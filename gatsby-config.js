@@ -6,6 +6,7 @@ module.exports = {
       'diversity, inclusion, technology, tech, computer science, boston, khoury college of computer sciences, khoury college, college of computer and information science, northeastern university',
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

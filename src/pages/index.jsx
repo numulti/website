@@ -1,11 +1,17 @@
 import React from 'react';
 
-import SEO from '../components/seo';
+import SEO from '../components/global/seo';
+import {
+  PrimaryHeading,
+  Paragraph,
+} from '../components';
 
 const IndexPage = () => (
   <section>
     <SEO title="Home" />
-    <h1>Under construction.</h1>
+    <PrimaryHeading pretty>Our website is under construction!</PrimaryHeading>
+    <Paragraph strong>Follow us on social media to stay updated on all things MULTI!</Paragraph>
+    <Paragraph>Contact us at multinortheastern@gmail.com</Paragraph>
   </section>
 );
 
