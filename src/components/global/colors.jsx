@@ -4,18 +4,18 @@ const logoColors = {
   racketWhite: '#ffffff',
 };
 
-const primaryColors = {
+const darkColors = {
   powerToThePine: '#0a1c18',
   justiceJade: '#088980',
   racketWhite: '#ffffff',
   codeComment: '#c6c6c',
 };
 
-const secondaryColors = {
+const lightColors = {
   consMint: '#c7dfdf',
   justiceJade: '#088980',
   darkMode: '#3b4344',
   bottlenose: '#606464',
 };
 
-export { logoColors, primaryColors, secondaryColors };
+export { logoColors, darkColors, lightColors };

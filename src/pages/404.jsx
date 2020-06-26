@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SEO from '../components/global/seo';
+import SEO from '../components/seo/seo.component';
 
 const NotFoundPage = () => (
   <section>
