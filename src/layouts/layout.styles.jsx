@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import {lightColors} from '../components/global'
+
+import { lightColors } from '../components/global';
 
 export const LayoutStyle = createGlobalStyle`
   body {

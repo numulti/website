@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import SEO from '../components/seo/seo.component';
+import {SEO} from '../components/global';
 import {
   PrimaryHeading,
   Paragraph,
