@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from '@material-ui/core';
 
 import { SEO, LargeHeading } from '../../components/global';
 
@@ -6,9 +7,11 @@ const EventsPage = () => (
   <>
     <SEO title="Events" />
     <section>
-      <LargeHeading pretty center>
-        Events
-      </LargeHeading>
+      <Container fixed>
+        <LargeHeading pretty center>
+          Events
+        </LargeHeading>
+      </Container>
     </section>
   </>
 );

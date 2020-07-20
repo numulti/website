@@ -1,16 +1,19 @@
 import React from 'react';
 
+import { Container } from '@material-ui/core';
 import { SEO, LargeHeading } from '../components/global';
 
-const IndexPage = () => (
+const HomePage = () => (
   <>
     <SEO title="Home" />
     <section>
-      <LargeHeading pretty center>
-        Home
-      </LargeHeading>
+      <Container fixed>
+        <LargeHeading pretty center>
+          Home
+        </LargeHeading>
+      </Container>
     </section>
   </>
 );
 
-export default IndexPage;
+export default HomePage;

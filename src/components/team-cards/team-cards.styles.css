@@ -1,0 +1,13 @@
+.team-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  align-items: stretch;
+}
+.team-card {
+  border: 1px solid black;
+}
+
+.team-card img {
+  max-width: 100%;
+}
