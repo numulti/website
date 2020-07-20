@@ -1,19 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-import { LayoutStyle } from './layout.styles.jsx';
+import './normalize.css';
+import './layout.styles.css';
 
 const Layout = ({ children }) => {
-  return (
-    <main>
-      <LayoutStyle />
-      {children}
-    </main>
-  );
-};
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  return <main>{children}</main>;
 };
 
 export default Layout;
