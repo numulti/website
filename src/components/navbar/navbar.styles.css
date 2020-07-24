@@ -4,13 +4,13 @@ header {
   width: 100vw;
   z-index: 2;
   max-height: var(--navbar-height);
-  background-color: grey;
+  background-color: var(--cons-mint);
   transition: background 0.3s, box-shadow 0.3s;
 }
 
 .navbar-header-styled {
   z-index: 2;
-  background-color: lightgreen;
+  background-color: var(--code-comment);
   box-shadow: 2px 6px 6px 0 var(--box-shadow-color);
   -moz-box-shadow: 2px 6px 6px 0 var(--box-shadow-color);
   -webkit-box-shadow: 2px 6px 6px 0 var(--box-shadow-color);
@@ -36,10 +36,6 @@ nav a {
 
 .navbar-vegan-burger {
   display: none;
-}
-
-.navbar-vegan-burger:active {
-  transform: scale(0.5);
 }
 
 @media (max-width: 959px) {
@@ -69,6 +65,10 @@ nav a {
     width: 3em;
     height: 3em;
     transition: 0.1s;
+  }
+
+  .navbar-vegan-burger:active {
+    transform: scale(0.5);
   }
 
   .nav-navbar-transition-enter,

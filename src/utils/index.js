@@ -10,7 +10,11 @@ const getSemester = () => {
 
 //Format is Month Day, Year eg. "July 24, 2020"
 const isFutureDate = (date) => {
-    return date > today;
+  return new Date(date) >= today;
 };
 
-export { getSemester, getYear, isFutureDate };
+const getAbbrvMonth = (month) => {
+  return month.substring(0, 3);
+};
+
+export { getSemester, getYear, isFutureDate, getAbbrvMonth };

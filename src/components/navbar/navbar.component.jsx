@@ -35,8 +35,8 @@ const CrossIcon = () => (
 );
 
 const NavBar = ({ toggleBlur }) => {
-  const [isMobile, setIsMobile] = useState(false);
-  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [isSmallScreenNavOpen, setIsSmallScreenNavOpen] = useState(false);
   const [isScrollTop, setIsScrollTop] = useState(true);
 
   useEffect(() => {
@@ -54,15 +54,15 @@ const NavBar = ({ toggleBlur }) => {
   }, []);
 
   const handleMediaQueryChange = (mediaQuery) => {
-    setIsMobile(mediaQuery.matches);
+    setIsSmallScreen(mediaQuery.matches);
   };
 
   const handleScroll = () => {
     setIsScrollTop(window.pageYOffset === 0);
   };
 
-  const toggleMobileNav = () => {
-    setIsMobileNavOpen(!isMobileNavOpen);
+  const toggleSmallScreenNav = () => {
+    setIsSmallScreenNavOpen(!isSmallScreenNavOpen);
     toggleBlur();
   };
 
@@ -86,12 +86,12 @@ const NavBar = ({ toggleBlur }) => {
   return (
     <>
       <header
-        className={!isScrollTop || isMobileNavOpen ? 'navbar-header-styled' : ''}
+        className={!isScrollTop || isSmallScreenNavOpen ? 'navbar-header-styled' : ''}
       >
         <Container fixed>
           <div className="navbar-header-layout">
             <div className="navbar-logo">(logo placeholder)</div>
-            {!isMobile && (
+            {!isSmallScreen && (
               <nav>
                 {edges.map((navLink, i) => {
                   return (
@@ -102,14 +102,14 @@ const NavBar = ({ toggleBlur }) => {
                 })}
               </nav>
             )}
-            <button className="navbar-vegan-burger" onClick={toggleMobileNav}>
-              {!isMobileNavOpen ? <MenuIcon /> : <CrossIcon />}
+            <button className="navbar-vegan-burger" onClick={toggleSmallScreenNav}>
+              {!isSmallScreenNavOpen ? <MenuIcon /> : <CrossIcon />}
             </button>
           </div>
         </Container>
       </header>
       <CSSTransition
-        in={isMobile && isMobileNavOpen}
+        in={isSmallScreen && isSmallScreenNavOpen}
         timeout={400}
         classNames="nav-navbar-transition"
         unmountOnExit
@@ -120,7 +120,7 @@ const NavBar = ({ toggleBlur }) => {
               <DynamicLink
                 key={i}
                 to={navLink.node.link}
-                onClick={toggleMobileNav}
+                onClick={toggleSmallScreenNav}
               >
                 {navLink.node.label}
               </DynamicLink>

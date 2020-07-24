@@ -1,13 +1,13 @@
 :root {
   /* Media Query Breakpoints (Based on Material UI)
   xs, extra-small: 0px
-  sm, small: 600px => (max-width: 599px)
-  md, medium: 960px (Mobile Screen is < 960px) => (max-width: 959px))
-  lg, large: 1280px
-  xl, extra-large: 1920px
+  sm, small: 600px => @media (max-width: 599px)
+  md, medium: 960px ("Small Screen") => @media (max-width: 959px)
+  lg, large: 1280px => @media (max-width: 1279px)
+  xl, extra-large: 1920px => @media (min-width: 1920px)
 */
 
-  /* Sizing */
+  /* Measurements */
   --navbar-height: 4em;
   --border-radius: 5px;
 
@@ -27,8 +27,21 @@
   --box-shadow-color: rgba(0, 0, 0, 0.3);
 }
 
-/* Material UI Container Edits */
+/* Layout */
+.section-margins {
+  margin: 4em 0;
+}
+
+.full-width {
+  position: relative;
+  width: 100vw;
+  margin-left: -50vw;
+  height: auto;
+  left: 50%;
+}
+
 @media (max-width: 599px) {
+  /* Material UI Container Edits */
   .MuiContainer-root {
     padding-left: 1.5em !important;
     padding-right: 1.5em !important;
@@ -60,9 +73,37 @@ h3 {
   font-size: 1.75rem;
 }
 
+h4 {
+  font-size: 1.3rem;
+}
+
 p {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 400;
+  line-height: 1.65rem;
+  color: var(--bottlenose);
+}
+
+@media (max-width: 959px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1.125rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
 
 .pretty-font {

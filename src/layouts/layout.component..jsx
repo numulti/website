@@ -9,7 +9,7 @@ import '../styles/global.css';
 import './layout.styles.css';
 
 const Layout = ({ children }) => {
-  /* Blurs content when mobile navigation is open */
+  /* Blurs content when small screen navigation is open */
   const [blurInnerContent, setBlurInnerContent] = useState(false);
 
   return (

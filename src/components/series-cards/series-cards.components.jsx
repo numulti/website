@@ -6,24 +6,26 @@ import './series-cards.styles.css';
 
 const SeriesCards = ({ series }) => {
   return (
-    <section className="series-cards">
+    <section className="series-cards section-margins">
       <Grid
         container
         direction="row"
-        spacing={4}
+        spacing={8}
         alignItems="stretch"
         justify="center"
       >
         {series.map((type, i) => {
           const { name, description, emoji } = type.node;
           return (
-            <Grid item key={i} xs={12} sm={6} md={4} lg={3} xl={3}>
+            <Grid item key={i} xs={12} sm={6} md={6} lg={4} xl={4}>
               <div className="card">
                 <div className="series-cards-icon">
                   <Emoji symbol={emoji} />
                 </div>
-                <h4>{name}</h4>
-                <p>{description}</p>
+                <div className="series-cards-text">
+                  <h3>{name}</h3>
+                  <p>{description}</p>
+                </div>
               </div>
             </Grid>
           );

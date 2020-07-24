@@ -1,0 +1,71 @@
+.schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.schedule h3 {
+  margin-bottom: 2rem;
+}
+
+.schedule-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em;
+}
+
+.schedule-details svg {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.schedule-details p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1279px) {
+  .schedule-details p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 959px) {
+  .schedule-details {
+    justify-content: left;
+    margin: 0.2em 25%;
+  }
+  .schedule-details p {
+    font-size: 1.3rem;
+  }
+
+  .schedule-details svg {
+    font-size: 1.3rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 599px) {
+  .schedule-details svg {
+    font-size: 1rem;
+  }
+
+  .schedule-details p {
+    font-size: 1rem;
+  }
+}
+
+/* Custom Breakpoint */
+@media (max-width: 432px) {
+  .schedule-details {
+    margin: 0.4em 25%;
+  }
+
+  .schedule-details svg {
+    font-size: 1rem;
+  }
+
+  .schedule-details p {
+    font-size: 0.9rem;
+  }
+}

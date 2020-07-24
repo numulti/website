@@ -1,0 +1,83 @@
+.event-card {
+  margin: 1.2em 0;
+  transition: 0.3s;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.event-card:hover {
+  opacity: 1;
+  transform: scale(1.01);
+}
+
+.event-card-old {
+  background-color: #eeeeee;
+  opacity: 0.7;
+}
+
+.chevron-toggle-container {
+  display: flex;
+}
+.chevron-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+  transition: 0.1s;
+}
+
+.chevron-toggle svg {
+  width: 3em;
+  height: 3em;
+  fill: var(--bottlenose);
+}
+
+.chevron-toggle:active {
+  transform: scale(0.5);
+}
+
+@media (max-width: 959px) {
+  .chevron-toggle svg {
+    width: 3em;
+    height: 3em;
+  }
+}
+
+.event-card-date-container {
+  background-color: var(--cons-mint);
+  display: flex;
+  justify-content: center;
+}
+.event-card-date {
+}
+
+.event-card-description {
+  padding: 1em 2em;
+}
+
+.event-card-transition-enter,
+.event-card-transition-appear {
+  height: 0;
+  opacity: 0;
+}
+
+.event-card-transition-enter-active,
+.event-card-transition-appear-active {
+  height: auto;
+  opacity: 1;
+  transition: all 200ms;
+}
+
+.event-card-transition-exit {
+  height: auto;
+  opacity: 1;
+}
+
+.event-card-transition-exit-active {
+  height: 100%;
+  opacity: 0;
+  transition: all 200ms;
+}

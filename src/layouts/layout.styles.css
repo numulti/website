@@ -1,6 +1,7 @@
 main {
-  padding-top: var(--navbar-height);
-  padding-bottom: 4em;
+  margin-top: var(--navbar-height);
+  padding-top: 1em; /* 5em-Navbar height */
+  padding-bottom: 5em;
 }
 
 .layout-inner-content {

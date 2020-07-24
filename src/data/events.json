@@ -1,25 +1,49 @@
 [
   {
     "name": "Event Name",
-    "description__html": "<div>description</div>",
+    "series": "Series Name",
+    "description__html": "<div>description with embedded HTML for <a href='https://google.com'>Link support</a>. description with embedded HTML. description with embedded HTML. description with embedded HTML. description with embedded HTML.</div>",
     "day": "1",
     "month": "September",
     "year": "2020",
-    "time": "6:00PM - 7:00PM",
+    "time": {
+      "start": "6:00PM",
+      "end": "7:00PM"
+    },
     "location": {
-      "place": "Zoom Video Call",
+      "name": "Zoom Video Call",
       "url": "https://zoom.com"
     }
   },
   {
     "name": "Event Name 2",
+    "series": "Series Name",
     "description__html": "<div>description</div>",
     "day": "1",
     "month": "January",
     "year": "2020",
-    "time": "6:00PM - 7:00PM",
+    "time": {
+      "start": "6:00PM",
+      "end": "7:00PM"
+    },
     "location": {
-      "place": "Zoom Video Call",
+      "name": "Zoom Video Call",
+      "url": "https://zoom.com"
+    }
+  },
+  {
+    "name": "Event Name",
+    "series": "Series Name",
+    "description__html": "<div>description with embedded HTML for <a href='https://google.com'>Link support</a>. description with embedded HTML. description with embedded HTML. description with embedded HTML. description with embedded HTML.</div>",
+    "day": "1",
+    "month": "February",
+    "year": "2020",
+    "time": {
+      "start": "6:00PM",
+      "end": "7:00PM"
+    },
+    "location": {
+      "name": "Zoom Video Call",
       "url": "https://zoom.com"
     }
   }

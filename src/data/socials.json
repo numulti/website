@@ -2,26 +2,26 @@
   {
     "name": "Email",
     "link": "mailto:multinortheastern@gmail.com",
-    "fontAwesomeIcon": ""
+    "fa_icon": ""
   },
   {
     "name": "Instagram",
     "link": "https://instagram.com/nu.multi",
-    "fontAwesomeIcon": ""
+    "fa_icon": ""
   },
   {
     "name": "Facebook",
     "link": "https://facebook.com/multinortheastern",
-    "fontAwesomeIcon": ""
+    "fa_icon": ""
   },
   {
     "name": "Slack",
     "link": "https://join.slack.com/t/numulti/shared_invite/zt-boxm5ypz-luVfu2ZVJ0sdc9gnfFQJcg",
-    "fontAwesomeIcon": ""
+    "fa_icon": ""
   },
   {
     "name": "LinkedIn",
     "link": "https://www.linkedin.com/company/numulti",
-    "fontAwesomeIcon": ""
+    "fa_icon": ""
   }
 ]
