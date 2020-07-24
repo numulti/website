@@ -1,21 +1,77 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import { Container } from '@material-ui/core';
 
-import { SEO, LargeHeading } from '../../components/global';
-import TeamCard from '../../components/team-cards/team-cards.component';
+import { SEO } from '../../components/global';
+import TeamCards from '../../components/team-cards/team-cards.component';
 
-const TeamPage = () => (
-  <>
-    <SEO title="Team" />
-    <section className="container">
+const TeamPage = ({ data }) => {
+  const { eboard, advisors } = data;
+  return (
+    <div id="team-page">
+      <SEO title="Team" />
       <Container fixed>
-        <LargeHeading pretty center>
-          Team
-        </LargeHeading>
-        <TeamCard />
+        <h1>Meet the Team</h1>
+        <h2>Leadership Team</h2>
+        <p>Description</p>
+        <TeamCards team={eboard.edges} />
+        {advisors.edges.length > 0 && (
+          <>
+            <h2>Student Advisors</h2>
+            <p>Description</p>
+            <TeamCards team={advisors.edges} />
+          </>
+        )}
       </Container>
-    </section>
-  </>
-);
+    </div>
+  );
+};
+
+export const query = graphql`
+  query {
+    eboard: allTeamJson(filter: { role: { ne: "Student Advisor" } }) {
+      edges {
+        node {
+          name
+          role
+          about
+          image {
+            src
+          }
+          fields {
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    advisors: allTeamJson(filter: { role: { eq: "Student Advisor" } }) {
+      edges {
+        node {
+          name
+          role
+          about
+          image {
+            src
+          }
+          fields {
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default TeamPage;

@@ -4,13 +4,13 @@ import { Container } from '@material-ui/core';
 import { SEO } from '../../components/global';
 
 const NotFoundPage = () => (
-  <section>
+  <div id="not-found-page">
     <Container fixed>
       <SEO title="404: Not found" />
-      <h1>NOT FOUND</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      <h1>Page Not Found</h1>
+      <p>This page doesn&#39;t exist... awkward.</p>
     </Container>
-  </section>
+  </div>
 );
 
 export default NotFoundPage;

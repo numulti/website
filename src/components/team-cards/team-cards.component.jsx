@@ -1,52 +1,34 @@
 import React from 'react';
-import { graphql, StaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
+import { Grid } from '@material-ui/core';
 
 import './team-cards.styles.css';
 
-export default function TeamCards() {
+const TeamCards = ({ team }) => {
   return (
-    <StaticQuery
-      query={graphql`
-        query {
-          team: allTeamJson {
-            edges {
-              node {
-                id
-                name
-                about
-                image {
-                  src
+    <section className="team-cards">
+      <Grid container direction="row" spacing={3} alignItems="stretch">
+        {team.map((member, i) => {
+          const { name, role, about, image, fields } = member.node;
+          return (
+            <Grid item key={i} xs={12} sm={6} md={4} lg={4} xl={3}>
+              <div className="card">
+                {
+                  // Render only if image src is valid to prevent website from breaking
+                  !!image.src && (
+                    <Img fluid={fields.image.childImageSharp.fluid} />
+                  )
                 }
-                fields {
-                  teamImage {
-                    childImageSharp {
-                      fluid {
-                        ...GatsbyImageSharpFluid
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      `}
-      render={(data) => (
-        <div className='team-cards-grid'>
-          {data.team.edges.map((member) => {
-            return (
-              <div key={member.node.id} className="team-card">
-                <h4>{member.node.name}</h4>
-                <h5>{member.node.about}</h5>
-                <Img
-                  fluid={member.node.fields.teamImage.childImageSharp.fluid}
-                />
+                <h4>{name}</h4>
+                {role !== 'Student Advisor' && <h5>{role}</h5>}
+                <p>{about}</p>
               </div>
-            );
-          })}
-        </div>
-      )}
-    />
+            </Grid>
+          );
+        })}
+      </Grid>
+    </section>
   );
-}
+};
+
+export default TeamCards;

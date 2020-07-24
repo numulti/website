@@ -1,16 +1,67 @@
 [
   {
     "name": "Dania",
+    "role": "Student Advisor",
     "about": "About Dania",
     "image": {
       "src": "test.jpg"
+    },
+    "contact": {
+      "email": "",
+      "linkedin": "",
+      "website": ""
     }
   },
   {
     "name": "Dania2",
+    "role": "President",
     "about": "About Dania2",
     "image": {
       "src": "test.jpg"
+    },
+    "contact": {
+      "email": "",
+      "linkedin": "",
+      "website": ""
+    }
+  },
+  {
+    "name": "Dania2",
+    "role": "President",
+    "about": "About Dania2",
+    "image": {
+      "src": "test.jpg"
+    },
+    "contact": {
+      "email": "",
+      "linkedin": "",
+      "website": ""
+    }
+  },
+  {
+    "name": "Dania2",
+    "role": "President",
+    "about": "About Dania2",
+    "image": {
+      "src": "test.jpg"
+    },
+    "contact": {
+      "email": "",
+      "linkedin": "",
+      "website": ""
+    }
+  },
+  {
+    "name": "Dania2",
+    "role": "Student Advisor",
+    "about": "About Dania2",
+    "image": {
+      "src": "test.jpg"
+    },
+    "contact": {
+      "email": "",
+      "linkedin": "",
+      "website": ""
     }
   }
 ]

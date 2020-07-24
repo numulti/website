@@ -1,4 +1,16 @@
 :root {
+  /* Media Query Breakpoints (Based on Material UI)
+  xs, extra-small: 0px
+  sm, small: 600px => (max-width: 599px)
+  md, medium: 960px (Mobile Screen is < 960px) => (max-width: 959px))
+  lg, large: 1280px
+  xl, extra-large: 1920px
+*/
+
+  /* Sizing */
+  --navbar-height: 4em;
+  --border-radius: 5px;
+
   /* Brand Colors */
   --command-line: #1e1e1e;
   --justice-jade: #088980;
@@ -10,4 +22,61 @@
   --racket-white: #ffffff;
 
   /* Web Colors */
+
+  /* Other Colors */
+  --box-shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Material UI Container Edits */
+@media (max-width: 599px) {
+  .MuiContainer-root {
+    padding-left: 1.5em !important;
+    padding-right: 1.5em !important;
+  }
+}
+
+/* Typography */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.pretty-font {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  text-transform: lowercase;
+  font-weight: 500;
+}
+
+/* Cards */
+.card {
+  padding: 1.5em;
+  border-radius: var(--border-radius);
+  box-shadow: 0 3px 6px var(--box-shadow-color);
+  -moz-box-shadow: 0 3px 6px var(--box-shadow-color);
+  -webkit-box-shadow: 0 3px 6px var(--box-shadow-color);
 }

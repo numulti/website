@@ -1,19 +1,18 @@
 import React from 'react';
 
 import { Container } from '@material-ui/core';
-import { SEO, LargeHeading } from '../components/global';
+import { SEO } from '../components/global';
 
 const HomePage = () => (
-  <>
+  <div id="home-page">
     <SEO title="Home" />
-    <section>
       <Container fixed>
-        <LargeHeading pretty center>
-          Home
-        </LargeHeading>
+        <h1>Home</h1>
+        <h2>Home</h2>
+        <h3>Home</h3>
+        <p>Text bgrbgrkjebg </p>
       </Container>
-    </section>
-  </>
+  </div>
 );
 
 export default HomePage;

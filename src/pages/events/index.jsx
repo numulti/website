@@ -1,19 +1,36 @@
 import React from 'react';
 import { Container } from '@material-ui/core';
 
-import { SEO, LargeHeading } from '../../components/global';
+import { SEO } from '../../components/global';
+import SeriesCards from '../../components/series-cards/series-cards.components';
 
-const EventsPage = () => (
-  <>
-    <SEO title="Events" />
-    <section>
-      <Container fixed>
-        <LargeHeading pretty center>
-          Events
-        </LargeHeading>
-      </Container>
-    </section>
-  </>
-);
+const EventsPage = ({ data }) => {
+  const { series } = data;
+  return (
+    <div id="events-page">
+      <SEO title="Events" />
+        <Container fixed>
+          <h1>Our Events</h1>
+          <h2>Event Series</h2>
+          <p>This is a Description</p>
+          <SeriesCards series={series.edges} />
+        </Container>
+    </div>
+  );
+};
+
+export const query = graphql`
+  query {
+    series: allSeriesJson {
+      edges {
+        node {
+          name
+          description
+          emoji
+        }
+      }
+    }
+  }
+`;
 
 export default EventsPage;

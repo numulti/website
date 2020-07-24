@@ -1,0 +1,16 @@
+[
+  {
+    "datePosted": "example",
+    "source": "example",
+    "title": "example",
+    "description__html": "<div>example</div>",
+    "slug": "/example",
+    "button": {
+      "title": "",
+      "link": ""
+    },
+    "image": {
+      "src": ""
+    }
+  }
+]

@@ -1,0 +1,38 @@
+.series-cards {
+  margin-top: 2.5em;
+}
+.series-cards .card {
+  display: flex;
+  height: 20em;
+  margin-top: 2.5em;
+  flex-direction: column;
+  align-items: center;
+}
+
+.series-cards .card h4 {
+  margin-top: 1rem;
+}
+
+.series-cards-icon {
+  background: grey;
+  font-size: 3.5em;
+  text-align: center;
+  margin-top: -1em;
+  width: 2em;
+  height: 0;
+  padding-top: 0.4em;
+  padding-bottom: 1.6em;
+  border-radius: 5em;
+  box-shadow: 0 1px 3px var(--box-shadow-color);
+  -moz-box-shadow: 0 1px 3px var(--box-shadow-color);
+  -webkit-box-shadow: 0 1px 3px var(--box-shadow-color);
+}
+
+@media (max-width: 599px) {
+  .series-cards-icon {
+    font-size: 4em;
+    width: 2.5em;
+    padding-top: 0.65em;
+    padding-bottom: 1.85em;
+  }
+}

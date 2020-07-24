@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Event Name",
+    "description__html": "<div>description</div>",
+    "day": "1",
+    "month": "September",
+    "year": "2020",
+    "time": "6:00PM - 7:00PM",
+    "location": {
+      "place": "Zoom Video Call",
+      "url": "https://zoom.com"
+    }
+  },
+  {
+    "name": "Event Name 2",
+    "description__html": "<div>description</div>",
+    "day": "1",
+    "month": "January",
+    "year": "2020",
+    "time": "6:00PM - 7:00PM",
+    "location": {
+      "place": "Zoom Video Call",
+      "url": "https://zoom.com"
+    }
+  }
+]

@@ -1,5 +1,10 @@
+/**
+ * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/ssr-apis/
+ */
 const React = require('react');
-const Layout = require('./src/layout/layout').default;
+const Layout = require('./src/layouts/layout.component.').default;
 
 exports.wrapPageElement = ({ element, props }) => {
   return <Layout {...props}>{element}</Layout>;
