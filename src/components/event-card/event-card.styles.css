@@ -61,18 +61,24 @@
   }
 }
 
-.event-card-date-container {
+.event-card-date {
   background-color: var(--cons-mint);
   display: flex;
   justify-content: center;
+  min-height:9em;
 }
-.event-card-date {
+
+.event-card-header {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .event-card-status {
-  display: inline-block;
-  font-size: .8rem;
-  padding: .6rem 1rem;
+  align-self: flex-start;
+  font-size: 0.8rem;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1rem;
   border-radius: 2em;
   text-transform: uppercase;
   font-weight: 600;
@@ -80,7 +86,26 @@
 }
 
 .event-card-status span {
-margin-right: .5rem;
+  margin-right: 0.5rem;
+}
+
+.event-card-name {
+  flex: 1;
+}
+
+.event-card-time-loc {
+  display: flex;
+  align-items: flex-start;
+}
+
+.event-card-time-loc p {
+  margin-right: 2rem;
+}
+
+@media (max-width: 959px) {
+  .event-card-time-loc {
+    display: block;
+  }
 }
 
 .event-card-description-container {

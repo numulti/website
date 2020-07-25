@@ -13,7 +13,7 @@ import './schedule.styles.css';
 
 const ScheduleDetails = ({ faIcon, text }) => {
   return (
-    <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+    <Grid item xs={12} sm={12} md={4} lg={4} xl={4} className="schedule-details-container">
       <div className="schedule-details">
         <FontAwesomeIcon icon={faIcon} />
         <p>{text}</p>
@@ -33,7 +33,7 @@ const Schedule = () => {
         <ScheduleDetails faIcon={faCalendar} text={`${frequency} on ${day}`} />
         <ScheduleDetails
           faIcon={faClock}
-          text={`${time.start} — ${time.end}`}
+          text={`${time.start} — ${time.end} EST`}
         />
         <ScheduleDetails
           faIcon={faMapMarkerAlt}

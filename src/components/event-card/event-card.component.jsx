@@ -6,7 +6,7 @@ import { faClock, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { CSSTransition } from 'react-transition-group';
 
 import { DynamicLink, Emoji } from '../global';
-import { useIsSmallScreen, isFutureDate, getAbbrvMonth } from '../../utils';
+import { useIsSmallScreen, isPastDate, getAbbrvMonth } from '../../utils';
 import './event-card.styles.css';
 
 const ChevronUpIcon = () => (
@@ -40,7 +40,7 @@ const EventCard = ({ event }) => {
     cancelled,
   } = event.node;
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
-  const isUpcoming = isFutureDate(`${month} ${day}, ${year}`);
+  const isUpcoming = !isPastDate(`${month} ${day}, ${year}`);
   const isSmallScreen = useIsSmallScreen(); //used to reorder grid items
 
   const toggleAccordion = () => {
@@ -78,20 +78,24 @@ const EventCard = ({ event }) => {
   const EventCardHeader = () => (
     <div className="event-card-header">
       <EventStatus />
-      <h4>{series}</h4>
-      <h3>{name} </h3>
-      <p>
-        <FontAwesomeIcon icon={faClock} />
-        {time.start} — {time.end}
-      </p>
-      <p>
-        <FontAwesomeIcon icon={faMapMarkerAlt} />
-        {location.url ? (
-          <DynamicLink to={location.url}>{location.name}</DynamicLink>
-        ) : (
-          location.name
-        )}
-      </p>
+      <div className="event-card-name">
+        <h4>{series}</h4>
+        <h3>{name} </h3>
+      </div>
+      <div className="event-card-time-loc">
+        <p>
+          <FontAwesomeIcon icon={faClock} />
+          {time.start} — {time.end}
+        </p>
+        <p>
+          <FontAwesomeIcon icon={faMapMarkerAlt} />
+          {location.url ? (
+            <DynamicLink to={location.url}>{location.name}</DynamicLink>
+          ) : (
+            location.name
+          )}
+        </p>
+      </div>
     </div>
   );
 
@@ -109,14 +113,7 @@ const EventCard = ({ event }) => {
       onClick={toggleAccordion}
     >
       <Grid container spacing={3}>
-        <Grid
-          item
-          xs={12}
-          sm={12}
-          md={3}
-          lg={3}
-          className="event-card-date-container"
-        >
+        <Grid item xs={12} sm={12} md={3} lg={3}>
           <EventCardDate />
         </Grid>
         <Grid item xs={12} sm={12} md={7} lg={7}>

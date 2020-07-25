@@ -3,8 +3,8 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { Container } from '@material-ui/core';
 import { CSSTransition } from 'react-transition-group';
 
-import { useIsSmallScreen } from '../../utils';
 import { DynamicLink } from '../global';
+import { useIsSmallScreen } from '../../utils';
 import './navbar.styles.css';
 
 const MenuIcon = () => (

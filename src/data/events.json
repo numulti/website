@@ -49,5 +49,22 @@
       "url": "https://zoom.com"
     },
     "cancelled": true
+  },
+  {
+    "name": "Event Name",
+    "series": "Series Name",
+    "description__html": "<p>description with embedded HTML for <a href='https://google.com'>Link support</a>. description with embedded HTML. description with embedded HTML. description with embedded HTML. description with embedded HTML.</p>",
+    "day": "25",
+    "month": "July",
+    "year": "2020",
+    "time": {
+      "start": "6:00PM",
+      "end": "7:00PM"
+    },
+    "location": {
+      "name": "Zoom Video Call",
+      "url": "https://zoom.com"
+    },
+    "cancelled": false
   }
 ]
