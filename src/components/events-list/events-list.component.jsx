@@ -12,8 +12,9 @@ const EventsList = ({ events }) => {
     ).getTime();
     return dateB - dateA;
   };
+
   return (
-    <section className="events-list section-margins">
+    <section className="section-margins">
       {events.sort(sortNewestFirst).map((event, i) => {
         return <EventCard key={i} event={event} />;
       })}

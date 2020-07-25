@@ -1,4 +1,5 @@
 import React from 'react';
+import {graphql} from 'gatsby'
 import { Container } from '@material-ui/core';
 
 import { SEO } from '../../components/global';
@@ -51,6 +52,7 @@ export const query = graphql`
             name
             url
           }
+          cancelled
         }
       }
     }

@@ -1,5 +1,6 @@
 .event-card {
   margin: 1.2em 0;
+  padding: 2rem;
   transition: 0.3s;
   opacity: 0.8;
   cursor: pointer;
@@ -30,9 +31,12 @@
 }
 
 .chevron-toggle svg {
-  width: 3em;
-  height: 3em;
+  width: 5em;
+  height: 5em;
   fill: var(--bottlenose);
+  border-radius: 50%;
+  padding: 1em;
+  background-color: lightgray;
 }
 
 .chevron-toggle:active {
@@ -40,9 +44,20 @@
 }
 
 @media (max-width: 959px) {
+  .chevron-toggle-container {
+    justify-content: center;
+  }
+
   .chevron-toggle svg {
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
+  }
+}
+
+@media (max-width: 599px) {
+  .chevron-toggle svg {
+    width: 3.5em;
+    height: 3.5em;
   }
 }
 
@@ -54,8 +69,26 @@
 .event-card-date {
 }
 
+.event-card-status {
+  display: inline-block;
+  font-size: .8rem;
+  padding: .6rem 1rem;
+  border-radius: 2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: var(--cons-mint);
+}
+
+.event-card-status span {
+margin-right: .5rem;
+}
+
+.event-card-description-container {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
 .event-card-description {
-  padding: 1em 2em;
+  padding: 1em 0;
 }
 
 .event-card-transition-enter,

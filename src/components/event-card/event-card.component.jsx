@@ -6,10 +6,10 @@ import { faClock, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { CSSTransition } from 'react-transition-group';
 
 import { DynamicLink, Emoji } from '../global';
-import { isFutureDate, getAbbrvMonth } from '../../utils';
+import { useIsSmallScreen, isFutureDate, getAbbrvMonth } from '../../utils';
 import './event-card.styles.css';
 
-const ChevronOpenIcon = () => (
+const ChevronUpIcon = () => (
   <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
     <path
       fillRule="evenodd"
@@ -18,7 +18,7 @@ const ChevronOpenIcon = () => (
   </svg>
 );
 
-const ChevronCloseIcon = () => (
+const ChevronDownIcon = () => (
   <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
     <path
       fillRule="evenodd"
@@ -37,12 +37,34 @@ const EventCard = ({ event }) => {
     year,
     time,
     location,
+    cancelled,
   } = event.node;
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
   const isUpcoming = isFutureDate(`${month} ${day}, ${year}`);
+  const isSmallScreen = useIsSmallScreen(); //used to reorder grid items
 
   const toggleAccordion = () => {
     setIsAccordionOpen(!isAccordionOpen);
+  };
+
+  const EventStatus = () => {
+    if (cancelled) {
+      return (
+        <div className="event-card-status">
+          <Emoji symbol={'🚫'} />
+          Cancelled
+        </div>
+      );
+    } else if (isUpcoming) {
+      return (
+        <div className="event-card-status">
+          <Emoji symbol={'🔥'} />
+          Upcoming
+        </div>
+      );
+    } else {
+      return null;
+    }
   };
 
   const EventCardDate = () => (
@@ -55,18 +77,9 @@ const EventCard = ({ event }) => {
 
   const EventCardHeader = () => (
     <div className="event-card-header">
+      <EventStatus />
       <h4>{series}</h4>
-      <h3>
-        {name}{' '}
-        {isUpcoming ? (
-          <p>
-            <Emoji symbol="🔥" />
-            Upcoming!
-          </p>
-        ) : (
-          ''
-        )}
-      </h3>
+      <h3>{name} </h3>
       <p>
         <FontAwesomeIcon icon={faClock} />
         {time.start} — {time.end}
@@ -82,10 +95,16 @@ const EventCard = ({ event }) => {
     </div>
   );
 
+  const EventCardDescription = () => (
+    <div className="event-card-description">
+      {ReactHtmlParser(description__html)}
+    </div>
+  );
+
   return (
     <div
       className={`event-card card ${
-        !isUpcoming && !isAccordionOpen ? 'event-card-old' : ''
+        (cancelled || !isUpcoming) && !isAccordionOpen ? 'event-card-old' : ''
       }`}
       onClick={toggleAccordion}
     >
@@ -100,31 +119,48 @@ const EventCard = ({ event }) => {
         >
           <EventCardDate />
         </Grid>
-        <Grid item xs={9} sm={9} md={7} lg={7}>
+        <Grid item xs={12} sm={12} md={7} lg={7}>
           <EventCardHeader />
         </Grid>
+        {isSmallScreen && (
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            className="event-card-description-container"
+          >
+            <CSSTransition
+              in={isAccordionOpen}
+              timeout={200}
+              classNames="event-card-transition"
+              unmountOnExit
+            >
+              <EventCardDescription />
+            </CSSTransition>
+          </Grid>
+        )}
         <Grid
           item
-          xs={3}
-          sm={3}
+          xs={isSmallScreen ? 12 : 3}
+          sm={isSmallScreen ? 12 : 3}
           md={2}
           lg={2}
           className="chevron-toggle-container"
         >
           <button className="chevron-toggle" onClick={toggleAccordion}>
-            {isAccordionOpen ? <ChevronCloseIcon /> : <ChevronOpenIcon />}
+            {isAccordionOpen ? <ChevronDownIcon /> : <ChevronUpIcon />}
           </button>
         </Grid>
-        <CSSTransition
-          in={isAccordionOpen}
-          timeout={200}
-          classNames="event-card-transition"
-          unmountOnExit
-        >
-          <div className="event-card-description">
-            {ReactHtmlParser(description__html)}
-          </div>
-        </CSSTransition>
+        {!isSmallScreen && (
+          <CSSTransition
+            in={isAccordionOpen}
+            timeout={200}
+            classNames="event-card-transition"
+            unmountOnExit
+          >
+            <EventCardDescription />
+          </CSSTransition>
+        )}
       </Grid>
     </div>
   );
