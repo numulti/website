@@ -47,7 +47,7 @@ const IndexPage = () => (
     <Paragraph center style={{ color: lightColors.darkMode }}>
       Contact us at{' '}
       <StyledLink>
-        <a href="mailto">multinortheastern@gmail.com</a>
+        <a href="mailto:multinortheastern@gmail.com">multinortheastern@gmail.com</a>
       </StyledLink>
     </Paragraph>
   </SectionWrapper>
