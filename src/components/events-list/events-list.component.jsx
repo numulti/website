@@ -14,9 +14,12 @@ const EventsList = ({ events }) => {
   };
 
   return (
-    <section className="section-margins">
+    <section>
       {events.sort(sortNewestFirst).map((event, i) => {
-        return <EventCard key={i} event={event} />;
+        //Shows only 4 latest events
+        if (i <= 3) {
+          return <EventCard key={i} event={event} />;
+        }
       })}
     </section>
   );

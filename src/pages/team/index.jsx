@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Container } from '@material-ui/core';
 
-import { SEO } from '../../components/global';
+import { SEO, SectionWrapper } from '../../components/global';
 import TeamCards from '../../components/team-cards/team-cards.component';
 
 const TeamPage = ({ data }) => {
@@ -12,16 +12,20 @@ const TeamPage = ({ data }) => {
       <SEO title="Team" />
       <Container fixed>
         <h1>Meet the Team</h1>
-        <h2>Leadership Team</h2>
-        <p>Description</p>
-        <TeamCards team={eboard.edges} />
-        {advisors.edges.length > 0 && (
-          <>
-            <h2>Student Advisors</h2>
-            <p>Description</p>
-            <TeamCards team={advisors.edges} />
-          </>
-        )}
+        <SectionWrapper>
+          <h2>Leadership Team</h2>
+          <p>Description</p>
+          <TeamCards team={eboard.edges} />
+        </SectionWrapper>
+        <SectionWrapper>
+          {advisors.edges.length > 0 && (
+            <>
+              <h2>Student Advisors</h2>
+              <p>Description</p>
+              <TeamCards team={advisors.edges} />
+            </>
+          )}
+        </SectionWrapper>
       </Container>
     </div>
   );

@@ -1,33 +1,42 @@
+// Global Variables
 const todayInEST = new Date().toLocaleString('en-US', {
   timeZone: 'America/New_York',
 });
-
 const today = new Date(todayInEST);
 
-const getYear = () => {
+// Helpers
+const isSameDay = (first, second) => {
+  return (
+    first.getFullYear() === second.getFullYear() &&
+    first.getMonth() === second.getMonth() &&
+    first.getDate() === second.getDate()
+  );
+};
+
+// Utils
+export const getYear = () => {
   return today.getFullYear();
 };
 
-const getSemester = () => {
+export const getSemester = () => {
   return today.getMonth() <= 5 ? 'Spring' : 'Fall';
 };
 
-//Format is Month Day, Year eg. "July 24, 2020"
-const isPastDate = (date) => {
+//date format is Month Day, Year eg. "July 24, 2020"
+export const isToday = (date) => {
   const parsedDate = new Date(date);
+  return isSameDay(parsedDate, today);
+};
 
-  const isSameDay = (first, second) =>
-    first.getFullYear() === second.getFullYear() &&
-    first.getMonth() === second.getMonth() &&
-    first.getDate() === second.getDate();
+//date format is Month Day, Year eg. "July 24, 2020"
+export const isPastDate = (date) => {
+  const parsedDate = new Date(date);
 
   if (isSameDay(parsedDate, today)) {
     return false;
   } else return parsedDate < today;
 };
 
-const getAbbrvMonth = (month) => {
+export const getAbbrvMonth = (month) => {
   return month.substring(0, 3);
 };
-
-export { getSemester, getYear, isPastDate, getAbbrvMonth };

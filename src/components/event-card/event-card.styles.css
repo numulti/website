@@ -62,10 +62,10 @@
 }
 
 .event-card-date {
-  background-color: var(--cons-mint);
+  background-color: var(--bg-color);
   display: flex;
   justify-content: center;
-  min-height:9em;
+  min-height: 9em;
 }
 
 .event-card-header {
@@ -82,7 +82,11 @@
   border-radius: 2em;
   text-transform: uppercase;
   font-weight: 600;
-  background-color: var(--cons-mint);
+  background-color: var(--bg-color);
+}
+
+.event-card-status span {
+  font-size: 1rem;
 }
 
 .event-card-status span {
@@ -93,17 +97,28 @@
   flex: 1;
 }
 
-.event-card-time-loc {
+.event-card-time-loc-container {
   display: flex;
   align-items: flex-start;
+}
+
+.event-card-time-loc{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .event-card-time-loc p {
   margin-right: 2rem;
 }
 
+.event-card-time-loc svg{
+  width: 1em;
+  margin-right: .5rem;
+}
+
 @media (max-width: 959px) {
-  .event-card-time-loc {
+  .event-card-time-loc-container {
     display: block;
   }
 }

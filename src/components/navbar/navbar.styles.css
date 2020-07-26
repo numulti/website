@@ -3,7 +3,7 @@ header {
   top: 0;
   width: 100vw;
   z-index: 2;
-  max-height: var(--navbar-height);
+  height: var(--navbar-height);
   background-color: var(--cons-mint);
   transition: background 0.3s, box-shadow 0.3s;
 }
@@ -18,11 +18,11 @@ header {
 
 .navbar-header-layout {
   display: flex;
+  height: var(--navbar-height);
   justify-content: space-between;
 }
 
 .navbar-logo {
-  height: 4em;
 }
 
 nav {
@@ -55,7 +55,8 @@ nav a {
   }
 
   .navbar-vegan-burger {
-    display: block;
+    display: flex;
+    align-items: center;
     cursor: pointer;
     padding: 0.5em 0;
     fill: black;
@@ -63,7 +64,7 @@ nav a {
     background: none;
     outline: none;
     width: 3em;
-    height: 3em;
+    height: 4em;
     transition: 0.1s;
   }
 

@@ -29,6 +29,8 @@ module.exports = {
         icon: `${__dirname}/src/images/favicon.png`,
       },
     },
+    // helps with FA icon flicker on load
     `gatsby-plugin-fontawesome-css`,
+    `gatsby-plugin-dark-mode`,
   ],
 };

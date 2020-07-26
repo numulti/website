@@ -12,14 +12,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1em 2em;
+  margin: 1em 1.5em;
   border-radius: 2em;
-  padding: 0.8rem 1rem;
-  background-color: var(--cons-mint);
+  padding: 1rem;
+  background-color: var(--transparent-color);
 }
 
 .schedule-details svg {
-  font-size: 1.5rem;
+  fill: var(--text-color);
+  width: 1.2em;
   margin-right: 1rem;
 }
 
@@ -31,25 +32,19 @@
 
 @media (max-width: 959px) {
   .schedule-details {
-    width: 80%;
+    margin: 0.8em 3em;
+    padding: 1rem 15%;
     display: flex;
     justify-content: left;
   }
   .schedule-details p {
-    width: 80%;
-    font-size: 1.3rem;
-    flex-grow: 4;
-  }
-
-  .schedule-details svg {
-    margin-left: 15%;
     font-size: 1.3rem;
   }
 }
 
 @media (max-width: 599px) {
-  .schedule-details svg {
-    font-size: 1rem;
+  .schedule-details {
+    margin: 0.5em 1.5em;
   }
 
   .schedule-details p {
@@ -58,10 +53,9 @@
 }
 
 /* Custom Breakpoint */
-@media (max-width: 432px) {
-  .schedule-details svg {
-    font-size: 1rem;
-    margin-left: 10%;
+@media (max-width: 500px) {
+  .schedule-details {
+    margin: 0.5em 1em;
   }
 
   .schedule-details p {

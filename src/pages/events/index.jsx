@@ -1,8 +1,8 @@
 import React from 'react';
-import {graphql} from 'gatsby'
+import { graphql } from 'gatsby';
 import { Container } from '@material-ui/core';
 
-import { SEO } from '../../components/global';
+import { SEO, SectionWrapper } from '../../components/global';
 import Schedule from '../../components/schedule/schedule.component';
 import EventsList from '../../components/events-list/events-list.component';
 import SeriesCards from '../../components/series-cards/series-cards.components';
@@ -14,11 +14,18 @@ const EventsPage = ({ data }) => {
       <SEO title="Events" />
       <Container fixed>
         <h1>Our Events</h1>
-        <Schedule />
-        <EventsList events={events.edges} />
-        <h2>Event Series</h2>
-        <p>This is a Description</p>
-        <SeriesCards series={series.edges} />
+        <SectionWrapper>
+          <Schedule />
+        </SectionWrapper>
+        <SectionWrapper>
+          <h2>Latest Events</h2>
+          <EventsList events={events.edges} />
+        </SectionWrapper>
+        <SectionWrapper>
+          <h2>Event Series</h2>
+          <p>This is a Description</p>
+          <SeriesCards series={series.edges} />
+        </SectionWrapper>
       </Container>
     </div>
   );

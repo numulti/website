@@ -2,32 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Container } from '@material-ui/core';
 import { CSSTransition } from 'react-transition-group';
+import { ThemeToggler } from 'gatsby-plugin-dark-mode';
 
 import { DynamicLink } from '../global';
+import {MenuIcon, CrossIcon} from '../../assets'
 import { useIsSmallScreen } from '../../utils';
 import './navbar.styles.css';
-
-const MenuIcon = () => (
-  <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-    <path
-      fillRule="evenodd"
-      d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-    />
-  </svg>
-);
-
-const CrossIcon = () => (
-  <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-    <path
-      fillRule="evenodd"
-      d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"
-    />
-    <path
-      fillRule="evenodd"
-      d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"
-    />
-  </svg>
-);
 
 const NavBar = ({ toggleBlur }) => {
   const [isSmallScreenNavOpen, setIsSmallScreenNavOpen] = useState(false);
@@ -51,6 +31,21 @@ const NavBar = ({ toggleBlur }) => {
     setIsSmallScreenNavOpen(!isSmallScreenNavOpen);
     toggleBlur();
   };
+
+  const ThemeButton = () => (
+    <ThemeToggler>
+      {({ theme, toggleTheme }) => (
+        <label>
+          <input
+            type="checkbox"
+            onChange={(e) => toggleTheme(e.target.checked ? 'dark' : 'light')}
+            checked={theme === 'dark'}
+          />{' '}
+          Dark mode
+        </label>
+      )}
+    </ThemeToggler>
+  );
 
   const {
     allNavigationJson: { edges },
@@ -88,6 +83,7 @@ const NavBar = ({ toggleBlur }) => {
                     </DynamicLink>
                   );
                 })}
+                <ThemeButton />
               </nav>
             )}
             <button
@@ -118,6 +114,7 @@ const NavBar = ({ toggleBlur }) => {
                 </DynamicLink>
               );
             })}
+            <ThemeButton />
           </nav>
         </CSSTransition>
       )}

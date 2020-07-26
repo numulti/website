@@ -27,17 +27,54 @@
   --box-shadow-color: rgba(0, 0, 0, 0.3);
 }
 
-/* Layout */
-.section-margins {
-  margin: 4em 0;
+
+/* Color Schemes */
+body {
+  --bg-color: #ffffff;
+  --lg-h-color: #1e1e1e;
+  --md-h-color: #7b7b7b;
+  --text-color: #3b4344;
+  --link-color: #088980;
+  --primary-accent-color: #00aea4;
+  --secondary-accent-color: #0c696f;
+  --secondary-hover-color: #0c696f;
+  --transparent-color: #eaf6f6;
+  --footer-color: linear-gradient(
+    180deg,
+    rgba(244, 255, 255, 0) 0%,
+    #f4ffff 21.35%
+  );
 }
 
+body.dark {
+  --bg-color: #1e1e1e;
+  --lg-h-color: #ffffff;
+  --md-h-color: #c6c6c5;
+  --text-color: #ffffff;
+  --link-color: #00aea4;
+  --primary-accent-color: #0c696f;
+  --secondary-accent-color: #00aea4;
+  --secondary-hover-color: #bce5e5;
+  --transparent-color: #253938;
+  --footer-color: linear-gradient(
+    180deg,
+    rgba(30, 58, 57, 0) 0%,
+    #1e3a39 21.35%
+  );
+}
+
+/* Layout */
 .full-width {
   position: relative;
   width: 100vw;
   margin-left: -50vw;
   height: auto;
   left: 50%;
+}
+
+body {
+  background-color: var(--bg-color);
+  transition: 0.3s;
 }
 
 @media (max-width: 599px) {
@@ -51,6 +88,11 @@
 /* Typography */
 body {
   font-family: 'Open Sans', sans-serif;
+  color: var(--text-color);
+}
+
+body.dark {
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -63,14 +105,17 @@ h5 {
 
 h1 {
   font-size: 2.75rem;
+  color: var(--lg-h-color);
 }
 
 h2 {
   font-size: 2.25rem;
+  color: var(--md-h-color);
 }
 
 h3 {
   font-size: 1.75rem;
+  color: var(--md-h-color);
 }
 
 h4 {
@@ -81,7 +126,13 @@ p {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.65rem;
-  color: var(--bottlenose);
+}
+
+a,
+a:focus,
+a:visited,
+a:active {
+  color: var(--link-color);
 }
 
 @media (max-width: 959px) {
@@ -111,12 +162,14 @@ p {
   font-style: italic;
   text-transform: lowercase;
   font-weight: 500;
+  color: var(--primary-accent-color);
 }
 
 /* Cards */
 .card {
   padding: 1.5em;
   border-radius: var(--border-radius);
+  background-color: var(--transparent-color);
   box-shadow: 0 3px 6px var(--box-shadow-color);
   -moz-box-shadow: 0 3px 6px var(--box-shadow-color);
   -webkit-box-shadow: 0 3px 6px var(--box-shadow-color);

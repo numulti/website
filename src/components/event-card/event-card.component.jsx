@@ -1,31 +1,22 @@
 import React, { useState } from 'react';
 import ReactHtmlParser from 'react-html-parser';
 import { Grid } from '@material-ui/core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClock, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { CSSTransition } from 'react-transition-group';
 
 import { DynamicLink, Emoji } from '../global';
-import { useIsSmallScreen, isPastDate, getAbbrvMonth } from '../../utils';
+import {
+  ChevronUpIcon,
+  ChevronDownIcon,
+  ClockIcon,
+  LocationIcon,
+} from '../../assets';
+import {
+  useIsSmallScreen,
+  isToday,
+  isPastDate,
+  getAbbrvMonth,
+} from '../../utils';
 import './event-card.styles.css';
-
-const ChevronUpIcon = () => (
-  <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-    <path
-      fillRule="evenodd"
-      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-    />
-  </svg>
-);
-
-const ChevronDownIcon = () => (
-  <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-    <path
-      fillRule="evenodd"
-      d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
-    />
-  </svg>
-);
 
 const EventCard = ({ event }) => {
   const {
@@ -40,7 +31,8 @@ const EventCard = ({ event }) => {
     cancelled,
   } = event.node;
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
-  const isUpcoming = !isPastDate(`${month} ${day}, ${year}`);
+  const isEventToday = isToday(`${month} ${day}, ${year}`);
+  const isEventUpcoming = !isPastDate(`${month} ${day}, ${year}`);
   const isSmallScreen = useIsSmallScreen(); //used to reorder grid items
 
   const toggleAccordion = () => {
@@ -55,10 +47,17 @@ const EventCard = ({ event }) => {
           Cancelled
         </div>
       );
-    } else if (isUpcoming) {
+    } else if (isEventToday) {
       return (
         <div className="event-card-status">
           <Emoji symbol={'🔥'} />
+          Today
+        </div>
+      );
+    } else if (isEventUpcoming) {
+      return (
+        <div className="event-card-status">
+          <Emoji symbol={'⏳'} />
           Upcoming
         </div>
       );
@@ -82,19 +81,23 @@ const EventCard = ({ event }) => {
         <h4>{series}</h4>
         <h3>{name} </h3>
       </div>
-      <div className="event-card-time-loc">
-        <p>
-          <FontAwesomeIcon icon={faClock} />
-          {time.start} — {time.end}
-        </p>
-        <p>
-          <FontAwesomeIcon icon={faMapMarkerAlt} />
-          {location.url ? (
-            <DynamicLink to={location.url}>{location.name}</DynamicLink>
-          ) : (
-            location.name
-          )}
-        </p>
+      <div className="event-card-time-loc-container">
+        <div className="event-card-time-loc">
+          <ClockIcon />
+          <p>
+            {time.start} — {time.end}
+          </p>
+        </div>
+        <div className="event-card-time-loc">
+          <LocationIcon />
+          <p>
+            {location.url ? (
+              <DynamicLink to={location.url}>{location.name}</DynamicLink>
+            ) : (
+              location.name
+            )}
+          </p>
+        </div>
       </div>
     </div>
   );
@@ -108,7 +111,9 @@ const EventCard = ({ event }) => {
   return (
     <div
       className={`event-card card ${
-        (cancelled || !isUpcoming) && !isAccordionOpen ? 'event-card-old' : ''
+        (cancelled || !isEventUpcoming) && !isAccordionOpen
+          ? 'event-card-old'
+          : ''
       }`}
       onClick={toggleAccordion}
     >

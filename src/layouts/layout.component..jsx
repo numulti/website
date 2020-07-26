@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 import NavBar from '../components/navbar/navbar.component';
 import Footer from '../components/footer/footer.component';
@@ -14,6 +15,13 @@ const Layout = ({ children }) => {
 
   return (
     <div id="layout">
+      <Helmet>
+        {/* FA imported again to support custom icons via queries*/}
+        <script
+          src="https://kit.fontawesome.com/a56e5ab623.js"
+          crossorigin="anonymous"
+        ></script>
+      </Helmet>
       <NavBar toggleBlur={() => setBlurInnerContent(!blurInnerContent)} />
       <div
         className={`layout-inner-content ${
