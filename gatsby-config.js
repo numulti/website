@@ -26,9 +26,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
+        name: `MULTI`,
+        short_name: `MULTI`,
+        start_url: `/`,
         icon: `${__dirname}/src/images/favicon.png`,
       },
     },
+    `gatsby-plugin-offline`,
     // helps with FA icon flicker on load
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-dark-mode`,

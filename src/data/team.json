@@ -3,70 +3,70 @@
     "name": "Dania",
     "role": "Student Advisor",
     "about": "About Dania",
-    "image": {
-      "src": "test.jpg"
-    },
     "contact": {
-      "email": "",
-      "linkedin": "",
-      "website": "",
-      "github": ""
+      "email": "email@email.com",
+      "website": "https://google.com",
+      "linkedin": "https://linkedin.com",
+      "github": "https://github.com"
+    },
+    "image": {
+      "src": "square.jpg"
     }
   },
   {
     "name": "Dania2",
     "role": "President",
     "about": "About Dania2",
-    "image": {
-      "src": "test.jpg"
-    },
     "contact": {
-      "email": "",
-      "linkedin": "",
+      "email": "email@email.com",
       "website": "",
-      "github": ""
+      "linkedin": "",
+      "github": "https://github.com"
+    },
+    "image": {
+      "src": "square.jpg"
     }
   },
   {
     "name": "Dania2",
     "role": "President",
     "about": "About Dania2",
-    "image": {
-      "src": "test.jpg"
-    },
     "contact": {
-      "email": "",
-      "linkedin": "",
+      "email": "email@email.com",
       "website": "",
+      "linkedin": "https://linkedin.com",
       "github": ""
+    },
+    "image": {
+      "src": "square.jpg"
     }
   },
   {
     "name": "Dania2",
     "role": "President",
     "about": "About Dania2",
-    "image": {
-      "src": "test.jpg"
-    },
     "contact": {
-      "email": "",
+      "email": "email@email.com",
+      "website": "https://google.com",
       "linkedin": "",
-      "website": "",
       "github": ""
+    },
+    "image": {
+      "src": "square.jpg"
     }
   },
   {
     "name": "Dania2",
     "role": "Student Advisor",
     "about": "About Dania2",
-    "image": {
-      "src": "test.jpg"
-    },
     "contact": {
-      "email": "",
-      "linkedin": "",
+      "email": "email@email.com",
       "website": "",
-      "github": ""
+      "linkedin": "https://linkedin.com",
+      "github": "https://github.com"
+    },
+    "image": {
+      "src": "square.jpg"
     }
   }
 ]

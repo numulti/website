@@ -60,9 +60,6 @@ nav a {
     cursor: pointer;
     padding: 0.5em 0;
     fill: black;
-    border: none;
-    background: none;
-    outline: none;
     width: 3em;
     height: 4em;
     transition: 0.1s;

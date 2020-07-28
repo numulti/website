@@ -1,10 +1,11 @@
-
-.team-cards .card {
-  padding: 1rem;
+.team-cards-img-container {
+  width: 50%;
+  height: 50%;
+  margin: 0 25%;
 }
 
 .team-cards .card img {
-  border-radius: var(--border-radius);
+  border-radius: 50%;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -18,4 +19,43 @@
   -moz-filter: none;
   -o-filter: none;
   -ms-filter: none;
+}
+
+.team-cards-text {
+  height: 13em;
+
+}
+
+.team-cards-contact-btns-row {
+  display: flex;
+  justify-content: center;
+  height: 3.5em;
+}
+
+.team-cards-contact-btn-container {
+  transition: var(--transition);
+}
+
+.team-cards-contact-btn-container:hover {
+  transition: var(--transition);
+  margin-top: -0.4rem;
+}
+
+.team-cards-contact-btn {
+  margin: 0 0.5em;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  width: 3.25em;
+  height: 3.25em;
+  opacity: 0.8;
+  transition: var(--transition);
+}
+
+.team-cards-contact-btn:hover {
+  background-color: var(--primary-accent-color);
+  opacity: 1;
+}
+
+.team-cards-contact-btn svg {
+  font-size: 1.5em;
 }

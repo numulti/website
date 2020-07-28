@@ -1,10 +1,11 @@
 .series-cards {
-  margin-top: 4em;
+  margin-top: 2em;
 }
 
 .series-cards .card {
   display: flex;
   height: 20em;
+  margin-top: 2em;
   flex-direction: column;
   align-items: center;
 }
@@ -23,10 +24,9 @@
   text-align: center;
   margin-top: -1em;
   width: 2em;
-  height: 0;
-  padding-top: 0.4em;
-  padding-bottom: 1.6em;
-  border-radius: 5em;
+  height: 2em;
+  padding-top: 0.45em;
+  border-radius: 50%;
   box-shadow: 0 1px 3px var(--box-shadow-color);
   -moz-box-shadow: 0 1px 3px var(--box-shadow-color);
   -webkit-box-shadow: 0 1px 3px var(--box-shadow-color);

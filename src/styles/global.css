@@ -9,7 +9,8 @@
 
   /* Measurements */
   --navbar-height: 4em;
-  --border-radius: 5px;
+  --border-radius: 60px;
+  --transition: 0.5s;
 
   /* Brand Colors */
   --command-line: #1e1e1e;
@@ -26,7 +27,6 @@
   /* Other Colors */
   --box-shadow-color: rgba(0, 0, 0, 0.3);
 }
-
 
 /* Color Schemes */
 body {
@@ -74,7 +74,7 @@ body.dark {
 
 body {
   background-color: var(--bg-color);
-  transition: 0.3s;
+  transition: var(--transition);
 }
 
 @media (max-width: 599px) {
@@ -87,7 +87,7 @@ body {
 
 /* Typography */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: var(--text-color);
 }
 
@@ -96,11 +96,17 @@ body.dark {
 }
 
 h1,
-h2,
+h2 {
+  font-family: 'Suez One', sans-serif;
+  letter-spacing: 1.5px;
+  /* font-weight: 800; */
+}
+
 h3,
 h4,
 h5 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
 }
 
 h1 {
@@ -157,6 +163,12 @@ a:active {
   }
 }
 
+.uppercase-font {
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 .pretty-font {
   font-family: 'Playfair Display', serif;
   font-style: italic;
@@ -169,6 +181,7 @@ a:active {
 .card {
   padding: 1.5em;
   border-radius: var(--border-radius);
+  transition: var(--transition);
   background-color: var(--transparent-color);
   box-shadow: 0 3px 6px var(--box-shadow-color);
   -moz-box-shadow: 0 3px 6px var(--box-shadow-color);

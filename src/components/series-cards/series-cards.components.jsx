@@ -10,7 +10,7 @@ const SeriesCards = ({ series }) => {
       <Grid
         container
         direction="row"
-        spacing={8}
+        spacing={6}
         alignItems="stretch"
         justify="center"
       >

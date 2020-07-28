@@ -39,6 +39,12 @@ export const query = graphql`
           name
           role
           about
+          contact {
+            email
+            linkedin
+            website
+            github
+          }
           image {
             src
           }
@@ -60,6 +66,12 @@ export const query = graphql`
           name
           role
           about
+          contact {
+            email
+            linkedin
+            website
+            github
+          }
           image {
             src
           }

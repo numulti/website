@@ -42,21 +42,21 @@ const EventCard = ({ event }) => {
   const EventStatus = () => {
     if (cancelled) {
       return (
-        <div className="event-card-status">
+        <div className="event-card-status uppercase-font">
           <Emoji symbol={'🚫'} />
           Cancelled
         </div>
       );
     } else if (isEventToday) {
       return (
-        <div className="event-card-status">
+        <div className="event-card-status uppercase-font">
           <Emoji symbol={'🔥'} />
           Today
         </div>
       );
     } else if (isEventUpcoming) {
       return (
-        <div className="event-card-status">
+        <div className="event-card-status uppercase-font">
           <Emoji symbol={'⏳'} />
           Upcoming
         </div>

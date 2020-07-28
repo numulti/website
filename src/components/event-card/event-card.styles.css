@@ -1,7 +1,6 @@
 .event-card {
-  margin: 1.2em 0;
+  margin: 1.8em 0;
   padding: 2rem;
-  transition: 0.3s;
   opacity: 0.8;
   cursor: pointer;
 }
@@ -80,8 +79,7 @@
   padding: 0.6rem 1rem;
   margin-bottom: 1rem;
   border-radius: 2em;
-  text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   background-color: var(--bg-color);
 }
 
@@ -102,7 +100,7 @@
   align-items: flex-start;
 }
 
-.event-card-time-loc{
+.event-card-time-loc {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -112,9 +110,9 @@
   margin-right: 2rem;
 }
 
-.event-card-time-loc svg{
+.event-card-time-loc svg {
   width: 1em;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 @media (max-width: 959px) {
