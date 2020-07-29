@@ -38,7 +38,6 @@ export const query = graphql`
         node {
           name
           role
-          about
           contact {
             email
             linkedin
@@ -65,7 +64,6 @@ export const query = graphql`
         node {
           name
           role
-          about
           contact {
             email
             linkedin

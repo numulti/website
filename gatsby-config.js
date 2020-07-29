@@ -36,5 +36,12 @@ module.exports = {
     // helps with FA icon flicker on load
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-dark-mode`,
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint:
+          'https://facebook.us19.list-manage.com/subscribe/post?u=f179c428c7e94394bedbba399&amp;id=8f32c1c4de',
+      },
+    },
   ],
 };

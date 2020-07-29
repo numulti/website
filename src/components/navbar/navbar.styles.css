@@ -20,17 +20,14 @@ header {
   display: flex;
   height: var(--navbar-height);
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-logo {
 }
 
-nav {
-  display: flex;
-  align-items: center;
-}
-
 nav a {
+  font-size: 1.5rem;
   padding: 0 1rem;
 }
 
@@ -38,10 +35,28 @@ nav a {
   display: none;
 }
 
+.navbar-theme-btn {
+  border-radius: 50%;
+  background-color: var(--primary-accent-color);
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0 1em;
+  padding: 0.6em;
+  opacity: 0.8;
+  transition: var(--transition);
+}
+
+.navbar-theme-btn:active {
+  transform: scale(0.5);
+}
+
 @media (max-width: 959px) {
   nav {
+    padding-bottom: var(--navbar-height);
     position: fixed;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     background: lightgray;
     top: var(--navbar-height);
     margin-top: -1px;
@@ -52,6 +67,10 @@ nav a {
     box-shadow: -3px 0 2em 0 var(--box-shadow-color);
     -moz-box-shadow: -3px 0 2em var(--box-shadow-color);
     -webkit-box-shadow: -3px 0 2em var(--box-shadow-color);
+  }
+
+  nav a {
+    margin: 1.5rem 1rem;
   }
 
   .navbar-vegan-burger {

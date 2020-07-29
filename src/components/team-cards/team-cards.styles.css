@@ -1,7 +1,11 @@
+.team-cards .card {
+  margin-top: 0.5em;
+  padding: 2em;
+}
 .team-cards-img-container {
-  width: 50%;
-  height: 50%;
-  margin: 0 25%;
+  width: 60%;
+  height: 60%;
+  margin: 0.5em 20%;
 }
 
 .team-cards .card img {
@@ -22,14 +26,13 @@
 }
 
 .team-cards-text {
-  height: 13em;
-
+  height: 4.5em;
 }
 
 .team-cards-contact-btns-row {
   display: flex;
   justify-content: center;
-  height: 3.5em;
+  height: 3em;
 }
 
 .team-cards-contact-btn-container {
@@ -41,12 +44,14 @@
   margin-top: -0.4rem;
 }
 
-.team-cards-contact-btn {
-  margin: 0 0.5em;
+.team-cards-contact-btn,
+.team-cards-contact-btn:focus,
+.team-cards-contact-btn:active {
+  margin: 0 0.3em;
   border-radius: 50%;
   background-color: var(--bg-color);
-  width: 3.25em;
-  height: 3.25em;
+  width: 3em;
+  height: 3em;
   opacity: 0.8;
   transition: var(--transition);
 }
@@ -57,5 +62,5 @@
 }
 
 .team-cards-contact-btn svg {
-  font-size: 1.5em;
+  font-size: 1.4rem;
 }

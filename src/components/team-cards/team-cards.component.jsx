@@ -19,15 +19,14 @@ const ContactButton = ({ link, faIcon }) => (
 const TeamCards = ({ team }) => {
   return (
     <section className="team-cards">
-      <Grid container direction="row" spacing={5} alignItems="stretch">
+      <Grid container direction="row" spacing={4}>
         {team.map((member, i) => {
-          const { name, role, about, image, fields, contact } = member.node;
+          const { name, role, image, fields, contact } = member.node;
           console.log(contact);
           return (
-            <Grid item key={i} xs={12} sm={12} md={6} lg={4} xl={3}>
+            <Grid item key={i} xs={12} sm={6} md={4} lg={3} xl={3}>
               <div className="card">
                 {
-                  // Render only if image src is valid to prevent website from breaking
                   !!image.src && (
                     <div className="team-cards-img-container">
                       <Img fluid={fields.image.childImageSharp.fluid} />
@@ -37,7 +36,6 @@ const TeamCards = ({ team }) => {
                 <div className="team-cards-text">
                   <h4>{name}</h4>
                   {role !== 'Student Advisor' && <h5>{role}</h5>}
-                  <p>{about}</p>
                 </div>
                 <div className="team-cards-contact-btns-row">
                   {!!contact.email && (

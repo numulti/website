@@ -5,7 +5,7 @@ import { CSSTransition } from 'react-transition-group';
 import { ThemeToggler } from 'gatsby-plugin-dark-mode';
 
 import { DynamicLink } from '../global';
-import {MenuIcon, CrossIcon} from '../../assets'
+import { MenuIcon, CrossIcon, SunIcon, MoonIcon } from '../../assets';
 import { useIsSmallScreen } from '../../utils';
 import './navbar.styles.css';
 
@@ -32,20 +32,26 @@ const NavBar = ({ toggleBlur }) => {
     toggleBlur();
   };
 
-  const ThemeButton = () => (
-    <ThemeToggler>
-      {({ theme, toggleTheme }) => (
-        <label>
-          <input
-            type="checkbox"
-            onChange={(e) => toggleTheme(e.target.checked ? 'dark' : 'light')}
-            checked={theme === 'dark'}
-          />{' '}
-          Dark mode
-        </label>
-      )}
-    </ThemeToggler>
-  );
+  const ThemeButton = () => {
+    return (
+      <ThemeToggler>
+        {({ theme, toggleTheme }) => {
+          const icon = theme === 'light' ? <MoonIcon /> : <SunIcon />;
+          return (
+            <button
+              className="navbar-theme-btn"
+              onClick={() => {
+                const nextTheme = theme === 'light' ? 'dark' : 'light';
+                toggleTheme(nextTheme);
+              }}
+            >
+              {icon}
+            </button>
+          );
+        }}
+      </ThemeToggler>
+    );
+  };
 
   const {
     allNavigationJson: { edges },

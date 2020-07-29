@@ -8,7 +8,7 @@
 */
 
   /* Measurements */
-  --navbar-height: 4em;
+  --navbar-height: 5em;
   --border-radius: 60px;
   --transition: 0.5s;
 
@@ -25,7 +25,7 @@
   /* Web Colors */
 
   /* Other Colors */
-  --box-shadow-color: rgba(0, 0, 0, 0.3);
+  --box-shadow-color: rgba(0, 0, 0, 0.15);
 }
 
 /* Color Schemes */
