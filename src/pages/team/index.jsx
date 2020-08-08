@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import { Container } from '@material-ui/core';
 
 import { SEO, SectionWrapper } from '../../components/global';
-import TeamCards from '../../components/team-cards/team-cards.component';
+import TeamCards from '../../components/team-cards/team-cards';
 
 const TeamPage = ({ data }) => {
   const { eboard, advisors } = data;

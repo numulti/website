@@ -1,2 +1,2 @@
 export * from './date-utils';
-export { default as useIsSmallScreen } from './small-screen';
+export { default as useIsSmallScreen } from './small-screen-hook';

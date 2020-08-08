@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from '@material-ui/core';
 
-import NewsletterForm from '../components/newsletter-form/newsletter-form.component';
+import NewsletterForm from '../components/newsletter-form/newsletter-form';
 import { SEO } from '../components/global';
 
 const HomePage = () => (

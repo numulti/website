@@ -3,9 +3,9 @@ import { graphql } from 'gatsby';
 import { Container } from '@material-ui/core';
 
 import { SEO, SectionWrapper } from '../../components/global';
-import Schedule from '../../components/schedule/schedule.component';
-import EventsList from '../../components/events-list/events-list.component';
-import SeriesCards from '../../components/series-cards/series-cards.components';
+import Schedule from '../../components/schedule/schedule';
+import EventsList from '../../components/events-list/events-list';
+import SeriesCards from '../../components/series-cards/series-cards';
 
 const EventsPage = ({ data }) => {
   const { series, events } = data;
