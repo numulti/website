@@ -1,0 +1,42 @@
+.series-cards {
+  margin-top: 2em;
+}
+
+.series-cards .card {
+  display: flex;
+  height: 20em;
+  margin-top: 2em;
+  flex-direction: column;
+  align-items: center;
+}
+
+.series-cards-text {
+  margin-top: 1.5rem;
+}
+.series-cards-text h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.series-cards-icon {
+  background: var(--bg-color);
+  font-size: 3.5em;
+  text-align: center;
+  margin-top: -1em;
+  width: 2em;
+  height: 2em;
+  padding-top: 0.45em;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px var(--box-shadow-color);
+  -moz-box-shadow: 0 1px 3px var(--box-shadow-color);
+  -webkit-box-shadow: 0 1px 3px var(--box-shadow-color);
+}
+
+@media (max-width: 599px) {
+  .series-cards-icon {
+    font-size: 4em;
+    width: 2.5em;
+    padding-top: 0.65em;
+    padding-bottom: 1.85em;
+  }
+}

@@ -1,0 +1,154 @@
+.event-card {
+  margin: 1.8em 0;
+  padding: 2rem;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.event-card:hover {
+  opacity: 1;
+  transform: scale(1.01);
+}
+
+.event-card-old {
+  background-color: #eeeeee;
+  opacity: 0.7;
+}
+
+.chevron-toggle-container {
+  display: flex;
+}
+.chevron-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+  transition: 0.1s;
+}
+
+.chevron-toggle svg {
+  width: 5em;
+  height: 5em;
+  fill: var(--bottlenose);
+  border-radius: 50%;
+  padding: 1em;
+  background-color: lightgray;
+}
+
+.chevron-toggle:active {
+  transform: scale(0.5);
+}
+
+@media (max-width: 959px) {
+  .chevron-toggle-container {
+    justify-content: center;
+  }
+
+  .chevron-toggle svg {
+    width: 4em;
+    height: 4em;
+  }
+}
+
+@media (max-width: 599px) {
+  .chevron-toggle svg {
+    width: 3.5em;
+    height: 3.5em;
+  }
+}
+
+.event-card-date {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  min-height: 9em;
+}
+
+.event-card-header {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.event-card-status {
+  align-self: flex-start;
+  font-size: 0.8rem;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 2em;
+  font-weight: 500;
+  background-color: var(--bg-color);
+}
+
+.event-card-status span {
+  font-size: 1rem;
+}
+
+.event-card-status span {
+  margin-right: 0.5rem;
+}
+
+.event-card-name {
+  flex: 1;
+}
+
+.event-card-time-loc-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.event-card-time-loc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.event-card-time-loc p {
+  margin-right: 2rem;
+}
+
+.event-card-time-loc svg {
+  width: 1em;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 959px) {
+  .event-card-time-loc-container {
+    display: block;
+  }
+}
+
+.event-card-description-container {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.event-card-description {
+  padding: 1em 0;
+}
+
+.event-card-transition-enter,
+.event-card-transition-appear {
+  height: 0;
+  opacity: 0;
+}
+
+.event-card-transition-enter-active,
+.event-card-transition-appear-active {
+  height: auto;
+  opacity: 1;
+  transition: all 200ms;
+}
+
+.event-card-transition-exit {
+  height: auto;
+  opacity: 1;
+}
+
+.event-card-transition-exit-active {
+  height: 100%;
+  opacity: 0;
+  transition: all 200ms;
+}

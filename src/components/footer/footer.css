@@ -1,0 +1,4 @@
+footer {
+  height: 18em;
+  background-image: var(--footer-color);
+}

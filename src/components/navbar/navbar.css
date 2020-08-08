@@ -1,0 +1,120 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 2;
+  height: var(--navbar-height);
+  background-color: var(--cons-mint);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.navbar-header-styled {
+  z-index: 2;
+  background-color: var(--code-comment);
+  box-shadow: 2px 6px 6px 0 var(--box-shadow-color);
+  -moz-box-shadow: 2px 6px 6px 0 var(--box-shadow-color);
+  -webkit-box-shadow: 2px 6px 6px 0 var(--box-shadow-color);
+}
+
+.navbar-header-layout {
+  display: flex;
+  height: var(--navbar-height);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+}
+
+nav a {
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+
+.navbar-vegan-burger {
+  display: none;
+}
+
+.navbar-theme-btn {
+  border-radius: 50%;
+  background-color: var(--primary-accent-color);
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0 1em;
+  padding: 0.6em;
+  opacity: 0.8;
+  transition: var(--transition);
+}
+
+.navbar-theme-btn:active {
+  transform: scale(0.5);
+}
+
+@media (max-width: 959px) {
+  nav {
+    padding-bottom: var(--navbar-height);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: lightgray;
+    top: var(--navbar-height);
+    margin-top: -1px;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+    width: 60%;
+    box-shadow: -3px 0 2em 0 var(--box-shadow-color);
+    -moz-box-shadow: -3px 0 2em var(--box-shadow-color);
+    -webkit-box-shadow: -3px 0 2em var(--box-shadow-color);
+  }
+
+  nav a {
+    margin: 1.5rem 1rem;
+  }
+
+  .navbar-vegan-burger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5em 0;
+    fill: black;
+    width: 3em;
+    height: 4em;
+    transition: 0.1s;
+  }
+
+  .navbar-vegan-burger:active {
+    transform: scale(0.5);
+  }
+
+  .nav-navbar-transition-enter,
+  .nav-navbar-transition-appear {
+    width: 0;
+    opacity: 0;
+    color: transparent;
+    background-color: grey;
+  }
+
+  .nav-navbar-transition-enter-active,
+  .nav-navbar-transition-appear-active {
+    width: 60%;
+    opacity: 1;
+    background-color: lightgray;
+    transition: all 400ms;
+  }
+
+  .nav-navbar-transition-exit {
+    width: 60%;
+    opacity: 1;
+    background-color: lightgray;
+  }
+
+  .nav-navbar-transition-exit-active {
+    width: 0;
+    opacity: 0;
+    color: transparent;
+    background-color: grey;
+    transition: all 400ms;
+  }
+}
