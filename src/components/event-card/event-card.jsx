@@ -110,6 +110,12 @@ const EventCard = ({ event }) => {
     </div>
   );
 
+  const EventCardChevronToggle = () => (
+    <button className="chevron-toggle">
+      {isAccordionOpen ? <ChevronDownIcon /> : <ChevronUpIcon />}
+    </button>
+  );
+
   return (
     <div
       className={`event-card card ${
@@ -126,23 +132,26 @@ const EventCard = ({ event }) => {
         <Grid item xs={12} sm={8} md={7} lg={7}>
           <EventCardHeader />
         </Grid>
-        {isSmallScreen && (
-          <Grid
-            item
-            xs={12}
-            sm={12}
-            className="event-card-description-container"
-          >
-            <CSSTransition
-              in={isAccordionOpen}
-              timeout={200}
-              classNames="event-card-transition"
-              unmountOnExit
+        {
+          //display description in this order for small screens
+          isSmallScreen && (
+            <Grid
+              item
+              xs={12}
+              sm={12}
+              className="event-card-description-container"
             >
-              <EventCardDescription />
-            </CSSTransition>
-          </Grid>
-        )}
+              <CSSTransition
+                in={isAccordionOpen}
+                timeout={200}
+                classNames="event-card-transition"
+                unmountOnExit
+              >
+                <EventCardDescription />
+              </CSSTransition>
+            </Grid>
+          )
+        }
         <Grid
           item
           xs={isSmallScreen ? 12 : 3}
@@ -151,20 +160,21 @@ const EventCard = ({ event }) => {
           lg={2}
           className="chevron-toggle-container"
         >
-          <button className="chevron-toggle">
-            {isAccordionOpen ? <ChevronDownIcon /> : <ChevronUpIcon />}
-          </button>
+          <EventCardChevronToggle />
         </Grid>
-        {!isSmallScreen && (
-          <CSSTransition
-            in={isAccordionOpen}
-            timeout={200}
-            classNames="event-card-transition"
-            unmountOnExit
-          >
-            <EventCardDescription />
-          </CSSTransition>
-        )}
+        {
+          // display description in this order for larger screens
+          !isSmallScreen && (
+            <CSSTransition
+              in={isAccordionOpen}
+              timeout={200}
+              classNames="event-card-transition"
+              unmountOnExit
+            >
+              <EventCardDescription />
+            </CSSTransition>
+          )
+        }
       </Grid>
     </div>
   );

@@ -9,23 +9,32 @@ import SeriesCards from '../../components/series-cards/series-cards';
 
 const EventsPage = ({ data }) => {
   const { series, events } = data;
+
+  const ScheduleSection = SectionWrapper(Schedule);
+
+  const EventsListSection = SectionWrapper(
+    <>
+      <h2>Latest Events</h2>
+      <EventsList events={events.edges} />
+    </>
+  );
+
+  const SeriesCardsSection = SectionWrapper(
+    <>
+      <h2>Event Series</h2>
+      <p>This is a Description</p>
+      <SeriesCards series={series.edges} />
+    </>
+  );
+
   return (
     <div id="events-page">
       <SEO title="Events" />
       <Container fixed>
         <h1>Our Events</h1>
-        <SectionWrapper>
-          <Schedule />
-        </SectionWrapper>
-        <SectionWrapper>
-          <h2>Latest Events</h2>
-          <EventsList events={events.edges} />
-        </SectionWrapper>
-        <SectionWrapper>
-          <h2>Event Series</h2>
-          <p>This is a Description</p>
-          <SeriesCards series={series.edges} />
-        </SectionWrapper>
+        <ScheduleSection />
+        <EventsListSection />
+        <SeriesCardsSection />
       </Container>
     </div>
   );

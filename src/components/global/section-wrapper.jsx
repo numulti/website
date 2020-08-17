@@ -1,9 +1,9 @@
 import React from 'react';
 
-const SectionWrapper = ({children}) => (
-  <section style={{ margin: '3em 0' }}>
-    {children}
-  </section>
-);
+const SectionWrapper = (component) => {
+  return function wrapComponent() {
+    return <section style={{ margin: '3em 0' }}>{component}</section>;
+  };
+};
 
 export default SectionWrapper;

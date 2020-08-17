@@ -7,25 +7,29 @@ import TeamCards from '../../components/team-cards/team-cards';
 
 const TeamPage = ({ data }) => {
   const { eboard, advisors } = data;
+
+  const LeadershipTeamSection = SectionWrapper(
+    <>
+      <h2>Leadership Team</h2>
+      <p>Description</p>
+      <TeamCards team={eboard.edges} />
+    </>
+  );
+
+  const AdvisorsSection = SectionWrapper(
+    <>
+      <h2>Student Advisors</h2>
+      <p>Description</p>
+      <TeamCards team={advisors.edges} />
+    </>
+  );
+
   return (
     <div id="team-page">
       <SEO title="Team" />
       <Container fixed>
-        <h1>Meet the Team</h1>
-        <SectionWrapper>
-          <h2>Leadership Team</h2>
-          <p>Description</p>
-          <TeamCards team={eboard.edges} />
-        </SectionWrapper>
-        <SectionWrapper>
-          {advisors.edges.length > 0 && (
-            <>
-              <h2>Student Advisors</h2>
-              <p>Description</p>
-              <TeamCards team={advisors.edges} />
-            </>
-          )}
-        </SectionWrapper>
+        <LeadershipTeamSection />
+        {advisors.length !== 0 && <AdvisorsSection />}
       </Container>
     </div>
   );

@@ -14,6 +14,23 @@ const NavBar = ({ toggleBlur }) => {
   const [isScrollTop, setIsScrollTop] = useState(true);
   const isSmallScreen = useIsSmallScreen();
 
+  const {
+    allNavigationJson: { edges },
+  } = useStaticQuery(
+    graphql`
+      query {
+        allNavigationJson {
+          edges {
+            node {
+              label
+              link
+            }
+          }
+        }
+      }
+    `
+  );
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     handleScroll();
@@ -28,7 +45,7 @@ const NavBar = ({ toggleBlur }) => {
   };
 
   const toggleSmallScreenNav = () => {
-    setIsSmallScreenNavOpen(prevState => !prevState);
+    setIsSmallScreenNavOpen((prevState) => !prevState);
     toggleBlur();
   };
 
@@ -53,23 +70,6 @@ const NavBar = ({ toggleBlur }) => {
     );
   };
 
-  const {
-    allNavigationJson: { edges },
-  } = useStaticQuery(
-    graphql`
-      query {
-        allNavigationJson {
-          edges {
-            node {
-              label
-              link
-            }
-          }
-        }
-      }
-    `
-  );
-
   return (
     <>
       <header
@@ -79,7 +79,13 @@ const NavBar = ({ toggleBlur }) => {
       >
         <Container fixed>
           <div className="navbar-header-layout">
-            <div className="navbar-logo">(logo placeholder)</div>
+            <button
+              className="navbar-vegan-burger"
+              onClick={toggleSmallScreenNav}
+            >
+              {!isSmallScreenNavOpen ? <MenuIcon /> : <CrossIcon />}
+            </button>
+            <div className="navbar-logo"><p>logo</p></div>
             {!isSmallScreen && (
               <nav>
                 {edges.map((navLink, i) => {
@@ -92,12 +98,6 @@ const NavBar = ({ toggleBlur }) => {
                 <ThemeButton />
               </nav>
             )}
-            <button
-              className="navbar-vegan-burger"
-              onClick={toggleSmallScreenNav}
-            >
-              {!isSmallScreenNavOpen ? <MenuIcon /> : <CrossIcon />}
-            </button>
           </div>
         </Container>
       </header>
@@ -105,7 +105,7 @@ const NavBar = ({ toggleBlur }) => {
         <CSSTransition
           in={isSmallScreenNavOpen}
           timeout={400}
-          classNames="nav-navbar-transition"
+          classNames="navbar-nav-transition"
           unmountOnExit
         >
           <nav>
