@@ -6,7 +6,7 @@ import { CalendarIcon, ClockIcon, LocationIcon } from '../../assets/icons';
 import schedule from '../../data/schedule';
 import './schedule.css';
 
-const ScheduleDetails = ({ text, icon }) => {
+const ScheduleDetailsChip = ({ icon, text }) => {
   return (
     <Grid
       item
@@ -14,7 +14,6 @@ const ScheduleDetails = ({ text, icon }) => {
       sm={12}
       md={4}
       lg={4}
-      xl={4}
       className="schedule-details-container"
     >
       <div className="schedule-details">
@@ -33,15 +32,15 @@ const Schedule = () => {
         {semester} {year} Events
       </h3>
       <Grid container direction="row">
-        <ScheduleDetails
+        <ScheduleDetailsChip
           icon={<CalendarIcon />}
           text={`${frequency} on ${day}`}
         />
-        <ScheduleDetails
+        <ScheduleDetailsChip
           icon={<ClockIcon />}
           text={`${time.start} — ${time.end} EST`}
         />
-        <ScheduleDetails
+        <ScheduleDetailsChip
           icon={<LocationIcon />}
           text={
             !!location.url ? (

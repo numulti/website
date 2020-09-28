@@ -81,11 +81,13 @@ const NavBar = ({ toggleBlur }) => {
           <div className="navbar-header-layout">
             <button
               className="navbar-vegan-burger"
-              onClick={toggleSmallScreenNav}
+              onClick={() => toggleSmallScreenNav()}
             >
               {!isSmallScreenNavOpen ? <MenuIcon /> : <CrossIcon />}
             </button>
-            <div className="navbar-logo"><p>logo</p></div>
+            <div className="navbar-logo">
+              <p>logo</p>
+            </div>
             {!isSmallScreen && (
               <nav>
                 {edges.map((navLink, i) => {
@@ -114,7 +116,7 @@ const NavBar = ({ toggleBlur }) => {
                 <DynamicLink
                   key={i}
                   to={navLink.node.link}
-                  onClick={toggleSmallScreenNav}
+                  onClick={() => toggleSmallScreenNav()}
                 >
                   {navLink.node.label}
                 </DynamicLink>

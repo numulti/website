@@ -16,7 +16,7 @@ header {
 }
 
 .navbar-header-styled {
-  background-color: var(--code-comment);
+  background-color: var(--bg-color);
   box-shadow: 2px 6px 6px 0 var(--box-shadow-color);
   -moz-box-shadow: 2px 6px 6px 0 var(--box-shadow-color);
   -webkit-box-shadow: 2px 6px 6px 0 var(--box-shadow-color);

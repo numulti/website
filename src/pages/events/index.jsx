@@ -10,7 +10,7 @@ import SeriesCards from '../../components/series-cards/series-cards';
 const EventsPage = ({ data }) => {
   const { series, events } = data;
 
-  const ScheduleSection = SectionWrapper(Schedule);
+  const ScheduleSection = SectionWrapper(<Schedule />);
 
   const EventsListSection = SectionWrapper(
     <>

@@ -13642,35 +13642,20 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-catamaran@^0.0.72:
+typeface-inter@^3.15.0:
+  version "3.15.0"
+  resolved "https://registry.yarnpkg.com/typeface-inter/-/typeface-inter-3.15.0.tgz#7ac09c0bcc5fdd5c5b85727df6478ee287f56deb"
+  integrity sha512-kWLJsvqSJTBKilu1HsBYHwi3usFg8JQ9I9u+bcU2kOkIi48fOZy8sYacbFmlJ9EHRVNqqvM4zeI73WCSKNMOuQ==
+
+typeface-noto-serif@^0.0.72:
   version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-catamaran/-/typeface-catamaran-0.0.72.tgz#eddb2c8cf2e75696c89f055e25057b85538efc9b"
-  integrity sha512-6l9gq/IPseoC40lv/etxdUlIR2RHBKpAm+vu3lwt03Jd4i2+VOhKS/fOz1n0YpRjkz8QyG2qFwYjcoLT02/2qw==
+  resolved "https://registry.yarnpkg.com/typeface-noto-serif/-/typeface-noto-serif-0.0.72.tgz#798e917662322443cec944ac68e2ebd42c2dd2ec"
+  integrity sha512-mhdlDJQF04V50+/mHwiOR+cVV9jl1ITpZhNMnaQF6CqgzS0ujR3+9Alme3OtT1iZd1kp2iM1VxLtzLKhR0Bh3Q==
 
 typeface-nunito@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/typeface-nunito/-/typeface-nunito-1.1.3.tgz#b0a7d0c4db40d69b58bcc56668344861ca4df4ab"
   integrity sha512-UNdX9TdK+xcYh/ESVIZq8vK3qf7Q3GwdRoaQmxpWrHkLmIYgno0/571xvfPzfvQx8MmlO4J4iQVEEJfnW3fQkQ==
-
-typeface-open-sans@^0.0.75:
-  version "0.0.75"
-  resolved "https://registry.yarnpkg.com/typeface-open-sans/-/typeface-open-sans-0.0.75.tgz#20d0c330f14c0c40463c334adbedd6005389abe4"
-  integrity sha512-0lLmB7pfj113OP4T78SbpSmC4OCdFQ0vUxdSXQccsSb6qF76F92iEuC/DghFgmPswTyidk8+Hwf+PS/htiJoRQ==
-
-typeface-playfair-display@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/typeface-playfair-display/-/typeface-playfair-display-1.1.4.tgz#ef37c9847a48996e1250cfd726387c36b34ecd07"
-  integrity sha512-FhzVmu6EE3LMsYTxG4x3DFkzhGHnv7/5Ltf6U9i6kDnQZQ4STtB2sVdrZ+wEqvr7oX0s+E8IjfL5ycMzBofiWw==
-
-typeface-rubik@^0.0.72:
-  version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-rubik/-/typeface-rubik-0.0.72.tgz#85d028dc66e8388a941f8c7ce194fad963d1824e"
-  integrity sha512-dRJrtCEHfY3e39zq/U4JpFPVVbEogpDKCGnS70sXur253gnrwunjai26KCZbwdF3NEdMAYMTBu4CIn3hJp4xSA==
-
-typeface-suez-one@^0.0.72:
-  version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-suez-one/-/typeface-suez-one-0.0.72.tgz#e1a055b889220539de0a01e7b2ddb118fcd75ed0"
-  integrity sha512-MHz1b4pgyb3yLdaZX8lram9FZyL4/ARHze42P8eGIUqAJzExc3HWMghGnd2OF5C2zcyXQDCbjlnKbgsXSuM5FA==
 
 ua-parser-js@^0.7.18:
   version "0.7.21"

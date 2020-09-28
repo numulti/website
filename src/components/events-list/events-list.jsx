@@ -3,7 +3,9 @@ import React from 'react';
 import EventCard from '../event-card/event-card';
 
 const EventsList = ({ events }) => {
-  const sortNewestFirst = (a, b) => {
+  const displayLimit = 3;
+
+  const sortNewestEventFirst = (a, b) => {
     var dateA = new Date(
       `${a.node.month} ${a.node.day}, ${a.node.year}`
     ).getTime();
@@ -14,14 +16,14 @@ const EventsList = ({ events }) => {
   };
 
   return (
-    <section>
-      {events.sort(sortNewestFirst).map((event, i) => {
+    <>
+      {events.sort(sortNewestEventFirst).map((event, i) => {
         //Shows only 4 latest events
-        if (i <= 3) {
+        if (i <= displayLimit) {
           return <EventCard key={i} event={event} />;
         }
       })}
-    </section>
+    </>
   );
 };
 

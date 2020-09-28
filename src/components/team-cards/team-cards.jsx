@@ -24,7 +24,7 @@ const TeamCards = ({ team }) => {
           const { name, role, image, fields, contact } = member.node;
           console.log(contact);
           return (
-            <Grid item key={i} xs={12} sm={6} md={4} lg={3} xl={3}>
+            <Grid item key={i} xs={12} sm={6} md={4} lg={3}>
               <div className="card">
                 {
                   !!image.src && (

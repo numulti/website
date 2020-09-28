@@ -123,7 +123,7 @@ const EventCard = ({ event }) => {
           ? 'event-card-old'
           : ''
       }`}
-      onClick={toggleAccordion}
+      onClick={() => toggleAccordion()}
     >
       <Grid container spacing={3}>
         <Grid item xs={12} sm={4} md={3} lg={3}>

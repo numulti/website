@@ -17,7 +17,7 @@ const SeriesCards = ({ series }) => {
         {series.map((type, i) => {
           const { name, description, emoji } = type.node;
           return (
-            <Grid item key={i} xs={12} sm={6} md={6} lg={4} xl={4}>
+            <Grid item key={i} xs={12} sm={6} md={6} lg={4}>
               <div className="card">
                 <div className="series-cards-icon">
                   <Emoji symbol={emoji} />
