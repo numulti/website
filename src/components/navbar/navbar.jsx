@@ -6,7 +6,7 @@ import { ThemeToggler } from 'gatsby-plugin-dark-mode';
 
 import DynamicLink from '../dynamic-link/dynamic-link';
 import { MenuIcon, CrossIcon, SunIcon, MoonIcon } from '../../assets';
-import  useIsSmallScreen from '../../utils/small-screen-hook';
+import useIsSmallScreen from '../../utils/small-screen-hook';
 import './navbar.css';
 
 const NavBar = ({ toggleBackgroundBlur }) => {

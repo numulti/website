@@ -4,7 +4,7 @@ import { Container } from '@material-ui/core';
 
 import SEO from '../../components/seo/seo';
 import Schedule from '../../components/schedule/schedule';
-import EventsList from '../../components/events-list/events-list';
+import EventsList from '../../components/events/events-list/events-list';
 import SeriesCards from '../../components/series-cards/series-cards';
 
 const EventsPage = ({ data }) => {

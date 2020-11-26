@@ -11,12 +11,8 @@ import {
   ClockIcon,
   LocationIcon,
 } from '../../../assets';
-import useIsSmallScreen from '../../../utils/small-screen-hook'
-import {
-  isToday,
-  isPastDate,
-  getAbbrvMonth,
-} from '../../../utils/date-utils';
+import useIsSmallScreen from '../../../utils/small-screen-hook';
+import { isToday, isPastDate, getAbbrvMonth } from '../../../utils/date-utils';
 import './events-card.css';
 
 const EventsCard = ({ event }) => {
