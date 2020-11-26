@@ -1,7 +1,7 @@
 import React from 'react';
-import { DynamicLink } from '../global';
 import { Grid } from '@material-ui/core';
 
+import DynamicLink from '../dynamic-link/dynamic-link';
 import { CalendarIcon, ClockIcon, LocationIcon } from '../../assets/icons';
 import schedule from '../../data/schedule';
 import './schedule.css';

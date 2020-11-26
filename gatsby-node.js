@@ -4,16 +4,23 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-// Links image src to correct folder 
+// Create image field to use with gatsby-image
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
 
-  // Create image field in query with correct
-  if (node.internal.type === 'TeamJson') {
-    createNodeField({
-      node,
-      name: `image`,
-      value: `../images/team/${node.image.src}`,
-    });
+  try {
+    if (node.internal.type.includes('Json')) {
+      createNodeField({
+        node,
+        name: `image`,
+        value: `../images/${node.image.src}`,
+      });
+    }
+  } catch (err) {
+    if (err.message.includes(`Cannot read property 'src'`)) {
+      //No image field found, skip
+    } else {
+      throw err;
+    }
   }
 };

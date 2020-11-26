@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 
-import { Emoji } from '../global';
+import Emoji from '../emoji/emoji';
 import './series-cards.css';
 
 const SeriesCards = ({ series }) => {

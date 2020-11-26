@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from '@material-ui/core';
 
-import { SEO } from '../../components/global';
+import SEO from '../../components/seo/seo';
 
 const NotFoundPage = () => (
   <div id="not-found-page">

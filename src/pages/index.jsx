@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from '@material-ui/core';
 
 import NewsletterForm from '../components/newsletter-form/newsletter-form';
-import { SEO } from '../components/global';
+import SEO from '../components/seo/seo';
 
 const HomePage = () => (
   <div id="home-page">

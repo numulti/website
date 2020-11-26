@@ -4,12 +4,12 @@ import { Container } from '@material-ui/core';
 import { CSSTransition } from 'react-transition-group';
 import { ThemeToggler } from 'gatsby-plugin-dark-mode';
 
-import { DynamicLink } from '../global';
+import DynamicLink from '../dynamic-link/dynamic-link';
 import { MenuIcon, CrossIcon, SunIcon, MoonIcon } from '../../assets';
-import { useIsSmallScreen } from '../../utils';
+import  useIsSmallScreen from '../../utils/small-screen-hook';
 import './navbar.css';
 
-const NavBar = ({ toggleBlur }) => {
+const NavBar = ({ toggleBackgroundBlur }) => {
   const [isSmallScreenNavOpen, setIsSmallScreenNavOpen] = useState(false);
   const [isScrollTop, setIsScrollTop] = useState(true);
   const isSmallScreen = useIsSmallScreen();
@@ -46,7 +46,7 @@ const NavBar = ({ toggleBlur }) => {
 
   const toggleSmallScreenNav = () => {
     setIsSmallScreenNavOpen((prevState) => !prevState);
-    toggleBlur();
+    toggleBackgroundBlur();
   };
 
   const ThemeButton = () => {

@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Container } from '@material-ui/core';
 
-import { SEO, SectionWrapper } from '../../components/global';
+import SEO from '../../components/seo/seo';
 import Schedule from '../../components/schedule/schedule';
 import EventsList from '../../components/events-list/events-list';
 import SeriesCards from '../../components/series-cards/series-cards';
@@ -10,31 +10,23 @@ import SeriesCards from '../../components/series-cards/series-cards';
 const EventsPage = ({ data }) => {
   const { series, events } = data;
 
-  const ScheduleSection = SectionWrapper(<Schedule />);
-
-  const EventsListSection = SectionWrapper(
-    <>
-      <h2>Latest Events</h2>
-      <EventsList events={events.edges} />
-    </>
-  );
-
-  const SeriesCardsSection = SectionWrapper(
-    <>
-      <h2>Event Series</h2>
-      <p>This is a Description</p>
-      <SeriesCards series={series.edges} />
-    </>
-  );
-
   return (
     <div id="events-page">
       <SEO title="Events" />
       <Container fixed>
         <h1>Our Events</h1>
-        <ScheduleSection />
-        <EventsListSection />
-        <SeriesCardsSection />
+        <section>
+          <Schedule />
+        </section>
+        <section>
+          <h2>Latest Events</h2>
+          <EventsList events={events.edges} />
+        </section>
+        <section>
+          <h2>Event Series</h2>
+          <p>This is a Description</p>
+          <SeriesCards series={series.edges} />
+        </section>
       </Container>
     </div>
   );
