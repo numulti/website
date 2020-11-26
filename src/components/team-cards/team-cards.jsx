@@ -33,7 +33,7 @@ const TeamCards = ({ team }) => {
                 )}
                 <div className="team-cards-text">
                   <h4>{name}</h4>
-                  {role !== 'Student Advisor' && <h5>{role}</h5>}
+                  <h5>{role}</h5>
                 </div>
                 <div className="team-cards-contact-btns-row">
                   {!!contact.email && (

@@ -6,7 +6,7 @@ import SEO from '../../components/seo/seo';
 import TeamCards from '../../components/team-cards/team-cards';
 
 const TeamPage = ({ data }) => {
-  const { eboard, advisors } = data;
+  const { team } = data;
 
   return (
     <div id="team-page">
@@ -15,12 +15,7 @@ const TeamPage = ({ data }) => {
         <section>
           <h2>Leadership Team</h2>
           <p>Description</p>
-          <TeamCards team={eboard.edges} />
-        </section>
-        <section>
-          <h2>Student Advisors</h2>
-          <p>Description</p>
-          <TeamCards team={advisors.edges} />
+          <TeamCards team={team.edges} />
         </section>
       </Container>
     </div>
@@ -29,33 +24,7 @@ const TeamPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    eboard: allTeamJson(filter: { role: { ne: "Student Advisor" } }) {
-      edges {
-        node {
-          name
-          role
-          contact {
-            email
-            linkedin
-            website
-            github
-          }
-          image {
-            src
-          }
-          fields {
-            image {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    advisors: allTeamJson(filter: { role: { eq: "Student Advisor" } }) {
+    team: allTeamJson {
       edges {
         node {
           name
