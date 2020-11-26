@@ -1,6 +1,6 @@
 import React from 'react';
 
-import EventCard from '../event-card/event-card';
+import EventsCard from '../events-card/events-card';
 
 const EventsList = ({ events }) => {
   const displayLimit = 3;
@@ -20,7 +20,7 @@ const EventsList = ({ events }) => {
       {events.sort(sortNewestEventFirst).map((event, i) => {
         //Shows only 4 latest events
         if (i <= displayLimit) {
-          return <EventCard key={i} event={event} />;
+          return <EventsCard key={i} event={event} />;
         }
       })}
     </>
