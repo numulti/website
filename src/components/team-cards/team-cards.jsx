@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLink } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
-import { DynamicLink } from '../global';
+import DynamicLink from '../dynamic-link/dynamic-link';
 import './team-cards.css';
 
 const ContactButton = ({ link, faIcon }) => (
@@ -26,13 +26,11 @@ const TeamCards = ({ team }) => {
           return (
             <Grid item key={i} xs={12} sm={6} md={4} lg={3}>
               <div className="card">
-                {
-                  !!image.src && (
-                    <div className="team-cards-img-container">
-                      <Img fluid={fields.image.childImageSharp.fluid} />
-                    </div>
-                  )
-                }
+                {!!image.src && (
+                  <div className="team-cards-img-container">
+                    <Img fluid={fields.image.childImageSharp.fluid} />
+                  </div>
+                )}
                 <div className="team-cards-text">
                   <h4>{name}</h4>
                   {role !== 'Student Advisor' && <h5>{role}</h5>}

@@ -30,7 +30,7 @@ body {
   --primary-accent-color: #03686f;
   --secondary-accent-color: #1096b4;
   --secondary-hover-color: #a5f2e9;
-  --transparent-color: #F2FFFE;
+  --transparent-color: #f2fffe;
   --footer-color: linear-gradient(
     180deg,
     rgba(244, 255, 255, 0) 0%,
@@ -75,6 +75,10 @@ body {
     padding-left: 1.5em !important;
     padding-right: 1.5em !important;
   }
+}
+
+section {
+  margin: 3em 0;
 }
 
 /* Typography */

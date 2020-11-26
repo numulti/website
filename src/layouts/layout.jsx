@@ -23,7 +23,9 @@ const Layout = ({ children }) => {
         ></script>
       </Helmet>
       <NavBar
-        toggleBackgroundBlur={() => setBlurInnerContent((prevState) => !prevState)}
+        toggleBackgroundBlur={() =>
+          setBlurInnerContent((prevState) => !prevState)
+        }
       />
       <div
         className={`layout-inner-content ${

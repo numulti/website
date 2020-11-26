@@ -2,34 +2,26 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Container } from '@material-ui/core';
 
-import { SEO, SectionWrapper } from '../../components/global';
+import SEO from '../../components/seo/seo';
 import TeamCards from '../../components/team-cards/team-cards';
 
 const TeamPage = ({ data }) => {
   const { eboard, advisors } = data;
 
-  const LeadershipTeamSection = SectionWrapper(
-    <>
-      <h2>Leadership Team</h2>
-      <p>Description</p>
-      <TeamCards team={eboard.edges} />
-    </>
-  );
-
-  const AdvisorsSection = SectionWrapper(
-    <>
-      <h2>Student Advisors</h2>
-      <p>Description</p>
-      <TeamCards team={advisors.edges} />
-    </>
-  );
-
   return (
     <div id="team-page">
       <SEO title="Team" />
       <Container fixed>
-        <LeadershipTeamSection />
-        {advisors.length !== 0 && <AdvisorsSection />}
+        <section>
+          <h2>Leadership Team</h2>
+          <p>Description</p>
+          <TeamCards team={eboard.edges} />
+        </section>
+        <section>
+          <h2>Student Advisors</h2>
+          <p>Description</p>
+          <TeamCards team={advisors.edges} />
+        </section>
       </Container>
     </div>
   );

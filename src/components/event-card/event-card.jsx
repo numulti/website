@@ -3,19 +3,20 @@ import ReactHtmlParser from 'react-html-parser';
 import { Grid } from '@material-ui/core';
 import { CSSTransition } from 'react-transition-group';
 
-import { DynamicLink, Emoji } from '../global';
+import DynamicLink from '../dynamic-link/dynamic-link';
+import Emoji from '../emoji/emoji';
 import {
   ChevronUpIcon,
   ChevronDownIcon,
   ClockIcon,
   LocationIcon,
 } from '../../assets';
+import useIsSmallScreen from '../../utils/small-screen-hook'
 import {
-  useIsSmallScreen,
   isToday,
   isPastDate,
   getAbbrvMonth,
-} from '../../utils';
+} from '../../utils/date-utils';
 import './event-card.css';
 
 const EventCard = ({ event }) => {
