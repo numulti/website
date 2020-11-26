@@ -9,7 +9,7 @@ import { MenuIcon, CrossIcon, SunIcon, MoonIcon } from '../../assets';
 import { useIsSmallScreen } from '../../utils';
 import './navbar.css';
 
-const NavBar = ({ toggleBlur }) => {
+const NavBar = ({ toggleBackgroundBlur }) => {
   const [isSmallScreenNavOpen, setIsSmallScreenNavOpen] = useState(false);
   const [isScrollTop, setIsScrollTop] = useState(true);
   const isSmallScreen = useIsSmallScreen();
@@ -46,7 +46,7 @@ const NavBar = ({ toggleBlur }) => {
 
   const toggleSmallScreenNav = () => {
     setIsSmallScreenNavOpen((prevState) => !prevState);
-    toggleBlur();
+    toggleBackgroundBlur();
   };
 
   const ThemeButton = () => {
