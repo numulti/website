@@ -23,11 +23,11 @@
 /* Color Schemes */
 body {
   --bg-color: #f2fffe;
-  --lg-h-color: #03686f;
-  --md-h-color: #1096b4;
+  --lg-h-color: #0E6D62;
+  --md-h-color: #0E6D62;
   --text-color: #1e1e1e;
-  --link-color: #1096b4;
-  --primary-accent-color: #03686f;
+  --link-color: #0E6D62;
+  --primary-accent-color: #0E6D62;
   --secondary-accent-color: #1096b4;
   --secondary-hover-color: #a5f2e9;
   --transparent-color: #f2fffe;
@@ -125,6 +125,8 @@ h3 {
 
 h4 {
   font-size: 1.3rem;
+  color: var(--md-h-color);
+  font-weight: 600;
 }
 
 p {
