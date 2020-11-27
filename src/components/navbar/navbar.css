@@ -35,14 +35,16 @@ nav a {
 }
 
 .navbar-theme-btn {
-  border-radius: 50%;
-  background-color: var(--primary-accent-color);
   width: 2.5em;
   height: 2.5em;
   margin: 0 1em;
   padding: 0.6em;
   opacity: 0.8;
   transition: var(--transition);
+}
+
+.navbar-theme-btn path {
+  fill: var(--lg-h-color);
 }
 
 .navbar-theme-btn:active {
@@ -65,7 +67,7 @@ nav a {
     align-items: center;
     cursor: pointer;
     padding: 0.5em 0;
-    fill: black;
+    fill: var(--lg-h-color);
     width: 3em;
     height: 4em;
     transition: 0.1s;

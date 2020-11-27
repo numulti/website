@@ -53,7 +53,7 @@ const NavBar = ({ toggleBackgroundBlur }) => {
     return (
       <ThemeToggler>
         {({ theme, toggleTheme }) => {
-          const icon = theme === 'light' ? <MoonIcon /> : <SunIcon />;
+          const icon = theme === 'light' ? <SunIcon /> : <MoonIcon />;
           return (
             <button
               className="navbar-theme-btn"
