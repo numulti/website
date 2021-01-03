@@ -23,11 +23,11 @@
 /* Color Schemes */
 body {
   --bg-color: #f2fffe;
-  --lg-h-color: #0E6D62;
-  --md-h-color: #0E6D62;
+  --lg-h-color: #0e6d62;
+  --md-h-color: #0e6d62;
   --text-color: #1e1e1e;
-  --link-color: #0E6D62;
-  --primary-accent-color: #0E6D62;
+  --link-color: #0e6d62;
+  --primary-accent-color: #0e6d62;
   --secondary-accent-color: #1096b4;
   --secondary-hover-color: #a5f2e9;
   --transparent-color: #f2fffe;
@@ -62,6 +62,13 @@ body.dark {
   margin-left: -50vw;
   height: auto;
   left: 50%;
+}
+
+.v-align-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
