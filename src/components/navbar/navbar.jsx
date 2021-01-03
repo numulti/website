@@ -1,35 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
 import { Container } from '@material-ui/core';
 import { CSSTransition } from 'react-transition-group';
 import { ThemeToggler } from 'gatsby-plugin-dark-mode';
 
 import DynamicLink from '../dynamic-link/dynamic-link';
-import { MenuIcon, CrossIcon, SunIcon, MoonIcon } from '../../assets';
+import { MenuIcon, CrossIcon, SunIcon, MoonIcon } from '../../assets/icons';
 import useIsSmallScreen from '../../utils/small-screen-hook';
+import navigation from '../../data/navigation';
 import './navbar.css';
 
 const NavBar = ({ toggleBackgroundBlur }) => {
   const [isSmallScreenNavOpen, setIsSmallScreenNavOpen] = useState(false);
   const [isScrollTop, setIsScrollTop] = useState(true);
   const isSmallScreen = useIsSmallScreen();
-
-  const {
-    allNavigationJson: { edges },
-  } = useStaticQuery(
-    graphql`
-      query {
-        allNavigationJson {
-          edges {
-            node {
-              label
-              link
-            }
-          }
-        }
-      }
-    `
-  );
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -90,10 +73,10 @@ const NavBar = ({ toggleBackgroundBlur }) => {
             </div>
             {!isSmallScreen && (
               <nav>
-                {edges.map((navLink, i) => {
+                {navigation.map((navLink, i) => {
                   return (
-                    <DynamicLink key={i} to={navLink.node.link}>
-                      {navLink.node.label}
+                    <DynamicLink key={i} to={navLink.link}>
+                      {navLink.label}
                     </DynamicLink>
                   );
                 })}
@@ -111,14 +94,14 @@ const NavBar = ({ toggleBackgroundBlur }) => {
           unmountOnExit
         >
           <nav>
-            {edges.map((navLink, i) => {
+            {navigation.map((navLink, i) => {
               return (
                 <DynamicLink
                   key={i}
-                  to={navLink.node.link}
+                  to={navLink.link}
                   onClick={() => toggleSmallScreenNav()}
                 >
-                  {navLink.node.label}
+                  {navLink.label}
                 </DynamicLink>
               );
             })}

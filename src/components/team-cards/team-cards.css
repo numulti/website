@@ -34,33 +34,3 @@
   justify-content: center;
   height: 3em;
 }
-
-.team-cards-contact-btn-container {
-  transition: var(--transition);
-}
-
-.team-cards-contact-btn-container:hover {
-  transition: var(--transition);
-  margin-top: -0.4rem;
-}
-
-.team-cards-contact-btn,
-.team-cards-contact-btn:focus,
-.team-cards-contact-btn:active {
-  margin: 0 0.3em;
-  border-radius: 50%;
-  background-color: var(--bg-color);
-  width: 3em;
-  height: 3em;
-  opacity: 0.8;
-  transition: var(--transition);
-}
-
-.team-cards-contact-btn:hover {
-  background-color: var(--primary-accent-color);
-  opacity: 1;
-}
-
-.team-cards-contact-btn svg {
-  font-size: 1.4rem;
-}

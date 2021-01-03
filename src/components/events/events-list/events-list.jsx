@@ -1,17 +1,14 @@
 import React from 'react';
 
 import EventsCard from '../events-card/events-card';
+import events from '../../../data/events';
 
-const EventsList = ({ events }) => {
+const EventsList = () => {
   const displayLimit = 3;
 
   const sortNewestEventFirst = (a, b) => {
-    var dateA = new Date(
-      `${a.node.month} ${a.node.day}, ${a.node.year}`
-    ).getTime();
-    var dateB = new Date(
-      `${b.node.month} ${b.node.day}, ${b.node.year}`
-    ).getTime();
+    var dateA = new Date(`${a.month} ${a.day}, ${a.year}`).getTime();
+    var dateB = new Date(`${b.month} ${b.day}, ${b.year}`).getTime();
     return dateB - dateA;
   };
 
@@ -22,6 +19,8 @@ const EventsList = ({ events }) => {
         if (i <= displayLimit) {
           return <EventsCard key={i} event={event} />;
         }
+
+        return null;
       })}
     </>
   );

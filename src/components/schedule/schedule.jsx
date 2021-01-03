@@ -28,9 +28,9 @@ const Schedule = () => {
   const { semester, year, frequency, day, time, location } = schedule;
   return (
     <div className="schedule section-margins">
-      <h3>
+      {/* <h3>
         {semester} {year} Events
-      </h3>
+      </h3> */}
       <Grid container direction="row">
         <ScheduleDetailsChip
           icon={<CalendarIcon />}

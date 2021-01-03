@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ReactHtmlParser from 'react-html-parser';
 import { Grid } from '@material-ui/core';
 import { CSSTransition } from 'react-transition-group';
 
@@ -10,7 +9,7 @@ import {
   ChevronDownIcon,
   ClockIcon,
   LocationIcon,
-} from '../../../assets';
+} from '../../../assets/icons';
 import useIsSmallScreen from '../../../utils/small-screen-hook';
 import { isToday, isPastDate, getAbbrvMonth } from '../../../utils/date-utils';
 import './events-card.css';
@@ -19,14 +18,14 @@ const EventsCard = ({ event }) => {
   const {
     name,
     series,
-    description__html,
+    description,
     day,
     month,
     year,
     time,
     location,
     cancelled,
-  } = event.node;
+  } = event;
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
   const isEventToday = isToday(`${month} ${day}, ${year}`);
   const isEventUpcoming = !isPastDate(`${month} ${day}, ${year}`);
@@ -102,9 +101,7 @@ const EventsCard = ({ event }) => {
   );
 
   const EventCardDescription = () => (
-    <div className="event-card-description">
-      {ReactHtmlParser(description__html)}
-    </div>
+    <div className="event-card-description">{description}</div>
   );
 
   const EventCardChevronToggle = () => (
