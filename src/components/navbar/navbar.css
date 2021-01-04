@@ -29,7 +29,7 @@ header {
 
 .navbar-logo {
   max-width: 175px;
-  padding: 15px;
+  padding: 15px 0;
 }
 
 nav {
@@ -80,6 +80,7 @@ nav a {
     width: 3em;
     height: 60px;
     transition: 0.1s;
+    margin: auto 0;
   }
 
   .navbar-vegan-burger:active {

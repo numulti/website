@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Container } from '@material-ui/core';
-import { CSSTransition } from 'react-transition-group';
 //import { ThemeToggler } from 'gatsby-plugin-dark-mode';
 
 import DynamicLink from '../dynamic-link/dynamic-link';
