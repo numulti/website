@@ -4,7 +4,7 @@ import { Container } from '@material-ui/core';
 import Schedule from '../schedule/schedule';
 import NewsletterForm from '../newsletter-form/newsletter-form';
 import SocialButton from '../social-button/social-button';
-import { LogoLight } from '../../assets/logos';
+import { Logo } from '../../assets/logos';
 import socials from '../../data/socials';
 import './temp-homepage.css';
 
@@ -13,7 +13,7 @@ const TempHomePage = () => {
     <div className="v-align-container">
       <Container fixed>
         <section className="temp-home-logo">
-          <LogoLight />
+          <Logo />
         </section>
         <p>
           MULTI is a student organization in Northeastern University advocating

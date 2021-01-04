@@ -1,4 +1,4 @@
-.team-cards .card {
+.team-cards .profile {
   margin-top: 0.5em;
   padding: 2em;
 }
@@ -8,16 +8,18 @@
   margin: 0.5em 20%;
 }
 
-.team-cards .card img {
+.team-cards .profile img {
   border-radius: 50%;
+  /*
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
+  */
 }
 
-.team-cards .card:hover img {
+.team-cards .profile:hover img {
   filter: none;
   -webkit-filter: none;
   -moz-filter: none;
@@ -27,6 +29,7 @@
 
 .team-cards-text {
   height: 4.5em;
+  padding-top: 10px;
 }
 
 .team-cards-contact-btns-row {

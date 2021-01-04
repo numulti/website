@@ -29,7 +29,6 @@ module.exports = {
     `gatsby-plugin-offline`,
     // helps with FA icon flicker on load
     `gatsby-plugin-fontawesome-css`,
-    `gatsby-plugin-dark-mode`,
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {

@@ -5,7 +5,6 @@ header {
   z-index: 2;
   height: var(--navbar-height);
   background-color: var(--cons-mint);
-  transition: background 0.3s, box-shadow 0.3s;
 }
 
 .navbar-header-layout {
@@ -15,17 +14,20 @@ header {
   align-items: center;
 }
 
+
 .navbar-header-styled {
-  background-color: var(--bg-color);
-  box-shadow: 2px 6px 6px 0 var(--box-shadow-color);
-  -moz-box-shadow: 2px 6px 6px 0 var(--box-shadow-color);
-  -webkit-box-shadow: 2px 6px 6px 0 var(--box-shadow-color);
+  -webkit-backdrop-filter: saturate(100%) blur(20px);
+  background-color: var(--blur-material);
 }
 
+
 .navbar-logo {
+  max-width: 175px;
 }
 
 nav a {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
   font-size: 1.5rem;
   padding: 0 1rem;
 }
@@ -68,8 +70,8 @@ nav a {
     cursor: pointer;
     padding: 0.5em 0;
     fill: var(--lg-h-color);
-    width: 3em;
-    height: 4em;
+    width: 2em;
+    height: 3em;
     transition: 0.1s;
   }
 
@@ -90,15 +92,18 @@ nav a {
     z-index: 1;
     height: 100%;
     width: 60%;
-    box-shadow: -3px 0 2em 0 var(--box-shadow-color);
-    -moz-box-shadow: -3px 0 2em var(--box-shadow-color);
-    -webkit-box-shadow: -3px 0 2em var(--box-shadow-color);
   }
 
   nav a {
     margin: 1.5rem 1rem;
   }
 
+  .navbar-logo {
+    margin: auto;
+  }
+
+
+   /*
   .navbar-nav-transition-enter,
   .navbar-nav-transition-appear {
     width: 0;
@@ -107,20 +112,22 @@ nav a {
     background-color: grey;
   }
 
+   
   .navbar-nav-transition-enter-active,
   .navbar-nav-transition-appear-active {
     width: 60%;
     opacity: 1;
-    background-color: lightgray;
     transition: all 400ms;
   }
-
+  
+ 
   .navbar-nav-transition-exit {
     width: 60%;
     opacity: 1;
     background-color: lightgray;
   }
 
+  
   .navbar-nav-transition-exit-active {
     width: 0;
     opacity: 0;
@@ -128,4 +135,5 @@ nav a {
     background-color: grey;
     transition: all 400ms;
   }
+  */
 }

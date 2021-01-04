@@ -52,16 +52,16 @@
     }
   },
   {
-    "name": "Dania2",
-    "role": "President",
+    "name": "Vincent Spitale",
+    "role": "Design Chair",
     "contact": {
-      "email": "email@email.com",
-      "website": "https://google.com",
-      "linkedin": "",
-      "github": ""
+      "email": "vincentgspitale@gmail.com",
+      "website": "https://vincentspitale.com",
+      "linkedin": "https://www.linkedin.com/in/vincentspitale",
+      "github": "https://www.github.com/vincentspitale"
     },
     "image": {
-      "src": "square.jpg"
+      "src": "vincent.jpg"
     }
   },
   {

@@ -9,8 +9,10 @@
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 100px;
 }
 
+/*
 @media (max-width: 959px) {
   .layout-inner-content-blur {
     background-color: rgba(0, 0, 0, 0.4);
@@ -21,3 +23,4 @@
     -ms-filter: blur(3px) brightness(0.5);
   }
 }
+*/

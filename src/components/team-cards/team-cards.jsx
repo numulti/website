@@ -45,12 +45,12 @@ const TeamCards = () => {
   return (
     <section className="team-cards">
       <Grid container direction="row" spacing={4}>
-        {team.edges.map((member, i) => {
+        {team.edges.sort((a,b) => a.node.name > b.node.name).map((member, i) => {
           const { name, role, image, fields, contact } = member.node;
           console.log(contact);
           return (
             <Grid item key={i} xs={12} sm={6} md={4} lg={3}>
-              <div className="card">
+              <div className="profile">
                 {!!image.src && (
                   <div className="team-cards-img-container">
                     <Img fluid={fields.image.childImageSharp.fluid} />

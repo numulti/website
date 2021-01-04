@@ -11,7 +11,7 @@ const EventsPage = () => {
     <div id="events-page">
       <SEO title="Events" />
       <Container fixed>
-        <h1>Our Events</h1>
+        <h1>Events</h1>
         <section>
           <Schedule />
         </section>
@@ -20,6 +20,7 @@ const EventsPage = () => {
           <EventsList />
         </section>
         <section>
+          <br/>
           <h2>Event Series</h2>
           <p>This is a Description</p>
           <SeriesCards />

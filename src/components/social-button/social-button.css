@@ -2,10 +2,12 @@
   transition: var(--transition);
 }
 
+/*
 .social-btn-container:hover {
   transition: var(--transition);
   margin-top: -0.4rem;
 }
+*/
 
 .social-btn,
 .social-btn:focus,
@@ -13,10 +15,9 @@
   margin: 0 0.3em;
   border-radius: 50%;
   color: var(--primary-accent-color);
-  background-color: var(--bg-color);
+  background-color: rgba(0,0,0,0);
   width: 3em;
   height: 3em;
-  opacity: 0.8;
   transition: var(--transition);
 }
 

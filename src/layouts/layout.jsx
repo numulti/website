@@ -10,8 +10,6 @@ import '../styles/global.css';
 import './layout.css';
 
 const Layout = ({ children }) => {
-  /* Blurs content when small screen navigation is open */
-  const [blurInnerContent, setBlurInnerContent] = useState(false);
 
   return (
     <div id="layout">
@@ -22,20 +20,12 @@ const Layout = ({ children }) => {
           crossorigin="anonymous"
         ></script>
       </Helmet>
-      {/* <NavBar
-        toggleBackgroundBlur={() =>
-          setBlurInnerContent((prevState) => !prevState)
-        }
-      />
-      <div
-        className={`layout-inner-content ${
-          blurInnerContent ? 'layout-inner-content-blur' : ''
-        }`}
-      > */}
+      <NavBar/>
+      <div className="layout-inner-content">
       <main>{children}</main>
-      {/* <Footer />
-      </div> */}
-    </div>
+       <Footer />
+      </div>
+      </div>
   );
 };
 

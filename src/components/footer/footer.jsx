@@ -9,6 +9,7 @@ import socials from '../../data/socials';
 
 const Footer = () => (
   <footer>
+    <div className="footer-elements">
     <Container fixed>
       <Grid container>
         <Grid item>MULTI © {getYear()}</Grid>
@@ -18,6 +19,7 @@ const Footer = () => (
         <SocialButton key={name} link={link} faIconName={fa_icon} />
       ))}
     </Container>
+    </div>
   </footer>
 );
 

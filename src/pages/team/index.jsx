@@ -10,8 +10,9 @@ const TeamPage = () => {
       <SEO title="Team" />
       <Container fixed>
         <section>
+          <h1>Meet the Team</h1>
+          <br/>
           <h2>Leadership Team</h2>
-          <p>Description</p>
           <TeamCards />
         </section>
       </Container>
