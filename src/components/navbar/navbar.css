@@ -75,10 +75,10 @@ nav a {
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 0.5em 0;
+    padding: 0.5em;
     fill: var(--lg-h-color);
-    width: 2em;
-    height: 3em;
+    width: 3em;
+    height: 60px;
     transition: 0.1s;
   }
 
