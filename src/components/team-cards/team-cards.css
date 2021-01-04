@@ -10,13 +10,13 @@
 
 .team-cards .profile img {
   border-radius: 50%;
-  /*
+  
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
-  */
+  
 }
 
 .team-cards .profile:hover img {

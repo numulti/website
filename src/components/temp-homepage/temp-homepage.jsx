@@ -22,14 +22,6 @@ const TempHomePage = () => {
           Massachusetts.
         </p>
         <Schedule />
-        <section>
-          <NewsletterForm />
-        </section>
-        <section>
-          {socials.map(({ name, link, fa_icon }) => (
-            <SocialButton key={name} link={link} faIconName={fa_icon} />
-          ))}
-        </section>
       </Container>
     </div>
   );

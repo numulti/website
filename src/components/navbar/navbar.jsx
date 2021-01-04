@@ -64,6 +64,7 @@ const NavBar = ({ }) => {
       >
         <Container fixed>
           <div className="navbar-header-layout">
+          <div className="burger-logo">
             <button
               className="navbar-vegan-burger"
               onClick={() => toggleSmallScreenNav()}
@@ -73,13 +74,16 @@ const NavBar = ({ }) => {
             <div className="navbar-logo">
               <Logo />
             </div>
-            {!isSmallScreen && (
+            </div>
+            {((!isSmallScreen) || isSmallScreenNavOpen) && (
               <nav>
                 {navigation.map((navLink, i) => {
                   return (
+                    <div className="header-link">
                     <DynamicLink key={i} to={navLink.link}>
                       {navLink.label}
                     </DynamicLink>
+                    </div>
                   );
                 })}
                 {/*
@@ -87,8 +91,10 @@ const NavBar = ({ }) => {
                 */}
               </nav>
             )}
-          </div>
+
+            </div>
         </Container>
+        <div className="header-background"/>
       </header>
     </>
   );
