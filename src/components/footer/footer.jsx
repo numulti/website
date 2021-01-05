@@ -23,7 +23,11 @@ const Footer = () => (
       <p>MULTI © {getYear()}</p>
       </div>
       <div className="footer-socials">
-      <h4>Subscribe to our newsletter</h4>
+      <div className="newsletter-info">
+      <h4>Stay Connected</h4>
+      <br />
+      <p>Subscribe to our newsletter to stay updated!</p>
+      </div>
       <div className="footer-newsletter">
       <NewsletterForm />
       </div>

@@ -75,9 +75,6 @@ nav a {
 
 @media (max-width: 959px) {
 
-  .navbar-header {
-    padding: none !important;
-  }
 
   .navbar-vegan-burger {
     display: flex;
@@ -93,6 +90,11 @@ nav a {
 
   .navbar-vegan-burger:active {
     transform: scale(0.5);
+  }
+
+  .navbar-logo {
+    padding-right: 3em;
+    max-width: 200px;
   }
 
   .header {

@@ -41,6 +41,10 @@ footer .footer-elements {
   padding: 20px 0;
 }
 
+.newsletter-info {
+  justify-content: baseline;
+}
+
 @media(prefers-color-scheme: dark) {
   .footer-logos img {
     filter: invert();
