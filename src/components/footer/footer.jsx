@@ -8,20 +8,34 @@ import SocialButton from '../social-button/social-button';
 import socials from '../../data/socials';
 import { Logo } from '../../assets/logos';
 
+
+
 const Footer = () => (
   <footer>
-    <div className="footer-elements">
+    
     <Container fixed>
-      <Grid container>
-      <Grid item><Logo /></Grid>
-      </Grid>
+    <div className="footer-elements">
+      <div className="footer-logos">
+      <span className="footer-logo">
+      <Logo />
+      </span>
+      <img src={require('../../images/Khoury.png')}/>
+      <p>MULTI © {getYear()}</p>
+      </div>
+      <div className="footer-socials">
+      <div className="footer-newsletter">
       <NewsletterForm />
-      {socials.map(({ name, link, fa_icon }) => (
+      </div>
+      <div className="footer-social">
+      {
+        socials.map(({ name, link, fa_icon }) => (
         <SocialButton key={name} link={link} faIconName={fa_icon} />
       ))}
-      <Grid item>MULTI © {getYear()}</Grid>
+      </div>
+      </div>
+      </div>
     </Container>
-    </div>
+    
   </footer>
 );
 
