@@ -57,9 +57,7 @@ const NavBar = ({ }) => {
   return (
     <>
       <header
-        className={
-          !isScrollTop || isSmallScreenNavOpen ? 'navbar-header-styled' : ''
-        }
+        className="navbar-header"
       >
         <Container fixed>
           <div className="navbar-header-layout">

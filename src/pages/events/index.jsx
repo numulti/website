@@ -22,7 +22,6 @@ const EventsPage = () => {
         <section>
           <br/>
           <h2>Event Series</h2>
-          <p>This is a Description</p>
           <SeriesCards />
         </section>
       </Container>

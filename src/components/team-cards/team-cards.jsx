@@ -8,7 +8,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import SocialButton from '../social-button/social-button';
 import './team-cards.css';
 
-const TeamCards = () => {
+const TeamCards = ({isAdvisors}) => {
   const { team } = useStaticQuery(
     graphql`
       query {
@@ -45,7 +45,11 @@ const TeamCards = () => {
   return (
     <section className="team-cards">
       <Grid container direction="row" spacing={4} alignItems="center">
-        {team.edges.sort((a,b) => a.node.name > b.node.name).map((member, i) => {
+        {team.edges.sort((a,b) => a.node.name > b.node.name).filter(a => { if (isAdvisors) {
+            return a.node.role.toUpperCase() === 'STUDENT ADVISOR'}
+          else {
+            return a.node.role.toUpperCase() !== 'STUDENT ADVISOR'
+        }}).map((member, i) => {
           const { name, role, image, fields, contact } = member.node;
           console.log(contact);
           return (

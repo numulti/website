@@ -19,6 +19,10 @@
     border-radius: 30px;
 }
 
+.newsletter-form button:hover {
+    opacity: 0.6;
+}
+
 .newsletter-form input {
     background: none !important;
     text-decoration: none !important;
