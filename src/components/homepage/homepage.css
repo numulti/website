@@ -29,8 +29,64 @@
     max-width: 100%;
 }
 
+.mission-statement {
+    padding: 100px 0;
+    max-width: 700px;
+    margin: auto;
+}
+
+.pretty-link {
+    font-size: large;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    text-transform: lowercase;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
 @media(max-width: 959px) {
     .hero {
         flex-direction: column-reverse;
     }
 }
+
+.multi-gender {
+    fill: var(--hero-gender);
+}
+
+.multi-trapezoid {
+    stop-color: var(--hero-trapezoid);
+}
+
+.multi-trapezoid-end {
+    stop-color: var(--hero-trapezoid-end);
+}
+
+.multi-fist-color {
+    fill: #BD7A4E;
+    animation: multi-fist 20s infinite;
+}
+
+iframe {
+    width: 100%;
+    min-height: max-content;
+}
+
+@keyframes multi-fist {
+    0% {
+        fill: #c48f6c;
+    }
+    33% {
+        fill: #5a3e2a;
+    }
+    45% {
+        fill: #a07556;
+    }
+    66% {
+        fill: #f7dbc9;
+    }
+    100% {
+        fill: #c48f6c;
+    }
+}
+

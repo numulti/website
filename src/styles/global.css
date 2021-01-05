@@ -12,9 +12,6 @@
   --border-radius: 30px;
   --transition: 0.5s;
 
-  
-  
-
   /* Web Colors */
 
   /* Other Colors */
@@ -43,6 +40,9 @@ body {
     rgba(244, 255, 255, 0) 0%,
     #ffffff 21.35%
   );
+  --hero-gender: #78D1C7;
+  --hero-trapezoid:  #ABF8F8;
+  --hero-trapezoid-end: white;
 
   /* Brand Colors */
 
@@ -76,6 +76,9 @@ body {
     #062826 30%,
     #062826 100%
   );
+  --hero-gender: #20D2BD;
+  --hero-trapezoid: #00b6a1;
+  --hero-trapezoid-end: rgba(3, 53, 47, 0);
 
 
     /* Brand Colors */
@@ -221,7 +224,7 @@ a:hover {
   font-family: 'Noto Serif', serif;
   font-style: italic;
   text-transform: lowercase;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--primary-accent-color);
 }
 
