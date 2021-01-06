@@ -13,12 +13,12 @@
     }
   },
   {
-    "name": "Dania2",
+    "name": "Sama",
     "role": "President",
     "contact": {
       "email": "email@email.com",
-      "website": "",
-      "linkedin": "",
+      "website": "https://google.com",
+      "linkedin": "https://linkedin.com",
       "github": "https://github.com"
     },
     "image": {
@@ -26,94 +26,146 @@
     }
   },
   {
-    "name": "Dania2",
-    "role": "President",
+    "name": "Brendan",
+    "role": "Vice President",
     "contact": {
       "email": "email@email.com",
-      "website": "",
+      "website": "https://google.com",
       "linkedin": "https://linkedin.com",
-      "github": ""
+      "github": "https://github.com"
     },
     "image": {
       "src": "square.jpg"
     }
   },
   {
-    "name": "Dania2",
-    "role": "President",
+    "name": "Sumana",
+    "role": "Treasurer",
     "contact": {
       "email": "email@email.com",
       "website": "https://google.com",
-      "linkedin": "",
-      "github": ""
+      "linkedin": "https://linkedin.com",
+      "github": "https://github.com"
     },
     "image": {
       "src": "square.jpg"
     }
   },
   {
-    "name": "Dania2",
-    "role": "President",
+    "name": "Gigi",
+    "role": "Community Engagement Chair",
     "contact": {
       "email": "email@email.com",
       "website": "https://google.com",
-      "linkedin": "",
-      "github": ""
+      "linkedin": "https://linkedin.com",
+      "github": "https://github.com"
     },
     "image": {
       "src": "square.jpg"
     }
   },
   {
-    "name": "Dania2",
-    "role": "President",
+    "name": "Bayden",
+    "role": "PR + Marketing Chair",
     "contact": {
       "email": "email@email.com",
       "website": "https://google.com",
-      "linkedin": "",
-      "github": ""
+      "linkedin": "https://linkedin.com",
+      "github": "https://github.com"
     },
     "image": {
       "src": "square.jpg"
     }
   },
   {
-    "name": "Dania2",
-    "role": "President",
+    "name": "Chloe",
+    "role": "Outreach Chair",
     "contact": {
       "email": "email@email.com",
       "website": "https://google.com",
-      "linkedin": "",
-      "github": ""
+      "linkedin": "https://linkedin.com",
+      "github": "https://github.com"
     },
     "image": {
       "src": "square.jpg"
     }
   },
   {
-    "name": "Dania2",
-    "role": "President",
+    "name": "Angelina",
+    "role": "Web Chair",
     "contact": {
       "email": "email@email.com",
       "website": "https://google.com",
-      "linkedin": "",
-      "github": ""
+      "linkedin": "https://linkedin.com",
+      "github": "https://github.com"
     },
     "image": {
       "src": "square.jpg"
     }
   },
   {
-    "name": "Dania2",
+    "name": "Sadaf",
     "role": "Student Advisor",
     "contact": {
       "email": "email@email.com",
-      "website": "",
+      "website": "https://google.com",
       "linkedin": "https://linkedin.com",
       "github": "https://github.com"
     },
     "image": {
       "src": "square.jpg"
+    }
+  },
+  {
+    "name": "Sneha",
+    "role": "Student Advisor",
+    "contact": {
+      "email": "email@email.com",
+      "website": "https://google.com",
+      "linkedin": "https://linkedin.com",
+      "github": "https://github.com"
+    },
+    "image": {
+      "src": "square.jpg"
+    }
+  },
+  {
+    "name": "Edgar",
+    "role": "Student Advisor",
+    "contact": {
+      "email": "email@email.com",
+      "website": "https://google.com",
+      "linkedin": "https://linkedin.com",
+      "github": "https://github.com"
+    },
+    "image": {
+      "src": "square.jpg"
+    }
+  },
+  {
+    "name": "Tina",
+    "role": "Student Advisor",
+    "contact": {
+      "email": "email@email.com",
+      "website": "https://google.com",
+      "linkedin": "https://linkedin.com",
+      "github": "https://github.com"
+    },
+    "image": {
+      "src": "square.jpg"
+    }
+  },
+  {
+    "name": "Vincent Spitale",
+    "role": "Design Chair",
+    "contact": {
+      "email": "vincentgspitale@gmail.com",
+      "website": "https://vincentspitale.com",
+      "linkedin": "https://www.linkedin.com/in/vincentspitale",
+      "github": "https://www.github.com/vincentspitale"
+    },
+    "image": {
+      "src": "vincent.jpg"
     }
   }
 ]

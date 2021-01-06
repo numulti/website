@@ -2,9 +2,10 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 
 import Emoji from '../emoji/emoji';
+import series from '../../data/series';
 import './series-cards.css';
 
-const SeriesCards = ({ series }) => {
+const SeriesCards = () => {
   return (
     <section className="series-cards section-margins">
       <Grid
@@ -15,7 +16,7 @@ const SeriesCards = ({ series }) => {
         justify="center"
       >
         {series.map((type, i) => {
-          const { name, description, emoji } = type.node;
+          const { name, description, emoji } = type;
           return (
             <Grid item key={i} xs={12} sm={6} md={6} lg={4}>
               <div className="card">

@@ -10,32 +10,22 @@ import '../styles/global.css';
 import './layout.css';
 
 const Layout = ({ children }) => {
-  /* Blurs content when small screen navigation is open */
-  const [blurInnerContent, setBlurInnerContent] = useState(false);
 
   return (
     <div id="layout">
       <Helmet>
-        {/* FA imported again to support custom icons via queries*/}
+        {/* FA imported again to support custom icons via data*/}
         <script
           src="https://kit.fontawesome.com/a56e5ab623.js"
           crossorigin="anonymous"
         ></script>
       </Helmet>
-      <NavBar
-        toggleBackgroundBlur={() =>
-          setBlurInnerContent((prevState) => !prevState)
-        }
-      />
-      <div
-        className={`layout-inner-content ${
-          blurInnerContent ? 'layout-inner-content-blur' : ''
-        }`}
-      >
-        <main>{children}</main>
-        <Footer />
+      <NavBar/>
+      <div className="layout-inner-content">
+      <main>{children}</main>
+       <Footer />
       </div>
-    </div>
+      </div>
   );
 };
 

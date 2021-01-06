@@ -1,0 +1,32 @@
+.social-btn-container {
+  transition: var(--transition);
+}
+
+/*
+.social-btn-container:hover {
+  transition: var(--transition);
+  margin-top: -0.4rem;
+}
+*/
+
+.social-btn,
+.social-btn:focus,
+.social-btn:active {
+  margin: 0 0.3em;
+  border-radius: 50%;
+  color: var(--primary-accent-color);
+  background-color: rgba(0,0,0,0);
+  width: 3em;
+  height: 3em;
+  transition: var(--transition);
+}
+
+.social-btn:hover {
+  color: var(--bg-color);
+  background-color: var(--primary-accent-color);
+  opacity: 1;
+}
+
+.social-btn svg, .social-btn i::before {
+  font-size: 1.4rem;
+}

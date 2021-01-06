@@ -1,23 +1,26 @@
-.team-cards .card {
+.team-cards .profile {
   margin-top: 0.5em;
   padding: 2em;
-}
-.team-cards-img-container {
-  width: 60%;
-  height: 60%;
-  margin: 0.5em 20%;
+  display: inline;
 }
 
-.team-cards .card img {
+.team-cards-img-container {
+  width: 175px;
+  height: 175px;
+  margin: auto;
+}
+
+.team-cards .profile img {
   border-radius: 50%;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
+  
 }
 
-.team-cards .card:hover img {
+.team-cards .profile:hover img {
   filter: none;
   -webkit-filter: none;
   -moz-filter: none;
@@ -27,40 +30,13 @@
 
 .team-cards-text {
   height: 4.5em;
+  max-width: 250px;
+  margin: 5px auto;
+  padding: 20px 0;
 }
 
 .team-cards-contact-btns-row {
   display: flex;
   justify-content: center;
   height: 3em;
-}
-
-.team-cards-contact-btn-container {
-  transition: var(--transition);
-}
-
-.team-cards-contact-btn-container:hover {
-  transition: var(--transition);
-  margin-top: -0.4rem;
-}
-
-.team-cards-contact-btn,
-.team-cards-contact-btn:focus,
-.team-cards-contact-btn:active {
-  margin: 0 0.3em;
-  border-radius: 50%;
-  background-color: var(--bg-color);
-  width: 3em;
-  height: 3em;
-  opacity: 0.8;
-  transition: var(--transition);
-}
-
-.team-cards-contact-btn:hover {
-  background-color: var(--primary-accent-color);
-  opacity: 1;
-}
-
-.team-cards-contact-btn svg {
-  font-size: 1.4rem;
 }
