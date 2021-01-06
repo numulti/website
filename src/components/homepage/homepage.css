@@ -41,7 +41,6 @@
     font-style: italic;
     text-transform: lowercase;
     font-weight: 600;
-    text-decoration: underline;
 }
 
 @media(max-width: 959px) {
@@ -83,7 +82,7 @@ iframe {
         fill: #a07556;
     }
     66% {
-        fill: #f7dbc9;
+        fill: #f5d3bd;
     }
     100% {
         fill: #c48f6c;
