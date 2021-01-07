@@ -234,6 +234,14 @@ a:hover {
   color: var(--primary-accent-color);
 }
 
+.pretty-link {
+  font-size: large;
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  text-transform: lowercase;
+  font-weight: 600;
+}
+
 /* Cards */
 .card {
   padding: 1.5em;

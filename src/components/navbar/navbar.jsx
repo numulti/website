@@ -65,9 +65,8 @@ const NavBar = ({}) => {
                     </div>
                   );
                 })}
-                
+
                 {/* <ThemeButton /> */}
-               
               </nav>
             )}
           </div>

@@ -1,39 +1,43 @@
 import React from 'react';
-import { Container } from '@material-ui/core';
-import '../components/homepage/homepage.css';
-
-import socials from '../data/socials';
-import SocialButton from '../components/social-button/social-button';
-import { MultiFistHero } from '../assets/icons';
-
-import Schedule from '../components/schedule/schedule';
+import { Container, Grid } from '@material-ui/core';
 
 import SEO from '../components/seo/seo';
-import { Link } from 'gatsby';
+import DynamicLink from '../components/dynamic-link/dynamic-link';
+import SocialButton from '../components/social-button/social-button';
+import Schedule from '../components/schedule/schedule';
+import HeroGraphic from '../components/hero-graphic/hero-graphic';
+import socials from '../data/socials';
+
+import '../styles/homepage.css';
 
 const HomePage = () => (
   <div id="home-page">
     <SEO title="Home" />
     <Container fixed>
-      <div className="hero">
-        <div className="hero-text">
-          <span className="pretty-font greeting">hello, we are</span>
-          <span className="multi-large">MULTI</span>
-          <span className="hero-caption">
-            Northeastern's Student Organization for Diversity and Inclusion in
-            Tech
-          </span>
-          <div>
-            {socials.map(({ name, link, fa_icon }) => (
-              <SocialButton key={name} link={link} faIconName={fa_icon} />
-            ))}
-          </div>
-        </div>
-        <MultiFistHero />
-      </div>
+      <section>
+        <Grid container spacing={2}>
+          <Grid item sm={12} md={6}>
+            <div className="hero-text">
+              <span className="pretty-font greeting">hello, we are</span>
+              <span className="multi-large">MULTI</span>
+              <span className="hero-caption">
+                Northeastern's Student Organization for Diversity and Inclusion
+                in Tech
+              </span>
+              <div>
+                {socials.map(({ name, link, fa_icon }) => (
+                  <SocialButton key={name} link={link} faIconName={fa_icon} />
+                ))}
+              </div>
+            </div>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <HeroGraphic />
+          </Grid>
+        </Grid>
+      </section>
       <section className="mission-statement">
         <h4>Our Mission</h4>
-        <br />
         <p>
           Northeastern’s Multi-diverse Unified Leaders in the Technology
           Industry (MULTI) aims to promote diversity and inclusion in the
@@ -45,7 +49,7 @@ const HomePage = () => (
           diversity and inclusion initiatives.
         </p>
         <br />
-        <Link to="/team">
+        <DynamicLink to="/team">
           <span className="pretty-link">meet the team</span>
           <svg
             className="right-arrow"
@@ -61,12 +65,12 @@ const HomePage = () => (
               fill="black"
             />
           </svg>
-        </Link>
+        </DynamicLink>
       </section>
       <section>
         <h4>See Us In Action</h4>
-        <br />
         <iframe
+          className="video"
           height="500"
           src="https://www.youtube.com/embed/RgPsG-OZfT8"
           frameborder="0"
