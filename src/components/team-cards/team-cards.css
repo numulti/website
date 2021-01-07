@@ -17,7 +17,6 @@
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
-  
 }
 
 .team-cards .profile:hover img {
@@ -30,7 +29,7 @@
 
 .team-cards-text {
   height: 4.5em;
-  max-width: 250px;
+  max-width: 275px;
   margin: 5px auto;
   padding: 20px 0;
 }

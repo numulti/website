@@ -43,6 +43,20 @@
     font-weight: 600;
 }
 
+.right-arrow {
+    padding-left: 10px;
+}
+  
+.arrow {
+    fill: var(--link-color);
+}
+
+
+.pretty-link:hover {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
 @media(max-width: 959px) {
     .hero {
         flex-direction: column-reverse;
