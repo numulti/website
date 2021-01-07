@@ -21,7 +21,7 @@ const EventsPage = () => {
         </section>
         */}
         <section>
-          <br/>
+          <br />
           <h2>Event Series</h2>
           <SeriesCards />
         </section>

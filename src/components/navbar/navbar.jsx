@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container } from '@material-ui/core';
-//import { ThemeToggler } from 'gatsby-plugin-dark-mode';
+import { ThemeToggler } from 'gatsby-plugin-dark-mode';
 
 import DynamicLink from '../dynamic-link/dynamic-link';
 import { MenuIcon, CrossIcon, SunIcon, MoonIcon } from '../../assets/icons';
@@ -9,29 +9,14 @@ import navigation from '../../data/navigation';
 import './navbar.css';
 import { Logo } from '../../assets/logos';
 
-const NavBar = ({ }) => {
+const NavBar = ({}) => {
   const [isSmallScreenNavOpen, setIsSmallScreenNavOpen] = useState(false);
-  const [isScrollTop, setIsScrollTop] = useState(true);
   const isSmallScreen = useIsSmallScreen();
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    handleScroll();
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const handleScroll = () => {
-    setIsScrollTop(window.pageYOffset === 0);
-  };
 
   const toggleSmallScreenNav = () => {
     setIsSmallScreenNavOpen((prevState) => !prevState);
   };
 
-  /*
   const ThemeButton = () => {
     return (
       <ThemeToggler>
@@ -52,46 +37,42 @@ const NavBar = ({ }) => {
       </ThemeToggler>
     );
   };
-  */
 
   return (
     <>
-      <header
-        className="navbar-header"
-      >
+      <header className="navbar-header">
         <Container fixed>
           <div className="navbar-header-layout">
-          <div className="burger-logo">
-            <button
-              className="navbar-vegan-burger"
-              onClick={() => toggleSmallScreenNav()}
-            >
-              {!isSmallScreenNavOpen ? <MenuIcon /> : <CrossIcon />}
-            </button>
-            <div className="navbar-logo">
-              <Logo />
+            <div className="burger-logo">
+              <button
+                className="navbar-vegan-burger"
+                onClick={() => toggleSmallScreenNav()}
+              >
+                {!isSmallScreenNavOpen ? <MenuIcon /> : <CrossIcon />}
+              </button>
+              <div className="navbar-logo">
+                <Logo />
+              </div>
             </div>
-            </div>
-            {((!isSmallScreen) || isSmallScreenNavOpen) && (
+            {(!isSmallScreen || isSmallScreenNavOpen) && (
               <nav>
                 {navigation.map((navLink, i) => {
                   return (
                     <div className="header-link">
-                    <DynamicLink key={i} to={navLink.link}>
-                      {navLink.label}
-                    </DynamicLink>
+                      <DynamicLink key={i} to={navLink.link}>
+                        {navLink.label}
+                      </DynamicLink>
                     </div>
                   );
                 })}
-                {/*
-                <ThemeButton />
-                */}
+                
+                {/* <ThemeButton /> */}
+               
               </nav>
             )}
-
-            </div>
+          </div>
         </Container>
-        <div className="header-background"/>
+        <div className="header-background" />
       </header>
     </>
   );

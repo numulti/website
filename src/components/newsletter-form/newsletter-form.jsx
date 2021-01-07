@@ -36,16 +36,16 @@ const NewsletterForm = () => {
 
   return (
     <div className="newsletter-alert">
-    <div className="newsletter-form">
-      <form onSubmit={handleSubmit}>
-        <input
-          placeholder="Email address"
-          type="email"
-          value={email}
-          onChange={handleChange}
-        />
-        <button type="submit">Subscribe</button>
-      </form>
+      <div className="newsletter-form">
+        <form onSubmit={handleSubmit}>
+          <input
+            placeholder="Email address"
+            type="email"
+            value={email}
+            onChange={handleChange}
+          />
+          <button type="submit">Subscribe</button>
+        </form>
       </div>
       {!!alert && <p>{alert}</p>}
     </div>
