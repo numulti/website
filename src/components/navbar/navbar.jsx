@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container } from '@material-ui/core';
-import { ThemeToggler } from 'gatsby-plugin-dark-mode';
+// import { ThemeToggler } from 'gatsby-plugin-dark-mode';
 
 import DynamicLink from '../dynamic-link/dynamic-link';
 import { MenuIcon, CrossIcon, SunIcon, MoonIcon } from '../../assets/icons';
@@ -17,26 +17,26 @@ const NavBar = ({}) => {
     setIsSmallScreenNavOpen((prevState) => !prevState);
   };
 
-  const ThemeButton = () => {
-    return (
-      <ThemeToggler>
-        {({ theme, toggleTheme }) => {
-          const icon = theme === 'light' ? <SunIcon /> : <MoonIcon />;
-          return (
-            <button
-              className="navbar-theme-btn"
-              onClick={() => {
-                const nextTheme = theme === 'light' ? 'dark' : 'light';
-                toggleTheme(nextTheme);
-              }}
-            >
-              {icon}
-            </button>
-          );
-        }}
-      </ThemeToggler>
-    );
-  };
+  // const ThemeButton = () => {
+  //   return (
+  //     <ThemeToggler>
+  //       {({ theme, toggleTheme }) => {
+  //         const icon = theme === 'light' ? <SunIcon /> : <MoonIcon />;
+  //         return (
+  //           <button
+  //             className="navbar-theme-btn"
+  //             onClick={() => {
+  //               const nextTheme = theme === 'light' ? 'dark' : 'light';
+  //               toggleTheme(nextTheme);
+  //             }}
+  //           >
+  //             {icon}
+  //           </button>
+  //         );
+  //       }}
+  //     </ThemeToggler>
+  //   );
+  // };
 
   return (
     <>
@@ -50,9 +50,11 @@ const NavBar = ({}) => {
               >
                 {!isSmallScreenNavOpen ? <MenuIcon /> : <CrossIcon />}
               </button>
+              <DynamicLink to="/">
               <div className="navbar-logo">
                 <Logo />
               </div>
+              </DynamicLink>
             </div>
             {(!isSmallScreen || isSmallScreenNavOpen) && (
               <nav>
