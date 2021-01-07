@@ -1,158 +1,133 @@
 [
   {
-    "name": "Dania",
+    "name": "Dania Alnahdi",
     "role": "Student Advisor",
     "contact": {
-      "email": "email@email.com",
-      "website": "https://google.com",
-      "linkedin": "https://linkedin.com",
-      "github": "https://github.com"
+      "email": "alnahdi.d@northeastern.edu",
+      "website": "https://daniaalnahdi.com/",
+      "linkedin": "https://www.linkedin.com/in/daniaalnahdi/",
+      "github": "https://github.com/daniaalnahdi"
     },
     "image": {
-      "src": "square.jpg"
+      "src": "dania.jpg"
     }
   },
   {
-    "name": "Sama",
+    "name": "Sama El Tahawy",
     "role": "President",
     "contact": {
-      "email": "email@email.com",
-      "website": "https://google.com",
-      "linkedin": "https://linkedin.com",
-      "github": "https://github.com"
+      "email": "eltahawy.s@northeastern.edu",
+      "linkedin": "https://www.linkedin.com/in/samaeltahawy/",
+      "github": "https://github.com/Samsooma"
     },
     "image": {
-      "src": "square.jpg"
+      "src": "sama.jpg"
     }
   },
   {
-    "name": "Brendan",
+    "name": "Brendan Prestage",
     "role": "Vice President",
     "contact": {
-      "email": "email@email.com",
-      "website": "https://google.com",
-      "linkedin": "https://linkedin.com",
-      "github": "https://github.com"
+      "email": "prestage.b@northeastern.edu"
     },
     "image": {
-      "src": "square.jpg"
+      "src": "brendan.jpg"
     }
   },
   {
-    "name": "Sumana",
-    "role": "Treasurer",
+    "name": "Sumana Sithalam",
+    "role": "Student Advisor",
     "contact": {
-      "email": "email@email.com",
-      "website": "https://google.com",
-      "linkedin": "https://linkedin.com",
-      "github": "https://github.com"
+      "email": "sithalam.s@northeastern.edu"
     },
     "image": {
-      "src": "square.jpg"
+      "src": "sumana.jpg"
     }
   },
   {
-    "name": "Gigi",
+    "name": "Gigi Ali",
     "role": "Community Engagement Chair",
     "contact": {
-      "email": "email@email.com",
-      "website": "https://google.com",
-      "linkedin": "https://linkedin.com",
-      "github": "https://github.com"
+      "email": "ali.je@northeastern.edu"
     },
     "image": {
-      "src": "square.jpg"
+      "src": "gigi.jpg"
     }
   },
   {
-    "name": "Bayden",
+    "name": "Bayden Ibrahim",
     "role": "PR + Marketing Chair",
     "contact": {
-      "email": "email@email.com",
-      "website": "https://google.com",
-      "linkedin": "https://linkedin.com",
-      "github": "https://github.com"
+      "email": "ibrahim.b@northeastern.edu",
+      "linkedin": "https://www.linkedin.com/in/bayden/",
+      "github": "https://github.com/baydeni"
     },
     "image": {
-      "src": "square.jpg"
+      "src": "bayden.jpg"
     }
   },
   {
-    "name": "Chloe",
+    "name": "Chloe Gold",
     "role": "Outreach Chair",
     "contact": {
-      "email": "email@email.com",
-      "website": "https://google.com",
-      "linkedin": "https://linkedin.com",
-      "github": "https://github.com"
+      "email": "gold.c@northeastern.edu",
+      "linkedin": "https://www.linkedin.com/in/chloe-gold/"
     },
     "image": {
-      "src": "square.jpg"
+      "src": "chloe.jpg"
     }
   },
   {
-    "name": "Angelina",
-    "role": "Web Chair",
-    "contact": {
-      "email": "email@email.com",
-      "website": "https://google.com",
-      "linkedin": "https://linkedin.com",
-      "github": "https://github.com"
-    },
-    "image": {
-      "src": "square.jpg"
-    }
-  },
-  {
-    "name": "Sadaf",
+    "name": "Angelina Shalupova",
     "role": "Student Advisor",
     "contact": {
-      "email": "email@email.com",
-      "website": "https://google.com",
-      "linkedin": "https://linkedin.com",
-      "github": "https://github.com"
+      "email": "shalupova.a@northeastern.edu"
     },
     "image": {
-      "src": "square.jpg"
+      "src": "angelina.jpg"
     }
   },
   {
-    "name": "Sneha",
+    "name": "Sadaf Khansalar",
     "role": "Student Advisor",
     "contact": {
-      "email": "email@email.com",
-      "website": "https://google.com",
-      "linkedin": "https://linkedin.com",
-      "github": "https://github.com"
+        "email": "khansalar.s@northeastern.edu",
+        "linkedin": "https://www.linkedin.com/in/sadafkhansalar"
     },
     "image": {
-      "src": "square.jpg"
+      "src": "sadaf.jpg"
     }
   },
   {
-    "name": "Edgar",
+    "name": "Sneha Shivakumar",
     "role": "Student Advisor",
     "contact": {
-      "email": "email@email.com",
-      "website": "https://google.com",
-      "linkedin": "https://linkedin.com",
-      "github": "https://github.com"
+      "email": "shivakumar.s@northeastern.edu",
+      "linkedin": "https://www.linkedin.com/in/snehaskr/",
+      "github": "https://github.com/snehaskr19"
     },
     "image": {
-      "src": "square.jpg"
+      "src": "sneha.jpg"
     }
   },
   {
-    "name": "Tina",
+    "name": "Edgar Maldonado",
     "role": "Student Advisor",
     "contact": {
-      "email": "email@email.com",
-      "website": "https://google.com",
-      "linkedin": "https://linkedin.com",
-      "github": "https://github.com"
+      "email": "maldonado.ed@northeastern.edu"
     },
     "image": {
-      "src": "square.jpg"
+      "src": "edgar.jpg"
+    }
+  },
+  {
+    "name": "Tina Noorani",
+    "role": "Student Advisor",
+    "contact": {
+      "email": "noorani.t@northeastern.edu"
+    },
+    "image": {
+      "src": "tina.jpg"
     }
   },
   {

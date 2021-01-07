@@ -17,10 +17,12 @@
     padding: 8px 10px;
     background: var(--link-color);
     border-radius: 30px;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+
 }
 
 .newsletter-form button:hover {
-    opacity: 0.6;
+    transform: scale(1.05);
 }
 
 .newsletter-form input {

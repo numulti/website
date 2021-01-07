@@ -36,5 +36,11 @@ module.exports = {
           'https://facebook.us19.list-manage.com/subscribe/post?u=f179c428c7e94394bedbba399&amp;id=8f32c1c4de',
       },
     },
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`${__dirname}/src/layouts/layout.jsx`),
+      },
+    },
   ],
 };

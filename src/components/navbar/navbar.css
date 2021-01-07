@@ -80,12 +80,12 @@ nav a {
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 0.5em;
+    padding: 5px;
     fill: var(--lg-h-color);
-    width: 3em;
-    height: 60px;
+    width: 40px;
     transition: 0.1s;
     margin: auto 0;
+    height: 50px;
   }
 
   .navbar-vegan-burger:active {
@@ -125,6 +125,9 @@ nav a {
 
   .navbar-logo {
     margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
   }
 
   nav {
