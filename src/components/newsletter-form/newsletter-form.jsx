@@ -35,7 +35,7 @@ const NewsletterForm = () => {
   };
 
   return (
-    <div className="newsletter-alert">
+    <div className="newsletter-container">
       <div className="newsletter-form">
         <form onSubmit={handleSubmit}>
           <input
@@ -47,7 +47,9 @@ const NewsletterForm = () => {
           <button type="submit">Subscribe</button>
         </form>
       </div>
+      <div className="newsletter-alert">
       {!!alert && <p>{alert}</p>}
+      </div>
     </div>
   );
 };
