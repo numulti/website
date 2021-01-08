@@ -3,10 +3,10 @@
 }
 
 
-/* .social-btn-container:hover {
+.social-btn-container:hover {
   transition: var(--transition);
-  margin-top: 0.4rem;
-} */
+  margin-top: -0.3rem;
+}
 
 
 .social-btn,

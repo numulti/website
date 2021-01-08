@@ -4,8 +4,7 @@ import { Container } from '@material-ui/core';
 import { getYear } from '../../utils/date-utils';
 import './footer.css';
 import NewsletterForm from '../newsletter-form/newsletter-form';
-import SocialButton from '../social-button/social-button';
-import socials from '../../data/socials';
+import SocialLinks from '../../components/social-links/social-links'
 import { Logo } from '../../assets/logos';
 
 const Footer = () => (
@@ -29,9 +28,7 @@ const Footer = () => (
             <NewsletterForm />
           </div>
           <div className="footer-social">
-            {socials.map(({ name, link, fa_icon }) => (
-              <SocialButton key={name} link={link} faIconName={fa_icon} />
-            ))}
+            <SocialLinks/>
           </div>
         </div>
       </div>

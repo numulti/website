@@ -2,11 +2,10 @@ import React from 'react';
 import { Container, Grid } from '@material-ui/core';
 
 import SEO from '../components/seo/seo';
-import SocialButton from '../components/social-button/social-button';
+import SocialLinks from '../components/social-links/social-links';
 import Schedule from '../components/schedule/schedule';
 import HeroGraphic from '../components/hero-graphic/hero-graphic';
 import CTALink from '../components/cta-link/cta-link';
-import socials from '../data/socials';
 
 import '../styles/homepage.css';
 
@@ -24,11 +23,7 @@ const HomePage = () => (
                 Northeastern's Student Organization for Diversity and Inclusion
                 in Tech
               </span>
-              <div>
-                {socials.map(({ name, link, fa_icon }) => (
-                  <SocialButton key={name} link={link} faIconName={fa_icon} />
-                ))}
-              </div>
+              <SocialLinks/>
             </div>
           </Grid>
           <Grid item xs={12} md={6}>
