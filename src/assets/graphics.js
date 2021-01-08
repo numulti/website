@@ -2,6 +2,7 @@ import React from 'react';
 
 export const MultiFistHero = () => (
   <svg
+    className="multi-fist-hero"
     width="100%"
     height="100%"
     viewBox="0 0 753 462"
