@@ -73,9 +73,9 @@ const HomePage = () => (
           className="video"
           height="500"
           src="https://www.youtube.com/embed/RgPsG-OZfT8"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </section>
       <section>

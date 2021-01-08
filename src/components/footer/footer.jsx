@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 
 import { getYear } from '../../utils/date-utils';
 import './footer.css';

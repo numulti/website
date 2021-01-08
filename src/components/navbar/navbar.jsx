@@ -60,8 +60,8 @@ const NavBar = ({}) => {
               <nav>
                 {navigation.map((navLink, i) => {
                   return (
-                    <div className="header-link">
-                      <DynamicLink key={i} to={navLink.link}>
+                    <div className="header-link" key={i}>
+                      <DynamicLink to={navLink.link}>
                         {navLink.label}
                       </DynamicLink>
                     </div>

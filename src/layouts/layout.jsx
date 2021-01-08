@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Container } from '@material-ui/core';
 
 import NavBar from '../components/navbar/navbar';
 import Footer from '../components/footer/footer';
