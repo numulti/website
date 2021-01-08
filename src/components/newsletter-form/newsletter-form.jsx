@@ -47,9 +47,7 @@ const NewsletterForm = () => {
           <button type="submit">Subscribe</button>
         </form>
       </div>
-      <div className="newsletter-alert">
-      {!!alert && <p>{alert}</p>}
-      </div>
+      <div className="newsletter-alert">{!!alert && <p>{alert}</p>}</div>
     </div>
   );
 };

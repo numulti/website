@@ -51,9 +51,9 @@ const NavBar = ({}) => {
                 {!isSmallScreenNavOpen ? <MenuIcon /> : <CrossIcon />}
               </button>
               <DynamicLink to="/">
-              <div className="navbar-logo">
-                <Logo />
-              </div>
+                <div className="navbar-logo">
+                  <Logo />
+                </div>
               </DynamicLink>
             </div>
             {(!isSmallScreen || isSmallScreenNavOpen) && (

@@ -3,11 +3,14 @@
   font-weight: 600;
 }
 
+.hero-text-container {
+    display: flex;
+    align-items: center;
+  }
+
 .hero-text {
   display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  margin: auto 0;
+  flex-direction: column;;
 }
 
 .multi-large {

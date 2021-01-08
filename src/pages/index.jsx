@@ -16,7 +16,7 @@ const HomePage = () => (
     <Container fixed>
       <section>
         <Grid container spacing={2}>
-          <Grid item sm={12} md={6}>
+          <Grid item sm={12} md={6} className="hero-text-container">
             <div className="hero-text">
               <span className="pretty-font greeting">hello, we are</span>
               <span className="multi-large">MULTI</span>

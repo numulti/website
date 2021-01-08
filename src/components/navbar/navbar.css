@@ -16,8 +16,6 @@ header {
   align-items: center;
 }
 
-
-
 .header-background {
   position: absolute;
   backdrop-filter: saturate(100%) blur(20px);
