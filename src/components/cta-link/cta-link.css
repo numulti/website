@@ -1,0 +1,31 @@
+.cta-link {
+  display: flex;
+  align-items: center;
+}
+
+.cta-link .pretty-link {
+  font-size: 1.25rem;
+  background-image: linear-gradient(transparent calc(100% - 2px), var(--primary-accent-color) 1px);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size .3s;
+  transition: background-size .3s;
+}
+
+.cta-link svg {
+  margin-left: 0.5rem;
+  stroke-width: 1;
+  stroke: var(--primary-accent-color);
+  fill: var(--primary-accent-color);
+  width: 1rem;
+  transition: var(--transition);
+}
+
+.cta-link:hover svg {
+  margin-left: 1rem;
+}
+
+.cta-link:hover .pretty-link {
+  color: var(--link-color);
+  background-size: 100% 100%;
+}

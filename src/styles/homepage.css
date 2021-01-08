@@ -38,11 +38,6 @@
   fill: var(--link-color);
 }
 
-.pretty-link:hover {
-  color: var(--link-color);
-  text-decoration: underline;
-}
-
 .video {
   width: 100%;
   min-height: max-content;
