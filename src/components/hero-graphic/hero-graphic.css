@@ -1,0 +1,122 @@
+
+.multi-gender {
+    fill: var(--hero-gender);
+}
+
+.multi-trapezoid {
+    stop-color: var(--hero-trapezoid);
+}
+
+.multi-trapezoid-end {
+    stop-color: var(--hero-trapezoid-end);
+}
+
+.multi-fist-color {
+    fill: #BD7A4E;
+    animation: multi-fist 5s infinite;
+}
+
+iframe {
+    width: 100%;
+    min-height: max-content;
+}
+
+@keyframes multi-fist {
+    0% {
+        fill: #c48f6c;
+    }
+    33% {
+        fill: #5a3e2a;
+    }
+    45% {
+        fill: #a07556;
+    }
+    66% {
+        fill: #f5d3bd;
+    }
+    100% {
+        fill: #c48f6c;
+    }
+}
+
+.link{
+	padding: 15px 30px;
+	margin: 10px;
+	display: inline-block;
+	color: #000;
+	background: #ffce54;
+  text-decoration: none;
+}
+
+.link:hover{
+	text-decoration: none;
+	color: #000;
+}
+
+/*===================*/
+/* BOB
+/*===================*/
+
+@-webkit-keyframes bob-on-hover {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes bob-on-hover {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes bob-on-hover-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes bob-on-hover-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.multi-gender{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.multi-fist-hero .multi-gender {
+  -webkit-animation-name: bob-on-hover-float, bob-on-hover;
+  animation-name: bob-on-hover-float, bob-on-hover;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}

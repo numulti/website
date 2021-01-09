@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 
 import NavBar from '../components/navbar/navbar';
@@ -7,10 +7,9 @@ import Footer from '../components/footer/footer';
 import '../styles/normalize.css';
 import '../styles/reset.css';
 import '../styles/global.css';
-import './layout.css';
+import '../styles/layout.css';
 
 const Layout = ({ children }) => {
-
   return (
     <div id="layout">
       <Helmet>
@@ -20,12 +19,10 @@ const Layout = ({ children }) => {
           crossorigin="anonymous"
         ></script>
       </Helmet>
-      <NavBar/>
-      <div className="layout-inner-content">
+      <NavBar />
       <main>{children}</main>
-       <Footer />
-      </div>
-      </div>
+      <Footer />
+    </div>
   );
 };
 

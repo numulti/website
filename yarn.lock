@@ -956,6 +956,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.12.5":
+  version "7.12.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
+  integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.7":
   version "7.10.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.5.tgz#303d8bd440ecd5a491eae6117fd3367698674c5c"
@@ -6420,6 +6427,13 @@ gatsby-plugin-fontawesome-css@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-fontawesome-css/-/gatsby-plugin-fontawesome-css-1.0.0.tgz#12b0d9e4eb45f9321556e83accfa93fc6627d608"
   integrity sha512-jToy7WSlNjCtcFWjS7/W1U8jJggKBv2hZhatYyNXELfxvl3eFvuJGlDYYDDKtMzv57N5hbXwUvJ+iW21+FcDOA==
+
+gatsby-plugin-layout@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.8.0.tgz#5f2e313f5b95c5e60e96d4cacd666fcd62c1275d"
+  integrity sha512-iiC5Q0fGAif00Ty6s8hunWxG6mnScmUpCqToLzjijPflq/0m/zlZW6870jJ/aVMs3mtyIYEoYk2aq1jVQdNl8Q==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
 
 gatsby-plugin-mailchimp@^5.2.2:
   version "5.2.2"

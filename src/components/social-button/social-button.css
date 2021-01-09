@@ -2,12 +2,12 @@
   transition: var(--transition);
 }
 
-/*
+
 .social-btn-container:hover {
   transition: var(--transition);
-  margin-top: -0.4rem;
+  margin-top: -0.3rem;
 }
-*/
+
 
 .social-btn,
 .social-btn:focus,

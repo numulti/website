@@ -1,0 +1,44 @@
+.greeting {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.hero-text-container {
+    display: flex;
+    align-items: center;
+  }
+
+.hero-text {
+  display: flex;
+  flex-direction: column;;
+}
+
+.multi-large {
+  font-size: 60pt;
+  font-weight: 700;
+}
+
+.hero-caption {
+  color: var(--md-h-color);
+  font-size: 20pt;
+  padding-bottom: 30px;
+}
+
+.mission-statement {
+  padding: 100px 0;
+  max-width: 700px;
+  margin: auto;
+}
+
+.right-arrow {
+  padding-left: 10px;
+}
+
+.arrow {
+  fill: var(--link-color);
+}
+
+.video {
+  width: 100%;
+  min-height: max-content;
+}
