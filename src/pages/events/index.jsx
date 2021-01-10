@@ -17,11 +17,11 @@ const EventsPage = () => {
         <section>
           <Schedule />
         </section>
-        {/*<section>
+        <section>
           <h2>Latest Events</h2>
           <EventsList />
         </section>
-        */}
+
         <section>
           <br />
           <h2>Event Series</h2>

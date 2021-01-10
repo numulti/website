@@ -55,14 +55,10 @@ body {
   --multi-logo-main: #022E31;
   --multi-logo-accent: #0E6D62;
 
-  --border-radius: 30px;
-
+  /* Variables */
+  --navbar-height: 3em;
   --transition: 0.5s;
-
-  
   --box-shadow-color: rgba(0, 0, 0, 0.15);
-
-
   line-height: 1.4;
 }
 
@@ -245,7 +241,6 @@ a:hover {
 /* Cards */
 .card {
   padding: 1.5em;
-  border-radius: var(--border-radius);
   transition: var(--transition);
   background-color: var(--card-material);
 }

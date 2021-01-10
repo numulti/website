@@ -9,9 +9,22 @@ import navigation from '../../data/navigation';
 import './navbar.css';
 import { Logo } from '../../assets/logos';
 
-const NavBar = ({}) => {
+const NavBar = () => {
   const [isSmallScreenNavOpen, setIsSmallScreenNavOpen] = useState(false);
+  const [isScrollTop, setIsScrollTop] = useState(true);
   const isSmallScreen = useIsSmallScreen();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    setIsScrollTop(window.pageYOffset === 0);
+  };
 
   const toggleSmallScreenNav = () => {
     setIsSmallScreenNavOpen((prevState) => !prevState);
@@ -40,40 +53,50 @@ const NavBar = ({}) => {
 
   return (
     <>
-      <header className="navbar-header">
+      <header
+        className={`navbar ${
+          !isScrollTop || (isSmallScreenNavOpen && isSmallScreen) ? 'navbar-styled' : ''
+        }`}
+      >
         <Container fixed>
-          <div className="navbar-header-layout">
-            <div className="burger-logo">
+          <div className="navbar-layout">
+            <div className="navbar-header">
               <button
-                className="navbar-vegan-burger"
+                className="navbar-header-burger"
                 onClick={() => toggleSmallScreenNav()}
               >
                 {!isSmallScreenNavOpen ? <MenuIcon /> : <CrossIcon />}
               </button>
-              <DynamicLink to="/">
-                <div className="navbar-logo">
+              <div className="navbar-header-logo">
+                <DynamicLink to="/">
                   <Logo />
-                </div>
-              </DynamicLink>
+                </DynamicLink>
+              </div>
             </div>
             {(!isSmallScreen || isSmallScreenNavOpen) && (
               <nav>
                 {navigation.map((navLink, i) => {
                   return (
-                    <div className="header-link" key={i}>
+                    <div
+                      className="navbar-link"
+                      key={i}
+                      onClick={
+                        isSmallScreenNavOpen
+                          ? () => toggleSmallScreenNav()
+                          : null
+                      }
+                    >
                       <DynamicLink to={navLink.link}>
                         {navLink.label}
                       </DynamicLink>
                     </div>
                   );
                 })}
-
                 {/* <ThemeButton /> */}
               </nav>
             )}
           </div>
         </Container>
-        <div className="header-background" />
       </header>
     </>
   );

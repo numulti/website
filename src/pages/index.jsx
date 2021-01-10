@@ -23,7 +23,7 @@ const HomePage = () => (
                 Northeastern's Student Organization for Diversity and Inclusion
                 in Tech
               </span>
-              <SocialLinks/>
+              <SocialLinks />
             </div>
           </Grid>
           <Grid item xs={12} md={6}>
