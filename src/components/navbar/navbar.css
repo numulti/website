@@ -15,7 +15,7 @@
 }
 
 .navbar-styled {
-  background-color: var(--card-material);  
+  background-color: var(--card-material);
 }
 
 .navbar-layout {
@@ -38,7 +38,6 @@
 .navbar-header-logo svg {
   width: 12em;
   padding-right: 2em; /*to center, offset by nav-header-burger width*/
-
 }
 
 /* .navbar-theme-btn {
@@ -94,12 +93,11 @@ nav a {
   }
 
   nav {
-    display:flex;
+    display: flex;
     flex-direction: column;
   }
 
   .navbar-link {
-  margin: 1.5rem 1rem;
-
+    margin: 1.5rem 1rem;
   }
 }

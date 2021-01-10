@@ -55,7 +55,9 @@ const NavBar = () => {
     <>
       <header
         className={`navbar ${
-          !isScrollTop || (isSmallScreenNavOpen && isSmallScreen) ? 'navbar-styled' : ''
+          !isScrollTop || (isSmallScreenNavOpen && isSmallScreen)
+            ? 'navbar-styled'
+            : ''
         }`}
       >
         <Container fixed>

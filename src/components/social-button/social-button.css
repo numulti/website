@@ -2,12 +2,10 @@
   transition: var(--transition);
 }
 
-
 .social-btn-container:hover {
   transition: var(--transition);
   margin-top: -0.3rem;
 }
-
 
 .social-btn,
 .social-btn:focus,
@@ -15,7 +13,7 @@
   margin: 0 0.3em;
   border-radius: 50%;
   color: var(--primary-accent-color);
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   width: 3em;
   height: 3em;
   transition: var(--transition);
@@ -27,6 +25,7 @@
   opacity: 1;
 }
 
-.social-btn svg, .social-btn i::before {
+.social-btn svg,
+.social-btn i::before {
   font-size: 1.4rem;
 }
