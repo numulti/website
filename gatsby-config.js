@@ -4,6 +4,9 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-material-ui`,
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-fontawesome-css`,
     {
       resolve: `gatsby-plugin-layout`,
       options: {
@@ -32,9 +35,6 @@ module.exports = {
         icon: `${__dirname}/src/images/favicon.png`,
       },
     },
-    `gatsby-plugin-offline`,
-    // helps with FA icon flicker on load
-    `gatsby-plugin-fontawesome-css`,
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
