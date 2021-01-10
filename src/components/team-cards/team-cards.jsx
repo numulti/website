@@ -8,7 +8,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import SocialButton from '../social-button/social-button';
 import './team-cards.css';
 
-const TeamCards = ({ isAdvisors }) => {
+const TeamCards = () => {
   const { team } = useStaticQuery(
     graphql`
       query {
@@ -42,18 +42,26 @@ const TeamCards = ({ isAdvisors }) => {
     `
   );
 
+  const sortEboardFirst = (a, b) => {
+    if (b.node.role.toUpperCase() === 'STUDENT ADVISOR') {
+      if (a.node.role.toUpperCase() === 'STUDENT ADVISOR') {
+        return a.node.name > b.node.name; //if both advisors, sort by name
+      }
+      return -1;
+    }
+    
+    if (b.node.role.toUpperCase() !== 'STUDENT ADVISOR') {
+      return 1;
+    }
+    
+    return 0;
+  };
+
   return (
     <section className="team-cards">
       <Grid container direction="row" spacing={4} alignItems="center">
         {team.edges
-          .sort((a, b) => a.node.name > b.node.name)
-          .filter((a) => {
-            if (isAdvisors) {
-              return a.node.role.toUpperCase() === 'STUDENT ADVISOR';
-            } else {
-              return a.node.role.toUpperCase() !== 'STUDENT ADVISOR';
-            }
-          })
+          .sort(sortEboardFirst)
           .map((member, i) => {
             const { name, role, image, fields, contact } = member.node;
             return (
