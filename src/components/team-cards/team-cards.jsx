@@ -49,58 +49,53 @@ const TeamCards = () => {
       }
       return -1;
     }
-    
+
     if (b.node.role.toUpperCase() !== 'STUDENT ADVISOR') {
       return 1;
     }
-    
+
     return 0;
   };
 
   return (
     <section className="team-cards">
       <Grid container direction="row" spacing={4} alignItems="center">
-        {team.edges
-          .sort(sortEboardFirst)
-          .map((member, i) => {
-            const { name, role, image, fields, contact } = member.node;
-            return (
-              <Grid item key={i} xs={12} sm={6} md={4} lg={3}>
-                <div className="profile">
-                  {!!image.src && (
-                    <div className="team-cards-img-container">
-                      <Img fluid={fields.image.childImageSharp.fluid} />
-                    </div>
-                  )}
-                  <div className="team-cards-text">
-                    <h4>{name}</h4>
-                    <h5>{role}</h5>
+        {team.edges.sort(sortEboardFirst).map((member, i) => {
+          const { name, role, image, fields, contact } = member.node;
+          return (
+            <Grid item key={i} xs={12} sm={6} md={4} lg={3}>
+              <div className="profile">
+                {!!image.src && (
+                  <div className="team-cards-img-container">
+                    <Img fluid={fields.image.childImageSharp.fluid} />
                   </div>
-                  <div className="team-cards-contact-btns-row">
-                    {!!contact.email && (
-                      <SocialButton
-                        link={`mailto:${contact.email}`}
-                        faIcon={faEnvelope}
-                      />
-                    )}
-                    {!!contact.website && (
-                      <SocialButton link={contact.website} faIcon={faLink} />
-                    )}
-                    {!!contact.linkedin && (
-                      <SocialButton
-                        link={contact.linkedin}
-                        faIcon={faLinkedin}
-                      />
-                    )}
-
-                    {!!contact.github && (
-                      <SocialButton link={contact.github} faIcon={faGithub} />
-                    )}
-                  </div>
+                )}
+                <div className="team-cards-text">
+                  <h4>{name}</h4>
+                  <h5>{role}</h5>
                 </div>
-              </Grid>
-            );
-          })}
+                <div className="team-cards-contact-btns-row">
+                  {!!contact.email && (
+                    <SocialButton
+                      link={`mailto:${contact.email}`}
+                      faIcon={faEnvelope}
+                    />
+                  )}
+                  {!!contact.website && (
+                    <SocialButton link={contact.website} faIcon={faLink} />
+                  )}
+                  {!!contact.linkedin && (
+                    <SocialButton link={contact.linkedin} faIcon={faLinkedin} />
+                  )}
+
+                  {!!contact.github && (
+                    <SocialButton link={contact.github} faIcon={faGithub} />
+                  )}
+                </div>
+              </div>
+            </Grid>
+          );
+        })}
       </Grid>
     </section>
   );

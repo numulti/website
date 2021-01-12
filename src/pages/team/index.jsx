@@ -11,7 +11,7 @@ const TeamPage = () => {
       <Container fixed>
         <section>
           <h1>Meet the Team</h1>
-          <TeamCards/>
+          <TeamCards />
         </section>
       </Container>
     </div>
