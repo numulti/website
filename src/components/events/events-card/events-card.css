@@ -10,8 +10,6 @@
   transform: scale(1.01);
 }
 
-
-
 .event-card-old {
   background-color: var(--card-material);
   opacity: 0.6;
@@ -38,12 +36,11 @@
   border-radius: 50%;
   padding: 1em;
   background-color: var(--contrast);
-  box-shadow: 0 0 transparent, 0 0 transparent, 0 1px 2px 0 rgba(0,0,0,0.05);
+  box-shadow: 0 0 transparent, 0 0 transparent, 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 .chevron-toggle:active {
   transform: scale(0.5);
-
 }
 
 @media (max-width: 959px) {

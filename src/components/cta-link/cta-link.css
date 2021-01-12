@@ -5,11 +5,14 @@
 
 .cta-link .pretty-link {
   font-size: 1.25rem;
-  background-image: linear-gradient(transparent calc(100% - 2px), var(--primary-accent-color) 1px);
+  background-image: linear-gradient(
+    transparent calc(100% - 2px),
+    var(--primary-accent-color) 1px
+  );
   background-repeat: no-repeat;
   background-size: 0 100%;
-  -webkit-transition: background-size .3s;
-  transition: background-size .3s;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
 }
 
 .cta-link svg {

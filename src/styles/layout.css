@@ -1,11 +1,11 @@
 main {
   margin-top: 4em;
-  padding-top: 1em; 
+  padding-top: 1em;
   padding-bottom: 5em;
 }
 
 @media (max-width: 959px) {
   main {
-    margin-top: 1em;
+    margin-top: 2em;
   }
 }

@@ -45,18 +45,18 @@ footer .footer-elements {
   justify-content: baseline;
 }
 
-@media(prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   .footer-logos img {
     filter: invert();
   }
 }
 
-@media(max-width: 959px) {
+@media (max-width: 959px) {
   .footer-elements {
-  flex-direction: column-reverse;
-  justify-content: center;
-  height: 700px;
-  padding-top: 150px !important;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 700px;
+    padding-top: 150px !important;
   }
 
   .footer-socials {
@@ -75,5 +75,4 @@ footer .footer-elements {
   .footer-logos p {
     margin: auto;
   }
-
 }

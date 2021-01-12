@@ -29,16 +29,16 @@ body {
   --contrast: white;
   --contrast-text: white;
   --bg-color: #f2fffe;
-  --lg-h-color: #022E31;
-  --md-h-color: #3B4344;
+  --lg-h-color: #022e31;
+  --md-h-color: #3b4344;
   --text-color: #1e1e1e;
-  --link-color: #0E6D62;
+  --link-color: #0e6d62;
   --link-hover: black;
   --primary-accent-color: #0e6d62;
   --secondary-accent-color: #0e6d62;
   --secondary-hover-color: #a5f2e9;
   --transparent-color: #f2fffe;
-  --card-material: rgba(206,242,238,0.6);
+  --card-material: rgba(206, 242, 238, 0.6);
   --blur-material: rgba(242, 255, 254, 0.6);
   --border: 0 solid #e4e4e7;
   --footer-color: linear-gradient(
@@ -46,61 +46,55 @@ body {
     rgba(244, 255, 255, 0) 0%,
     #ffffff 21.35%
   );
-  --hero-gender: #78D1C7;
-  --hero-trapezoid:  #ABF8F8;
+  --hero-gender: #78d1c7;
+  --hero-trapezoid: #abf8f8;
   --hero-trapezoid-end: white;
 
   /* Brand Colors */
 
-  --multi-logo-main: #022E31;
-  --multi-logo-accent: #0E6D62;
+  --multi-logo-main: #022e31;
+  --multi-logo-accent: #0e6d62;
 
-  --border-radius: 30px;
-
+  /* Variables */
+  --navbar-height: 3em;
   --transition: 0.5s;
-
-  
   --box-shadow-color: rgba(0, 0, 0, 0.15);
-
-
   line-height: 1.4;
 }
 
-@media(prefers-color-scheme: dark) {
-body {
-  --contrast: rgb(44, 44, 44);
-  --contrast-text: black;
-  --bg-color: #151515;
-  --lg-h-color: #ffffff;
-  --md-h-color: #E2E2E2;
-  --text-color: #ffffff;
-  --link-color: #43D7C5;
-  --link-hover: white;
-  --primary-accent-color: #43D7C5;
-  --secondary-accent-color: #43D7C5;
-  --secondary-hover-color: #bce5e5;
-  --transparent-color: #253938;
-  --card-material: rgba(28,168,160,0.2);
-  --blur-material: rgba(21,21,21,0.6);
-  --border: 0 solid rgba(0,0,0,0);
-  --footer-color: linear-gradient(
-    180deg,
-    rgba(21, 21, 21, 0) 0%,
-    #062826 30%,
-    #062826 100%
-  );
-  --hero-gender: #20D2BD;
-  --hero-trapezoid: #00b6a1;
-  --hero-trapezoid-end: rgba(3, 53, 47, 0);
-
+@media (prefers-color-scheme: dark) {
+  body {
+    --contrast: rgb(44, 44, 44);
+    --contrast-text: black;
+    --bg-color: #151515;
+    --lg-h-color: #ffffff;
+    --md-h-color: #e2e2e2;
+    --text-color: #ffffff;
+    --link-color: #43d7c5;
+    --link-hover: white;
+    --primary-accent-color: #43d7c5;
+    --secondary-accent-color: #43d7c5;
+    --secondary-hover-color: #bce5e5;
+    --transparent-color: #253938;
+    --card-material: rgba(28, 168, 160, 0.2);
+    --blur-material: rgba(21, 21, 21, 0.6);
+    --border: 0 solid rgba(0, 0, 0, 0);
+    --footer-color: linear-gradient(
+      180deg,
+      rgba(21, 21, 21, 0) 0%,
+      #062826 30%,
+      #062826 100%
+    );
+    --hero-gender: #20d2bd;
+    --hero-trapezoid: #00b6a1;
+    --hero-trapezoid-end: rgba(3, 53, 47, 0);
 
     /* Brand Colors */
 
     --multi-logo-main: white;
-    --multi-logo-accent: #43D7C5;
+    --multi-logo-accent: #43d7c5;
+  }
 }
-}
-
 
 /* Layout */
 .full-width {
@@ -140,7 +134,6 @@ body {
   font-weight: 400;
   color: var(--text-color);
 }
-
 
 h1 {
   font-weight: 600;
@@ -245,7 +238,6 @@ a:hover {
 /* Cards */
 .card {
   padding: 1.5em;
-  border-radius: var(--border-radius);
   transition: var(--transition);
   background-color: var(--card-material);
 }
@@ -257,5 +249,3 @@ a:hover {
 .logo-accent {
   fill: var(--multi-logo-accent);
 }
-
-
