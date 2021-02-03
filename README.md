@@ -59,7 +59,7 @@ If you're new to Gatsby, check out the [official documentation](https://www.gats
 
 - **[Yarn](https://yarnpkg.com/):** Package manager for handling project dependencies.
 - **[Prettier](https://prettier.io/):** Code formatter.
-- **[ESLint](https://www.gatsbyjs.com/docs/how-to/custom-configuration/eslint/):** Code linter; automaitcally flags  syntactical and stylistic problems. Gatsby ships with a built-in ESLint setup.
+- **[ESLint](https://www.gatsbyjs.com/docs/how-to/custom-configuration/eslint/):** Code linter; automaitcally flags syntactical and stylistic problems. Gatsby ships with a built-in ESLint setup.
 - **[React](https://reactjs.org/):** JavaScript library for building user interfaces and UI components.
 - **[Gatsby](https://www.gatsbyjs.com/):** React-based framework for building static websites.
 - **[GraphQL](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/):** A query language for fetching data. Natively integrated with Gatsby.
@@ -80,7 +80,7 @@ Under the `src` directory:
 - **[/pages](src/pages):** Contains all page components as per [Gatsby's file strucutre](https://reactjs.org/docs/hooks-custom.html).
 - **[/styles](src/styles):** Contains global stylesheets (imported in [layout.jsx](src/layouts/layout.jsx)), as well as stylesheets for individual pages.
 - **[/typefaces](src/typefaces):** Includes imports for font packages (installed via Typefaces).
-- **[/utils](src/utils):** Contains utility functions and [custom React Hooks](https://reactjs.org/docs/hooks-custom.html). 
+- **[/utils](src/utils):** Contains utility functions and [custom React Hooks](https://reactjs.org/docs/hooks-custom.html).
 
 ## When to Use GraphQL for Data
 
