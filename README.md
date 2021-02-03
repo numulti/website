@@ -14,6 +14,7 @@ If you're new to Gatsby, check out the [official documentation](https://www.gats
 
 - [Gatsby - Full Tutorial for Beginners](https://www.youtube.com/watch?v=mHFAM0CXviE)
 - [Learn how Gatsby works](https://www.gatsbyjs.org/tutorial/)
+- [Gatsby Project Structure](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure)
 
 ### Set up
 
@@ -68,7 +69,7 @@ If you're new to Gatsby, check out the [official documentation](https://www.gats
 - **[Material-UI](https://material-ui.com/):** A React component library. In this project, we only use grid system components ([Container](https://material-ui.com/components/container/) and [Grid](https://material-ui.com/components/grid/)).
 - **[FontAwesome](https://fontawesome.com/how-to-use/on-the-web/using-with/react):** A library of icons that we can import and render.
 
-## File Structure
+## Folder Structure
 
 Under the `src` directory:
 
@@ -77,7 +78,7 @@ Under the `src` directory:
 - **[/data](src/data):** Contains any data files used to render elements.
 - **[/images](src/images):** Contains all image files (.jpg, .png, etc). Due to GraphQL configurations, images must live directly under this directory (no subfolders). You can read more about this [below](#when-to-use-graphql-for-data).
 - **[/layouts](src/layouts):** Contains Gatsby [layout](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/) components, which are for website sections that are shared across multiple pages (such as the header and footer). There's currently one layout component that automatically wraps around all pages (configured in [gatsby-config.js](gatsby-config.js)).
-- **[/pages](src/pages):** Contains all page components as per [Gatsby's file strucutre](https://reactjs.org/docs/hooks-custom.html).
+- **[/pages](src/pages):** Contains all page components as per [Gatsby's folder strucutre](https://www.gatsbyjs.com/docs/creating-and-modifying-pages/).
 - **[/styles](src/styles):** Contains global stylesheets (imported in [layout.jsx](src/layouts/layout.jsx)), as well as stylesheets for individual pages.
 - **[/typefaces](src/typefaces):** Includes imports for font packages (installed via Typefaces).
 - **[/utils](src/utils):** Contains utility functions and [custom React Hooks](https://reactjs.org/docs/hooks-custom.html).
@@ -95,6 +96,8 @@ The only time we use GraphQL to query data is when **the data includes images th
 The [gatsby-node.js](gatsby-node.js) file has been **already configured** so that, if a `.json` file has been found in `sr/data` with an `image { src { <filename.jpg> }}` property, it will automatically find the corresponding image in `src/images`. In React components, these images can then be queried (along with the rest of the data) via GraphQL and rendered using the Gatsby Image API. **Note that it will only look for images directly under `src/images`, so images should not be placed in subfolders.**
 
 If this is still confusing, take a look at [team.json](src/data/team.json) and [team-cards.jsx](src/components/team-cards/team-cards.jsx). If you need to implement the above, replicating the code structure of those files should be enough to get you the desired result.
+
+If you want to learn more about GraphQL and Gatsby, check out the [documentation](https://www.gatsbyjs.com/docs/reference/graphql-data-layer/).
 
 ## Style Guide
 
