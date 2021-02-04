@@ -18,7 +18,7 @@ If you're new to Gatsby, check out the [official documentation](https://www.gats
 
 ### Set up
 
-1.  If you haven't already, install [Node.js](https://nodejs.org/en/download/) on your machine.
+1.  If you haven't already, install [Node.js](https://nodejs.org/en/download/) on your machine
 2.  Install [Yarn](https://yarnpkg.com/)
     ```
     npm i yarn
@@ -27,7 +27,7 @@ If you're new to Gatsby, check out the [official documentation](https://www.gats
     ```
     npm i gatsby-cli
     ```
-4.  Clone and `cd` into this repository.
+4.  Clone and `cd` into this repository
 5.  Install project dependencies
     ```
     yarn install
