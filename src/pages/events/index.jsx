@@ -5,6 +5,7 @@ import SEO from '../../components/seo/seo';
 import Schedule from '../../components/schedule/schedule';
 import EventsList from '../../components/events/events-list/events-list';
 import SeriesCards from '../../components/series-cards/series-cards';
+import UpcomingEvents from '../../components/events/upcoming-events/upcoming-events';
 
 const EventsPage = () => {
   return (
@@ -13,12 +14,15 @@ const EventsPage = () => {
       <Container fixed>
         <section>
           <h1>Events</h1>
+          <br/>
+          <h2>Upcoming Events</h2>
+          <UpcomingEvents />
         </section>
         <section>
           <Schedule />
         </section>
         <section>
-          <h2>Latest Events</h2>
+          <h2>Previous Events</h2>
           <EventsList />
         </section>
 

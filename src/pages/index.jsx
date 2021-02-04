@@ -48,6 +48,7 @@ const HomePage = () => (
       </section>
       <section>
         <h4>See Us In Action</h4>
+        <br/>
         <iframe
           className="video"
           height="500"
