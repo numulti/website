@@ -76,8 +76,7 @@ const EventsCard = ({ event }) => {
     <div className="event-card-header">
       <EventStatus />
       <div className="event-card-name">
-        <h4>{series}</h4>
-        <h3>{name} </h3>
+        <h4>{name} </h4>
       </div>
       <div className="event-card-time-loc-container">
         <div className="event-card-time-loc">
@@ -96,6 +95,7 @@ const EventsCard = ({ event }) => {
             )}
           </p>
         </div>
+      <p>{getAbbrvMonth(month)  + " " + day}</p>
       </div>
     </div>
   );
@@ -120,11 +120,12 @@ const EventsCard = ({ event }) => {
       onClick={() => toggleAccordion()}
     >
       <Grid container spacing={3}>
-        <Grid item xs={12} sm={4} md={3} lg={3}>
-          <EventCardDate />
-        </Grid>
+       
         <Grid item xs={12} sm={8} md={7} lg={7}>
           <EventCardHeader />
+        </Grid>
+        <Grid item xs={12} sm={4} md={3} lg={3}>
+          <div> </div>
         </Grid>
         {
           //display description in this order for small screens

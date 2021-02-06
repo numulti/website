@@ -14,15 +14,11 @@ const EventsPage = () => {
       <Container fixed>
         <section>
           <h1>Events</h1>
-          <br/>
-          <h2>Upcoming Events</h2>
-          <UpcomingEvents />
         </section>
         <section>
           <Schedule />
         </section>
         <section>
-          <h2>Previous Events</h2>
           <EventsList />
         </section>
 

@@ -2,90 +2,15 @@ import React from 'react';
 
 const events = [
   {
-    name: 'Event Name',
-    series: 'Series Name',
+    name: 'Remote Co-op Experience with Synopsys',
+    series: '',
     description: (
       <p>
-        description with embedded HTML for{' '}
-        <a href="https://google.com">Link support</a>. description with embedded
-        HTML. description with embedded HTML. description with embedded HTML.
-        description with embedded HTML.
+        Learn how to make the best of your remote co-op and navigate complications of the ongoing pandemic.
       </p>
     ),
-    day: '1',
-    month: 'September',
-    year: '2020',
-    time: {
-      start: '6:00PM',
-      end: '7:00PM',
-    },
-    location: {
-      name: 'Zoom Video Call',
-      url: 'https://zoom.com',
-    },
-    cancelled: false,
-  },
-  {
-    name: 'Event Name 2',
-    series: 'Series Name',
-    description: (
-      <p>
-        description with embedded HTML for{' '}
-        <a href="https://google.com">Link support</a>. description with embedded
-        HTML. description with embedded HTML. description with embedded HTML.
-        description with embedded HTML.
-      </p>
-    ),
-    day: '1',
-    month: 'January',
-    year: '2020',
-    time: {
-      start: '6:00PM',
-      end: '7:00PM',
-    },
-    location: {
-      name: 'Zoom Video Call',
-      url: 'https://zoom.com',
-    },
-    cancelled: false,
-  },
-  {
-    name: 'Event Name',
-    series: 'Series Name',
-    description: (
-      <p>
-        description with embedded HTML for{' '}
-        <a href="https://google.com">Link support</a>. description with embedded
-        HTML. description with embedded HTML. description with embedded HTML.
-        description with embedded HTML.
-      </p>
-    ),
-    day: '25',
-    month: 'August',
-    year: '2020',
-    time: {
-      start: '6:00PM',
-      end: '7:00PM',
-    },
-    location: {
-      name: 'Zoom Video Call',
-      url: 'https://zoom.com',
-    },
-    cancelled: true,
-  },
-  {
-    name: 'Event Name',
-    series: 'Series Name',
-    description: (
-      <p>
-        description with embedded HTML for{' '}
-        <a href="https://google.com">Link support</a>. description with embedded
-        HTML. description with embedded HTML. description with embedded HTML.
-        description with embedded HTML.
-      </p>
-    ),
-    day: '25',
-    month: 'July',
+    day: '10',
+    month: 'February',
     year: '2021',
     time: {
       start: '6:00PM',
@@ -93,7 +18,29 @@ const events = [
     },
     location: {
       name: 'Zoom Video Call',
-      url: 'https://zoom.com',
+      url: 'https://northeastern.zoom.us/j/99313290657',
+    },
+    cancelled: false,
+  },
+  {
+    name: 'MULTI x Capital One',
+    series: '',
+    description: (
+      <p>
+        Learn how to make the best of your remote co-op and navigate complications of the ongoing pandemic.
+      </p>
+    ),
+    day: '10',
+    month: 'February',
+    year: '2021',
+    time: {
+      start: '6:00PM',
+      end: '7:00PM',
+    },
+    photo: 'event-02-10-2021.png',
+    location: {
+      name: 'Zoom Video Call',
+      url: 'https://northeastern.zoom.us/j/99313290657',
     },
     cancelled: false,
   },

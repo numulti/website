@@ -50,7 +50,11 @@ body {
   --hero-gender: #78d1c7;
   --hero-trapezoid: #abf8f8;
   --hero-trapezoid-end: white;
-  --event-gradient: linear-gradient(180deg, rgba(232, 246, 246, 0) 0%, #F5FFFF 100%);
+  --event-gradient: linear-gradient(
+    180deg,
+    rgba(242, 255, 254, 0),
+    rgb(242, 255, 254) 100%
+  );
 
   /* Brand Colors */
 
@@ -91,7 +95,11 @@ body {
     --hero-gender: #20d2bd;
     --hero-trapezoid: #00b6a1;
     --hero-trapezoid-end: rgba(3, 53, 47, 0);
-    --event-gradient: linear-gradient(180deg, rgba(38, 49, 49, 0) 0%, rgba(38, 49, 49, 0.8) 100%);
+    --event-gradient: linear-gradient(
+    180deg,
+    rgba(21, 21, 21, 0),
+    rgb(21, 21, 21) 100%
+  );
 
     /* Brand Colors */
 
