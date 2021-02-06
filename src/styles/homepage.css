@@ -42,6 +42,8 @@
 .video {
   width: 100%;
   min-height: max-content;
+  height: 500px;
+  padding-top: 20px;
 }
 
 @media (max-width: 959px) {

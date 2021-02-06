@@ -44,10 +44,8 @@ const HomePage = () => (
       </section>
       <section>
         <h4>See Us In Action</h4>
-        <br />
         <iframe
           className="video"
-          height="500"
           src="https://www.youtube.com/embed/RgPsG-OZfT8"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

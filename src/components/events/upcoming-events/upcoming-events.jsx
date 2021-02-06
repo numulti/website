@@ -22,7 +22,7 @@ const UpcomingEvents = () => {
   };
 
   return (
-    <div className="horizScroll">
+    <div className="horiz-scroll">
       {events
         .filter(isUpcomingEvent)
         .sort(sortNewestEventFirst)
