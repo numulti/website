@@ -32,7 +32,7 @@ const events = [
         complications of the ongoing pandemic.
       </p>
     ),
-    day: '10',
+    day: '24',
     month: 'February',
     year: '2021',
     time: {
