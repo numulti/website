@@ -17,21 +17,21 @@ const LargeEventsCard = ({ event }) => {
     cancelled,
   } = event;
 
-  var path = '../../../images/'
+  var path = '../../../images/';
 
-  var image = 'event-02-10-2021.png'
+  var image = 'event-02-10-2021.png';
 
   if (photo != null) {
-    image = photo
+    image = photo;
   }
 
-  path = path + image
+  path = path + image;
 
   return (
     <>
       {
         <div className="large-event">
-        <img src={require('../../../images/event-02-10-2021.png')}/>
+          <img src={require('../../../images/event-02-10-2021.png')} />
           <div className="large-event-gradient">
             <div className="large-event-sections">
               <div>

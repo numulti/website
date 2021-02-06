@@ -15,17 +15,17 @@ const HomePage = () => (
     <Container fixed>
       <section>
         <div className="hero">
-            <div className="hero-text">
-              <span className="pretty-font greeting">hello, we are</span>
-              <span className="multi-large">MULTI</span>
-              <span className="hero-caption">
-                Northeastern's Student Organization for Diversity and Inclusion
-                in Tech
-              </span>
-              <SocialLinks />
-            </div>
-            <HeroGraphic />
-            </div>
+          <div className="hero-text">
+            <span className="pretty-font greeting">hello, we are</span>
+            <span className="multi-large">MULTI</span>
+            <span className="hero-caption">
+              Northeastern's Student Organization for Diversity and Inclusion in
+              Tech
+            </span>
+            <SocialLinks />
+          </div>
+          <HeroGraphic />
+        </div>
       </section>
       <section className="mission-statement">
         <h4>Our Mission</h4>

@@ -6,7 +6,8 @@ const events = [
     series: '',
     description: (
       <p>
-        Learn how to make the best of your remote co-op and navigate complications of the ongoing pandemic.
+        Learn how to make the best of your remote co-op and navigate
+        complications of the ongoing pandemic.
       </p>
     ),
     day: '10',
@@ -27,7 +28,8 @@ const events = [
     series: '',
     description: (
       <p>
-        Learn how to make the best of your remote co-op and navigate complications of the ongoing pandemic.
+        Learn how to make the best of your remote co-op and navigate
+        complications of the ongoing pandemic.
       </p>
     ),
     day: '10',

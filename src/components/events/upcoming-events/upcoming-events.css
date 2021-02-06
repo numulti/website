@@ -1,5 +1,5 @@
 .horizScroll {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
 }

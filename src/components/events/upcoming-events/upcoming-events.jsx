@@ -3,7 +3,7 @@ import React from 'react';
 import LargeEventsCard from '../large-events-card/large-events-card';
 import events from '../../../data/events';
 import { isToday, isPastDate } from '../../../utils/date-utils';
-import './upcoming-events.css'
+import './upcoming-events.css';
 
 const UpcomingEvents = () => {
   const displayLimit = 3;

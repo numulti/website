@@ -95,7 +95,7 @@ const EventsCard = ({ event }) => {
             )}
           </p>
         </div>
-      <p>{getAbbrvMonth(month)  + " " + day}</p>
+        <p>{getAbbrvMonth(month) + ' ' + day}</p>
       </div>
     </div>
   );
@@ -120,7 +120,6 @@ const EventsCard = ({ event }) => {
       onClick={() => toggleAccordion()}
     >
       <Grid container spacing={3}>
-       
         <Grid item xs={12} sm={8} md={7} lg={7}>
           <EventCardHeader />
         </Grid>

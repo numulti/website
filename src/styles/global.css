@@ -96,10 +96,10 @@ body {
     --hero-trapezoid: #00b6a1;
     --hero-trapezoid-end: rgba(3, 53, 47, 0);
     --event-gradient: linear-gradient(
-    180deg,
-    rgba(21, 21, 21, 0),
-    rgb(21, 21, 21) 100%
-  );
+      180deg,
+      rgba(21, 21, 21, 0),
+      rgb(21, 21, 21) 100%
+    );
 
     /* Brand Colors */
 
