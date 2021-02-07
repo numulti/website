@@ -3,7 +3,7 @@ import React from 'react';
 const events = [
   {
     name: 'Remote Co-op Experience with Synopsys',
-    series: '',
+    series: 'Tech Talk',
     description: (
       <p>
         Learn how to make the best of your remote co-op and navigate
@@ -25,11 +25,9 @@ const events = [
   },
   {
     name: 'MULTI x Capital One',
-    series: '',
+    series: 'Tech Talk',
     description: (
       <p>
-        Learn how to make the best of your remote co-op and navigate
-        complications of the ongoing pandemic.
       </p>
     ),
     day: '24',
