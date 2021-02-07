@@ -9,7 +9,7 @@ const schedule = {
   },
   location: {
     name: 'Virtual Meetings',
-    url: 'https://northeastern.zoom.us/j/99829034580',
+    url: 'https://northeastern.zoom.us/j/99313290657',
   },
 };
 

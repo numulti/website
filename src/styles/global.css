@@ -39,6 +39,7 @@ body {
   --secondary-hover-color: #a5f2e9;
   --transparent-color: #f2fffe;
   --card-material: rgba(206, 242, 238, 0.6);
+  --header-material: rgba(223, 255, 251, 0.6);
   --blur-material: rgba(242, 255, 254, 0.6);
   --border: 0 solid #e4e4e7;
   --footer-color: linear-gradient(
@@ -49,6 +50,11 @@ body {
   --hero-gender: #78d1c7;
   --hero-trapezoid: #abf8f8;
   --hero-trapezoid-end: white;
+  --event-gradient: linear-gradient(
+    180deg,
+    rgba(242, 255, 254, 0),
+    rgb(242, 255, 254) 100%
+  );
 
   /* Brand Colors */
 
@@ -76,7 +82,8 @@ body {
     --secondary-accent-color: #43d7c5;
     --secondary-hover-color: #bce5e5;
     --transparent-color: #253938;
-    --card-material: rgba(28, 168, 160, 0.2);
+    --card-material: rgba(9, 63, 60, 0.6);
+    --header-material: rgba(11, 37, 36, 0.6);
     --blur-material: rgba(21, 21, 21, 0.6);
     --border: 0 solid rgba(0, 0, 0, 0);
     --footer-color: linear-gradient(
@@ -88,6 +95,11 @@ body {
     --hero-gender: #20d2bd;
     --hero-trapezoid: #00b6a1;
     --hero-trapezoid-end: rgba(3, 53, 47, 0);
+    --event-gradient: linear-gradient(
+      180deg,
+      rgba(21, 21, 21, 0),
+      rgb(21, 21, 21) 100%
+    );
 
     /* Brand Colors */
 

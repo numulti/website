@@ -3,14 +3,15 @@
   font-weight: 600;
 }
 
-.hero-text-container {
-  display: flex;
-  align-items: center;
-}
-
 .hero-text {
   display: flex;
   flex-direction: column;
+  margin: auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
 }
 
 .multi-large {
@@ -41,4 +42,16 @@
 .video {
   width: 100%;
   min-height: max-content;
+  height: 500px;
+  padding-top: 20px;
+}
+
+@media (max-width: 959px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .hero-text {
+    padding-top: 50px;
+  }
 }

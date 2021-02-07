@@ -14,22 +14,18 @@ const HomePage = () => (
     <SEO title="Home" />
     <Container fixed>
       <section>
-        <Grid container spacing={2}>
-          <Grid item sm={12} md={6} className="hero-text-container">
-            <div className="hero-text">
-              <span className="pretty-font greeting">hello, we are</span>
-              <span className="multi-large">MULTI</span>
-              <span className="hero-caption">
-                Northeastern's Student Organization for Diversity and Inclusion
-                in Tech
-              </span>
-              <SocialLinks />
-            </div>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <HeroGraphic />
-          </Grid>
-        </Grid>
+        <div className="hero">
+          <div className="hero-text">
+            <span className="pretty-font greeting">hello, we are</span>
+            <span className="multi-large">MULTI</span>
+            <span className="hero-caption">
+              Northeastern's Student Organization for Diversity and Inclusion in
+              Tech
+            </span>
+            <SocialLinks />
+          </div>
+          <HeroGraphic />
+        </div>
       </section>
       <section className="mission-statement">
         <h4>Our Mission</h4>
@@ -50,7 +46,6 @@ const HomePage = () => (
         <h4>See Us In Action</h4>
         <iframe
           className="video"
-          height="500"
           src="https://www.youtube.com/embed/RgPsG-OZfT8"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

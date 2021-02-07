@@ -131,6 +131,26 @@
     }
   },
   {
+    "name": "Anna Schneiderman",
+    "role": "Web Chair",
+    "contact": {
+      "email": "schneiderman.a@northeastern.edu"
+    },
+    "image": {
+      "src": "team-anna.jpg"
+    }
+  },
+  {
+    "name": "Carson Goffinet",
+    "role": "Treasurer",
+    "contact": {
+      "email": "goffinet.c@northeastern.edu"
+    },
+    "image": {
+      "src": "team-carson.jpg"
+    }
+  },
+  {
     "name": "Vincent Spitale",
     "role": "Design Chair",
     "contact": {
