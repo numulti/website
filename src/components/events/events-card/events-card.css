@@ -1,7 +1,7 @@
 .event-card {
   margin: 1.8em 0;
   padding: 2rem;
-  opacity: 0.8;
+  opacity: 1;
   cursor: pointer;
   border-radius: 30px;
 }
@@ -12,8 +12,7 @@
 }
 
 .event-card-old {
-  background-color: var(--card-material);
-  opacity: 0.6;
+  background-color: var(--header-material);
 }
 
 .chevron-toggle-container {

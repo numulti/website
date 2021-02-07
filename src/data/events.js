@@ -26,10 +26,7 @@ const events = [
   {
     name: 'MULTI x Capital One',
     series: 'Tech Talk',
-    description: (
-      <p>
-      </p>
-    ),
+    description: <p></p>,
     day: '24',
     month: 'February',
     year: '2021',
