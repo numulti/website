@@ -9,7 +9,7 @@ const EventsList = () => {
   const sortNewestEventFirst = (a, b) => {
     var dateA = new Date(`${a.month} ${a.day}, ${a.year}`).getTime();
     var dateB = new Date(`${b.month} ${b.day}, ${b.year}`).getTime();
-    return dateB - dateA;
+    return dateA - dateB;
   };
 
   return (
