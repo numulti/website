@@ -2,16 +2,16 @@ import React from 'react';
 
 const events = [
   {
-    name: 'Remote Co-op Experience with Synopsys',
-    series: 'Tech Talk',
+    name: 'Game Night',
+    series: 'Coding 404',
     description: (
       <p>
-        Learn how to make the best of your remote co-op and navigate
-        complications of the ongoing pandemic.
+        Take a break from classes this week and join us for a fun night of
+        Quiplash games and socializing this Wednesday!
       </p>
     ),
     day: '10',
-    month: 'February',
+    month: 'March',
     year: '2021',
     time: {
       start: '6:00PM',
@@ -24,17 +24,22 @@ const events = [
     cancelled: false,
   },
   {
-    name: 'MULTI x Capital One',
-    series: 'Tech Talk',
-    description: <p></p>,
-    day: '24',
-    month: 'February',
+    name: 'Interview Bias',
+    series: 'Breaking the Stigma',
+    description: (
+      <p>
+        Join our discussion on our experiences with interview bias, as well as
+        how to identify and overcome the unconscious bias that employers can
+        have in the hiring process.
+      </p>
+    ),
+    day: '17',
+    month: 'March',
     year: '2021',
     time: {
       start: '6:00PM',
       end: '7:00PM',
     },
-    photo: 'event-02-10-2021.png',
     location: {
       name: 'Zoom Video Call',
       url: 'https://northeastern.zoom.us/j/99313290657',
