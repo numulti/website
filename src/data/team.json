@@ -14,7 +14,7 @@
   },
   {
     "name": "Sama El Tahawy",
-    "role": "President",
+    "role": "Student Advisor",
     "contact": {
       "email": "eltahawy.s@northeastern.edu",
       "linkedin": "https://www.linkedin.com/in/samaeltahawy/",
@@ -22,6 +22,18 @@
     },
     "image": {
       "src": "team-sama.jpg"
+    }
+  },
+  {
+    "name": "Bayden Ibrahim",
+    "role": "President",
+    "contact": {
+      "email": "ibrahim.b@northeastern.edu",
+      "linkedin": "https://www.linkedin.com/in/bayden/",
+      "github": "https://github.com/baydeni"
+    },
+    "image": {
+      "src": "team-bayden.jpg"
     }
   },
   {
@@ -52,18 +64,6 @@
     },
     "image": {
       "src": "team-gigi.jpg"
-    }
-  },
-  {
-    "name": "Bayden Ibrahim",
-    "role": "PR + Marketing Chair",
-    "contact": {
-      "email": "ibrahim.b@northeastern.edu",
-      "linkedin": "https://www.linkedin.com/in/bayden/",
-      "github": "https://github.com/baydeni"
-    },
-    "image": {
-      "src": "team-bayden.jpg"
     }
   },
   {
@@ -141,18 +141,18 @@
     }
   },
   {
-    "name": "Carson Goffinet",
+    "name": "Michelle Lim",
     "role": "Treasurer",
     "contact": {
-      "email": "goffinet.c@northeastern.edu"
+      "email": "lim.miche@northeastern.edu"
     },
     "image": {
-      "src": "team-carson.jpg"
+      "src": "team-michelle.jpg"
     }
   },
   {
     "name": "Vincent Spitale",
-    "role": "Design Chair",
+    "role": "Student Advisor",
     "contact": {
       "email": "vincentgspitale@gmail.com",
       "website": "https://vincentspitale.com",
@@ -161,6 +161,17 @@
     },
     "image": {
       "src": "team-vincent.jpg"
+    }
+  },
+  {
+    "name": "Ava Silver",
+    "role": "Design Chair",
+    "contact": {
+      "email": "silver.ava@northeastern.edu",
+      "github": "https://github.com/ava-silver"
+    },
+    "image": {
+      "src": "team-ava.jpg"
     }
   }
 ]
