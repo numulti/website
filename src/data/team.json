@@ -99,28 +99,6 @@
     }
   },
   {
-    "name": "Sneha Shivakumar",
-    "role": "Student Advisor",
-    "contact": {
-      "email": "shivakumar.s@northeastern.edu",
-      "linkedin": "https://www.linkedin.com/in/snehaskr/",
-      "github": "https://github.com/snehaskr19"
-    },
-    "image": {
-      "src": "team-sneha.jpg"
-    }
-  },
-  {
-    "name": "Edgar Maldonado",
-    "role": "Student Advisor",
-    "contact": {
-      "email": "maldonado.ed@northeastern.edu"
-    },
-    "image": {
-      "src": "team-edgar.jpg"
-    }
-  },
-  {
     "name": "Tina Noorani",
     "role": "Student Advisor",
     "contact": {
