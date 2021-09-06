@@ -2,47 +2,23 @@ import React from 'react';
 
 const events = [
   {
-    name: 'Game Night',
-    series: 'Coding 404',
+    name: 'Fall Kickoff',
     description: (
       <p>
-        Take a break from classes this week and join us for a fun night of
-        Quiplash games and socializing this Wednesday!
+        Celebrate a new semester with MULTI at our annual Fall Kickoff! Meet the
+        e-board, learn more about the club, mingle with your peers, and meet
+        some new friends!
       </p>
     ),
-    day: '10',
-    month: 'March',
+    day: '15',
+    month: 'September',
     year: '2021',
     time: {
       start: '6:00PM',
       end: '7:00PM',
     },
     location: {
-      name: 'Zoom Video Call',
-      url: 'https://northeastern.zoom.us/j/99313290657',
-    },
-    cancelled: false,
-  },
-  {
-    name: 'Interview Bias',
-    series: 'Breaking the Stigma',
-    description: (
-      <p>
-        Join our discussion on our experiences with interview bias, as well as
-        how to identify and overcome the unconscious bias that employers can
-        have in the hiring process.
-      </p>
-    ),
-    day: '17',
-    month: 'March',
-    year: '2021',
-    time: {
-      start: '6:00PM',
-      end: '7:00PM',
-    },
-    location: {
-      name: 'Zoom Video Call',
-      url: 'https://northeastern.zoom.us/j/99313290657',
+      name: 'Center for Intercultural Engagement',
     },
     cancelled: false,
   },

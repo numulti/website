@@ -1,6 +1,6 @@
 const schedule = {
   semester: 'Fall',
-  year: '2020',
+  year: '2021',
   day: 'Wednesday',
   frequency: 'Weekly',
   time: {
@@ -8,8 +8,7 @@ const schedule = {
     end: '7:00PM',
   },
   location: {
-    name: 'Virtual Meetings',
-    url: 'https://northeastern.zoom.us/j/99313290657',
+    name: 'Center for Intercultural Engagement',
   },
 };
 
