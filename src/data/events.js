@@ -10,7 +10,7 @@ const events = [
         some new friends!
       </p>
     ),
-    day: '15',
+    day: '22',
     month: 'September',
     year: '2021',
     time: {
