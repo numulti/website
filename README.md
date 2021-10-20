@@ -10,7 +10,7 @@ _Written in React and built with Gatsbty.js, a React-based static site generator
 
 ### Ramping Up
 
-If you're new to Gatsby, check out the [official documentation](https://www.gatsbyjs.com/docs/) to learn more about it. To get the hang of it, try building a basic Gatsby site from scratch!
+If you're new to Gatsby, check out the [official documentation](https://www.gatsbyjs.com/docs/) to learn more about it. To get the hang of it, try building a basic Gatsby site from scratch! 
 
 - [Gatsby - Full Tutorial for Beginners](https://www.youtube.com/watch?v=mHFAM0CXviE)
 - [Learn how Gatsby works](https://www.gatsbyjs.org/tutorial/)
