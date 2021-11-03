@@ -2,18 +2,20 @@ import React from 'react';
 
 const events = [
   {
-    name: 'Technical Interview Practice with PowerAdvocate',
-    series: 'Tech Talk',
+    name: 'Town Hall',
+    series: 'Town Hall',
     description: (
       <p>
-        Looking to brush up your skills for technical interviews? Join us with
-        software engineers from PowerAdvocate to work in small groups of
-        students to practice technical interview questions, and to learn more
-        about their co-op program!
+        Attend our semesterly town hall and voice your suggestions regarding
+        Khoury College’s academics, extracurricular activities, student life,
+        and more, all in a relaxed and friendly environment with yummy Insomnia
+        cookies! Your thoughts and ideas will be passed on to the administration
+        through our E-Board so that we can help Khoury improve our academic
+        experience!
       </p>
     ),
-    day: '13',
-    month: 'October',
+    day: '3',
+    month: 'November',
     year: '2021',
     time: {
       start: '6:00PM',
@@ -25,19 +27,17 @@ const events = [
     cancelled: false,
   },
   {
-    name: 'Git/Github Workshop',
-    series: 'Level Up',
+    name: 'Registration 101',
+    series: 'Coding 404',
     description: (
       <p>
-        Want to learn more about how Git, one of the most useful tools for
-        development, is used? Join us for a beginner-friendly, hands-on
-        workshop, where we'll cover the fundamentals of Git, terminology, and
-        source control, and how you can start using it by yourself or to work
-        collaboratively with others!
+        Got any questions about courses, class sections, and the registration
+        process for Spring 2021? Hear from MULTI and upperclassmen to get the
+        recommendations you need!
       </p>
     ),
-    day: '20',
-    month: 'October',
+    day: '10',
+    month: 'November',
     year: '2021',
     time: {
       start: '6:00PM',
