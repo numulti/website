@@ -2,24 +2,20 @@ import React from 'react';
 
 const events = [
   {
-    name: 'Town Hall',
-    series: 'Town Hall',
+    name: 'Spring 22 Kickoff',
     description: (
       <p>
-        Attend our semesterly town hall and voice your suggestions regarding
-        Khoury College’s academics, extracurricular activities, student life,
-        and more, all in a relaxed and friendly environment with yummy Insomnia
-        cookies! Your thoughts and ideas will be passed on to the administration
-        through our E-Board so that we can help Khoury improve our academic
-        experience!
+        Celebrate the new semester with MULTI at our annual Spring kickoff! Meet
+        the e-board, mingle with friends and peers, and learn more about what we
+        do as a club. Stick around for a fun Kahoot to win some cool prizes!
       </p>
     ),
-    day: '3',
-    month: 'November',
-    year: '2021',
+    day: '26',
+    month: 'January',
+    year: '2022',
     time: {
-      start: '6:00PM',
-      end: '7:00PM',
+      start: '7:00PM',
+      end: '8:00PM',
     },
     location: {
       name: 'Center for Intercultural Engagement',
@@ -27,21 +23,22 @@ const events = [
     cancelled: false,
   },
   {
-    name: 'Registration 101',
-    series: 'Coding 404',
+    name: 'Welcome Week with MULTI!',
     description: (
       <p>
-        Got any questions about courses, class sections, and the registration
-        process for Spring 2021? Hear from MULTI and upperclassmen to get the
-        recommendations you need!
+        Calling all new members: welcome to campus! Come meet some new faces at
+        our Welcome Week event, where we'll have a variety of fun group
+        activities to connect with your peers. Activity topics will include
+        campus life, utilizing resources, and making the most out of your time
+        at Northeastern!
       </p>
     ),
-    day: '10',
-    month: 'November',
-    year: '2021',
+    day: '19',
+    month: 'January',
+    year: '2022',
     time: {
-      start: '6:00PM',
-      end: '7:00PM',
+      start: '7:00PM',
+      end: '8:00PM',
     },
     location: {
       name: 'Center for Intercultural Engagement',

@@ -1,11 +1,11 @@
 const schedule = {
-  semester: 'Fall',
-  year: '2021',
+  semester: 'Spring',
+  year: '2022',
   day: 'Wednesday',
   frequency: 'Weekly',
   time: {
-    start: '6:00PM',
-    end: '7:00PM',
+    start: '7:00PM',
+    end: '8:00PM',
   },
   location: {
     name: 'Center for Intercultural Engagement',
