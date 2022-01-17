@@ -58,7 +58,7 @@
   },
   {
     "name": "Gigi Ali",
-    "role": "Community Engagement Chair",
+    "role": "Student Advisor",
     "contact": {
       "email": "ali.je@northeastern.edu"
     },
@@ -68,23 +68,13 @@
   },
   {
     "name": "Chloe Gold",
-    "role": "Outreach Chair",
+    "role": "Student Advisor",
     "contact": {
       "email": "gold.c@northeastern.edu",
       "linkedin": "https://www.linkedin.com/in/chloe-gold/"
     },
     "image": {
       "src": "team-chloe.jpg"
-    }
-  },
-  {
-    "name": "Angelina Shalupova",
-    "role": "Student Advisor",
-    "contact": {
-      "email": "shalupova.a@northeastern.edu"
-    },
-    "image": {
-      "src": "team-angelina.jpg"
     }
   },
   {
@@ -150,6 +140,36 @@
     },
     "image": {
       "src": "team-ava.jpg"
+    }
+  },
+  {
+    "name": "Nicole Rosas",
+    "role": "PR/Marketing Chair",
+    "contact": {
+      "email": "rosas.n@northeastern.edu"
+    },
+    "image": {
+      "src": "team-nicole.jpg"
+    }
+  },
+  {
+    "name": "Kene Onyeachonam",
+    "role": "Community Engagement Chair",
+    "contact": {
+      "email": "onyeachonam.k@northeastern.edu"
+    },
+    "image": {
+      "src": "team-kene.jpg"
+    }
+  },
+  {
+    "name": "Christopher Denaci",
+    "role": "Outreach Chair",
+    "contact": {
+      "email": "denaci.c@northeastern.edu"
+    },
+    "image": {
+      "src": "team-christopher.jpg"
     }
   }
 ]
