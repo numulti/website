@@ -33,7 +33,7 @@
       "github": "https://github.com/baydeni"
     },
     "image": {
-      "src": "team-bayden.jpg"
+      "src": "team-bayden-1.jpg"
     }
   },
   {
@@ -136,17 +136,21 @@
     "role": "Design Chair",
     "contact": {
       "email": "silver.ava@northeastern.edu",
-      "github": "https://github.com/ava-silver"
+      "linkedin": "https://www.linkedin.com/in/ava-silver/",
+      "github": "https://github.com/ava-silver",
+      "website": "https://ava-silver.github.io/"
     },
     "image": {
-      "src": "team-ava.jpg"
+      "src": "team-ava-1.jpg"
     }
   },
   {
     "name": "Nicole Rosas",
     "role": "PR/Marketing Chair",
     "contact": {
-      "email": "rosas.n@northeastern.edu"
+      "email": "rosas.n@northeastern.edu",
+      "linkedin": "https://www.linkedin.com/in/nicole-e-rosas/",
+      "github": "https://github.com/nicole-rosas"
     },
     "image": {
       "src": "team-nicole.jpg"
@@ -156,7 +160,8 @@
     "name": "Kene Onyeachonam",
     "role": "Community Engagement Chair",
     "contact": {
-      "email": "onyeachonam.k@northeastern.edu"
+      "email": "onyeachonam.k@northeastern.edu",
+      "linkedin": "https://www.linkedin.com/in/kene-onyeachonam/"
     },
     "image": {
       "src": "team-kene.jpg"

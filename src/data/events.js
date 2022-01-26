@@ -18,30 +18,29 @@ const events = [
       end: '8:00PM',
     },
     location: {
-      name: 'Center for Intercultural Engagement',
+      name: 'West Village H 366',
     },
     cancelled: false,
   },
   {
-    name: 'Welcome Week with MULTI!',
+    name: 'Resume Workshop With Cisco!',
     description: (
       <p>
-        Calling all new members: welcome to campus! Come meet some new faces at
-        our Welcome Week event, where we'll have a variety of fun group
-        activities to connect with your peers. Activity topics will include
-        campus life, utilizing resources, and making the most out of your time
-        at Northeastern!
+        Cisco will be joining MULTI to provide helpful resume tips and how to
+        build your digital presence! They will also review resumes so be sure to
+        have a resume prepared!
       </p>
     ),
-    day: '19',
-    month: 'January',
+    series: 'Tech Talk',
+    day: '2',
+    month: 'February',
     year: '2022',
     time: {
       start: '7:00PM',
       end: '8:00PM',
     },
     location: {
-      name: 'Center for Intercultural Engagement',
+      name: 'West Village H 366',
     },
     cancelled: false,
   },

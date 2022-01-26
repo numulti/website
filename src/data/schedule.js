@@ -8,7 +8,7 @@ const schedule = {
     end: '8:00PM',
   },
   location: {
-    name: 'Center for Intercultural Engagement',
+    name: 'West Village H 366',
   },
 };
 
