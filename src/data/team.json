@@ -26,7 +26,7 @@
   },
   {
     "name": "Bayden Ibrahim",
-    "role": "President",
+    "role": "Student Advisor",
     "contact": {
       "email": "ibrahim.b@northeastern.edu",
       "linkedin": "https://www.linkedin.com/in/bayden/",
@@ -37,8 +37,29 @@
     }
   },
   {
-    "name": "Brendan Prestage",
+    "name": "Kene Onyeachonam",
+    "role": "President",
+    "contact": {
+      "email": "onyeachonam.k@northeastern.edu",
+      "linkedin": "https://www.linkedin.com/in/kene-onyeachonam/"
+    },
+    "image": {
+      "src": "team-kene.jpg"
+    }
+  },
+  {
+    "name": "Michelle Lim",
     "role": "Vice President",
+    "contact": {
+      "email": "lim.miche@northeastern.edu"
+    },
+    "image": {
+      "src": "team-michelle.jpg"
+    }
+  },
+  {
+    "name": "Brendan Prestage",
+    "role": "Student Advisor",
     "contact": {
       "email": "prestage.b@northeastern.edu"
     },
@@ -100,7 +121,7 @@
   },
   {
     "name": "Anna Schneiderman",
-    "role": "Web Chair",
+    "role": "Student Advisor",
     "contact": {
       "email": "schneiderman.a@northeastern.edu"
     },
@@ -109,13 +130,23 @@
     }
   },
   {
-    "name": "Michelle Lim",
-    "role": "Treasurer",
+    "name": "Lavanya Goel",
+    "role": "Web Chair",
     "contact": {
-      "email": "lim.miche@northeastern.edu"
+      "email": "goel.la@northeastern.edu"
     },
     "image": {
-      "src": "team-michelle.jpg"
+      "src": "team-lavanya.jpg"
+    }
+  },
+  {
+    "name": "Madeline Chew",
+    "role": "Treasurer",
+    "contact": {
+      "email": "chew.ma@northeastern.edu"
+    },
+    "image": {
+      "src": "team-madeline.jpg"
     }
   },
   {
@@ -133,7 +164,7 @@
   },
   {
     "name": "Ava Silver",
-    "role": "Design Chair",
+    "role": "Student Advisor",
     "contact": {
       "email": "silver.ava@northeastern.edu",
       "linkedin": "https://www.linkedin.com/in/ava-silver/",
@@ -142,6 +173,16 @@
     },
     "image": {
       "src": "team-ava-1.jpg"
+    }
+  },
+  {
+    "name": "Jaren Adams",
+    "role": "Design Chair",
+    "contact": {
+      "email": "adams.jar@northeastern.edu"
+    },
+    "image": {
+      "src": "team-jaren.jpg"
     }
   },
   {
@@ -154,17 +195,6 @@
     },
     "image": {
       "src": "team-nicole.jpg"
-    }
-  },
-  {
-    "name": "Kene Onyeachonam",
-    "role": "Community Engagement Chair",
-    "contact": {
-      "email": "onyeachonam.k@northeastern.edu",
-      "linkedin": "https://www.linkedin.com/in/kene-onyeachonam/"
-    },
-    "image": {
-      "src": "team-kene.jpg"
     }
   },
   {
