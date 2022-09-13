@@ -1,30 +1,5 @@
 [
   {
-    "name": "Dania Alnahdi",
-    "role": "Student Advisor",
-    "contact": {
-      "email": "alnahdi.d@northeastern.edu",
-      "website": "https://daniaalnahdi.com/",
-      "linkedin": "https://www.linkedin.com/in/daniaalnahdi/",
-      "github": "https://github.com/daniaalnahdi"
-    },
-    "image": {
-      "src": "team-dania.jpg"
-    }
-  },
-  {
-    "name": "Sama El Tahawy",
-    "role": "Student Advisor",
-    "contact": {
-      "email": "eltahawy.s@northeastern.edu",
-      "linkedin": "https://www.linkedin.com/in/samaeltahawy/",
-      "github": "https://github.com/Samsooma"
-    },
-    "image": {
-      "src": "team-sama.jpg"
-    }
-  },
-  {
     "name": "Bayden Ibrahim",
     "role": "Student Advisor",
     "contact": {
@@ -51,7 +26,8 @@
     "name": "Michelle Lim",
     "role": "Vice President",
     "contact": {
-      "email": "lim.miche@northeastern.edu"
+      "email": "lim.miche@northeastern.edu",
+      "linkedin": "https://www.linkedin.com/in/michelle-lim8/"
     },
     "image": {
       "src": "team-michelle.jpg"
@@ -68,16 +44,6 @@
     }
   },
   {
-    "name": "Sumana Sithalam",
-    "role": "Student Advisor",
-    "contact": {
-      "email": "sithalam.s@northeastern.edu"
-    },
-    "image": {
-      "src": "team-sumana.jpg"
-    }
-  },
-  {
     "name": "Gigi Ali",
     "role": "Student Advisor",
     "contact": {
@@ -85,38 +51,6 @@
     },
     "image": {
       "src": "team-gigi.jpg"
-    }
-  },
-  {
-    "name": "Chloe Gold",
-    "role": "Student Advisor",
-    "contact": {
-      "email": "gold.c@northeastern.edu",
-      "linkedin": "https://www.linkedin.com/in/chloe-gold/"
-    },
-    "image": {
-      "src": "team-chloe.jpg"
-    }
-  },
-  {
-    "name": "Sadaf Khansalar",
-    "role": "Student Advisor",
-    "contact": {
-      "email": "khansalar.s@northeastern.edu",
-      "linkedin": "https://www.linkedin.com/in/sadafkhansalar"
-    },
-    "image": {
-      "src": "team-sadaf.jpg"
-    }
-  },
-  {
-    "name": "Tina Noorani",
-    "role": "Student Advisor",
-    "contact": {
-      "email": "noorani.t@northeastern.edu"
-    },
-    "image": {
-      "src": "team-tina.jpg"
     }
   },
   {
@@ -143,23 +77,11 @@
     "name": "Madeline Chew",
     "role": "Treasurer",
     "contact": {
-      "email": "chew.ma@northeastern.edu"
+      "email": "chew.ma@northeastern.edu",
+      "linkedin": "http://www.linkedin.com/in/madeline-chew"
     },
     "image": {
       "src": "team-madeline.jpg"
-    }
-  },
-  {
-    "name": "Vincent Spitale",
-    "role": "Student Advisor",
-    "contact": {
-      "email": "vincentgspitale@gmail.com",
-      "website": "https://vincentspitale.com",
-      "linkedin": "https://www.linkedin.com/in/vincentspitale",
-      "github": "https://www.github.com/vincentspitale"
-    },
-    "image": {
-      "src": "team-vincent.jpg"
     }
   },
   {
