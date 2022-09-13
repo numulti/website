@@ -8,7 +8,7 @@ const schedule = {
     end: '8:00PM',
   },
   location: {
-    name: 'West Village H 366',
+    name: '144 Curry Student Center (CIE)',
   },
 };
 
