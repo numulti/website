@@ -120,13 +120,22 @@
     }
   },
   {
-    "name": "Christopher Denaci",
+    "name": "",
     "role": "Outreach Chair",
     "contact": {
-      "email": "denaci.c@northeastern.edu"
+      "email": ""
     },
     "image": {
-      "src": "team-christopher.jpg"
+      "src": ""
     }
+  },
+  {   "name": "",
+  "role": "Community Engagement Chair",
+  "contact": {
+    "email": ""
+  },
+  "image": {
+    "src": ""
   }
+}
 ]
