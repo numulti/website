@@ -118,24 +118,5 @@
     "image": {
       "src": "team-nicole.jpg"
     }
-  },
-  {
-    "name": "",
-    "role": "Outreach Chair",
-    "contact": {
-      "email": ""
-    },
-    "image": {
-      "src": ""
-    }
-  },
-  {   "name": "",
-  "role": "Community Engagement Chair",
-  "contact": {
-    "email": ""
-  },
-  "image": {
-    "src": ""
   }
-}
 ]
