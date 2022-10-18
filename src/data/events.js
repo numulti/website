@@ -11,11 +11,9 @@ const events = [
         the job and answer all your questions about working at one of the
         biggest tech companies in the world!
         <br></br>
-        Open to <b>undergrads</b> only
+        Open to <b>undergrads only</b>
         <br></br>
-        <a href="https://bit.ly/MxG-Fall22">
-          Make sure to RSVP for the event!
-        </a>
+        <a href="https://bit.ly/MxG-Fall22">Make sure to RSVP for the event!</a>
         <br></br>
         Presenters:
         <ul>
@@ -24,7 +22,7 @@ const events = [
         </ul>
       </p>
     ),
-    series: 'Tech Talks',
+    series: 'Tech Talk',
     day: '19',
     month: 'October',
     year: '2022',
