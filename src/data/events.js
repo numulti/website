@@ -2,11 +2,12 @@ import React from 'react';
 
 const events = [
   {
-    name: 'Spring \'23 Kickoff',
+    name: "Spring '23 Kickoff",
     description: (
       <p>
-        Celebrate fall semester with MULTI at our annual Spring kickoff! Meet the E-board,
-        talk to new friends, and learn more about what we do as a club!
+        Celebrate fall semester with MULTI at our annual Spring kickoff! Meet
+        the E-board, talk to new friends, and learn more about what we do as a
+        club!
         <br></br>
         Open to <b>undergrads only</b>
         <br></br>
