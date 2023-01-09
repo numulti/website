@@ -2,30 +2,21 @@ import React from 'react';
 
 const events = [
   {
-    name: 'Day in the Life @ Google',
+    name: "Spring '23 Kickoff",
     description: (
       <p>
-        Considered what it would be like to work at Google? Join us this
-        Wednesday to learn about the life of a Software Engineer and Product
-        Manager at Google! They'll talk about day to day activities, perks of
-        the job and answer all your questions about working at one of the
-        biggest tech companies in the world!
+        Celebrate fall semester with MULTI at our annual Spring kickoff! Meet
+        the E-board, talk to new friends, and learn more about what we do as a
+        club!
         <br></br>
         Open to <b>undergrads only</b>
         <br></br>
-        <a href="https://bit.ly/MxG-Fall22">Make sure to RSVP for the event!</a>
-        <br></br>
-        Presenters:
-        <ul>
-          <li>Kenny Sulaimon, Product Manager</li>
-          <li>Kurt Marcinkiewicz, Software Engineer</li>
-        </ul>
       </p>
     ),
-    series: 'Tech Talk',
-    day: '19',
-    month: 'October',
-    year: '2022',
+    series: 'General',
+    day: 'TBD',
+    month: 'January',
+    year: '2023',
     time: {
       start: '7:00PM',
       end: '8:00PM',
