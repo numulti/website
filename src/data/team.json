@@ -135,6 +135,9 @@
     "role": "Outreach Chair",
     "contact": {
       "email": "chao.c@northeastern.edu"
+    },
+    "image": {
+      "src": "favicon.png"
     }
   }
 ]
