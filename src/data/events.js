@@ -14,7 +14,7 @@ const events = [
       </p>
     ),
     series: 'General',
-    day: 'TBD',
+    day: '18',
     month: 'January',
     year: '2023',
     time: {
