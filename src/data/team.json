@@ -118,5 +118,26 @@
     "image": {
       "src": "team-nicole.jpg"
     }
+  },
+  {
+    "name": "Dessy Dusichka",
+    "role": "Community Engagement Chair",
+    "contact": {
+      "email": "dusichka.d@northeastern.edu",
+      "linkedin": "https://www.linkedin.com/in/dessy-dusichka"
+    },
+    "image": {
+      "src": "team-dessy.jpg"
+    }
+  },
+  {
+    "name": "Caitlin Chao",
+    "role": "Outreach Chair",
+    "contact": {
+      "email": "chao.c@northeastern.edu"
+    },
+    "image": {
+      "src": "team-caitlin.jpeg"
+    }
   }
 ]
