@@ -7,8 +7,8 @@ const events = [
       <p>
         Listen and ask questions to current students who have already gone on
         their first or second co-op about their experiences and skills they
-        learned while on co-op! Hear from a panel of Khoury students who have 
-        experience in areas such as Software Engineering, System Development, 
+        learned while on co-op! Hear from a panel of Khoury students who have
+        experience in areas such as Software Engineering, System Development,
         Back-End, Front-End/Design, Data Science, and more!
       </p>
     ),
@@ -29,8 +29,8 @@ const events = [
     name: 'Movie Night!',
     description: (
       <p>
-        Join us for a chill meeting where we will watch a movie of your choice and 
-        eat popcorn!
+        Join us for a chill meeting where we will watch a movie of your choice
+        and eat popcorn!
       </p>
     ),
     series: 'Coding 404',

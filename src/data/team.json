@@ -128,5 +128,27 @@
     "image": {
       "src": "team-caitlin.jpeg"
     }
+  },
+  {
+    "name": "Lauren Phan",
+    "role": "PR & Marketing Chair",
+    "contact": {
+      "email": "phan.la@northeastern.edu",
+      "linkedin": "https://www.linkedin.com/in/laurenphan"
+    },
+    "image": {
+      "src": "team-lauren.jpg"
+    }
+  },
+  {
+    "name": "Katerina Thano",
+    "role": "Treasurer",
+    "contact": {
+      "email": "thano.k@northeastern.edu",
+      "linkedin": "https://www.linkedin.com/in/katerinathano/"
+    },
+    "image": {
+      "src": "team-kat.jpg"
+    }
   }
 ]
