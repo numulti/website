@@ -2,18 +2,36 @@ import React from 'react';
 
 const events = [
   {
-    name: 'Preparing for Co-Ops Panel',
+    name: 'Movie Night!',
     description: (
       <p>
-        Listen and ask questions to current students who have already gone on
-        their first or second co-op about their experiences and skills they
-        learned while on co-op! Hear from a panel of Khoury students who have
-        experience in areas such as Software Engineering, System Development,
-        Back-End, Front-End/Design, Data Science, and more!
+        Join us this week for movie night, where we will be watching Black
+        Panther: Wakanda Forever! Snacks will be provided!
       </p>
     ),
-    series: 'Tech Talk',
-    day: '01',
+    series: 'Coding 404',
+    day: '08',
+    month: 'February',
+    year: '2023',
+    time: {
+      start: '6:30PM',
+      end: '9:00PM',
+    },
+    location: {
+      name: '144 Curry Student Center (CIE)',
+    },
+    cancelled: false,
+  },
+  {
+    name: 'Intro to Data Viz',
+    description: (
+      <p>
+        Learn how to visualize large datasets in Python using bar charts,
+        scatterplots, and line graphs!
+      </p>
+    ),
+    series: 'Level Up',
+    day: '15',
     month: 'February',
     year: '2023',
     time: {
@@ -26,15 +44,15 @@ const events = [
     cancelled: false,
   },
   {
-    name: 'Movie Night!',
+    name: 'Town Hall',
     description: (
       <p>
-        Join us for a chill meeting where we will watch a movie of your choice
-        and eat popcorn!
+        Voice your opinions about Khoury's academics, extracurriculars, and
+        student life in an open environment!
       </p>
     ),
-    series: 'Coding 404',
-    day: '08',
+    series: 'Town Hall',
+    day: '22',
     month: 'February',
     year: '2023',
     time: {
