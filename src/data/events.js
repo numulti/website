@@ -2,32 +2,14 @@ import React from 'react';
 
 const events = [
   {
-    name: 'Movie Night!',
-    description: (
-      <p>
-        Join us this week for movie night, where we will be watching Black
-        Panther: Wakanda Forever! Snacks will be provided!
-      </p>
-    ),
-    series: 'Coding 404',
-    day: '08',
-    month: 'February',
-    year: '2023',
-    time: {
-      start: '6:30PM',
-      end: '9:00PM',
-    },
-    location: {
-      name: '144 Curry Student Center (CIE)',
-    },
-    cancelled: false,
-  },
-  {
     name: 'Intro to Data Viz',
     description: (
       <p>
-        Learn how to visualize large datasets in Python using bar charts,
-        scatterplots, and line graphs!
+        Join us for an intro to Python! We will explain the importance of 
+        data visualization and demonstrate how to use Python libraries to 
+        customize visualizations using a mock dataset. Learn how to visualize 
+        large datasets in Python using bar charts, scatterplots, and line 
+        graphs! <b>Make sure to bring a laptop!</b> We will also have cookies!
       </p>
     ),
     series: 'Level Up',
@@ -54,6 +36,27 @@ const events = [
     series: 'Town Hall',
     day: '22',
     month: 'February',
+    year: '2023',
+    time: {
+      start: '7:00PM',
+      end: '8:00PM',
+    },
+    location: {
+      name: '144 Curry Student Center (CIE)',
+    },
+    cancelled: false,
+  },
+  {
+    name: 'MULTI x HackBeanpot: Intro to Hackathons',
+    description: (
+      <p>
+        Join MULTI and HackBeanpot to learn about hackathons and how to 
+        get the most out of them!
+      </p>
+    ),
+    series: 'Level Up',
+    day: '01',
+    month: 'March',
     year: '2023',
     time: {
       start: '7:00PM',
