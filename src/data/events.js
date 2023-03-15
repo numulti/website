@@ -2,35 +2,20 @@ import React from 'react';
 
 const events = [
   {
-    name: 'Town Hall',
+    name: 'Code 4 Cash: SQL Detectives',
     description: (
       <p>
-        Voice your opinions about Khoury's academics, extracurriculars, and
-        student life in an open environment! Dunkin' Donuts will also be provided!
+        Join us for our Code for Ca$h contest, where we will be learning 
+        and using SQL! This is the perfect opportunity if you're interested 
+        in learning the basics of databases and how to query them. We will 
+        walk through a detective-themed scavenger hunt to compete for an 
+        Amazon gift card! Boba will also be provided!
+        <br></br>
+        <b>Remember to bring your laptops!</b>
       </p>
     ),
-    series: 'Town Hall',
-    day: '22',
-    month: 'February',
-    year: '2023',
-    time: {
-      start: '7:00PM',
-      end: '8:00PM',
-    },
-    location: {
-      name: '144 Curry Student Center (CIE)',
-    },
-    cancelled: false,
-  },
-  {
-    name: 'MULTI x HackBeanpot',
-    description: (
-      <p>
-        Join MULTI and HackBeanpot for an intro to hackathons!
-      </p>
-    ),
-    series: 'Level Up',
-    day: '01',
+    series: 'Code For Cash',
+    day: '15',
     month: 'March',
     year: '2023',
     time: {
@@ -43,15 +28,36 @@ const events = [
     cancelled: false,
   },
   {
-    name: 'Code For Cash: SQL',
+    name: 'Tableau Workshop',
     description: (
       <p>
-        Our semesterly event will be introducing SQL along with a friendly 
-        competition using the application!
+        We will be collaborating with ColorStackNEU and Data Club to give 
+        an intro to Tableau! No experience is necessary.
       </p>
     ),
-    series: 'Code For Cash',
-    day: '15',
+    series: 'Level Up',
+    day: '22',
+    month: 'March',
+    year: '2023',
+    time: {
+      start: '7:00PM',
+      end: '8:00PM',
+    },
+    location: {
+      name: '144 Curry Student Center (CIE)',
+    },
+    cancelled: false,
+  },
+  {
+    name: 'Intro to Personal Websites',
+    description: (
+      <p>
+        Want to learn how to create your own website? Join us for this workshop, 
+        where we will introduce the basics of HTML and CSS!
+      </p>
+    ),
+    series: 'Level Up',
+    day: '29',
     month: 'March',
     year: '2023',
     time: {
