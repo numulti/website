@@ -28,7 +28,7 @@ const socials = [
   {
     name: 'Discord',
     link: 'https://discord.gg/AnHt5UCy',
-    fa_icon: 'fa fa-discord',
+    fa_icon: 'fab fa-discord',
   },
 ];
 
