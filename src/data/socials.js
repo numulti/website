@@ -25,6 +25,11 @@ const socials = [
     link: 'https://www.linkedin.com/company/numulti',
     fa_icon: 'fa fa-linkedin',
   },
+  {
+    name: 'Discord',
+    link: 'https://discord.gg/AnHt5UCy',
+    fa_icon: 'fa fa-discord',
+  },
 ];
 
 export default socials;
