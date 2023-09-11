@@ -65,12 +65,22 @@
   },
   {
     "name": "Lavanya Goel",
-    "role": "Web Chair",
+    "role": "Student Advisor",
     "contact": {
       "email": "goel.la@northeastern.edu"
     },
     "image": {
       "src": "team-lavanya.jpg"
+    }
+  },
+  {
+    "name": "Damian Uduevbo",
+    "role": "Web Chair",
+    "contact": {
+      "email": "uduevbo.d@northeastern.edu"
+    },
+    "image": {
+      "src": "team-damian.jpg"
     }
   },
   {
