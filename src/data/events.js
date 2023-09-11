@@ -8,7 +8,6 @@ const events = [
         We'll be back in the fall semester, see you then!
       </p>
     ),
-    description: <p>We'll be back in the fall semester, see you then!</p>,
     series: 'Coding 404',
     day: '6',
     month: 'September',
