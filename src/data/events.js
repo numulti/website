@@ -63,6 +63,27 @@ const events = [
     },
     cancelled: false,
   },
+  {
+    name: 'C4C x MULTI: Intro to Personal Projects',
+    description: (
+      <p>
+        Join Code4Community and MULTI for our personal projects workshop, where we will go over the fundamentals of building personal projects for resumes.
+        We will go over example projects, brainstorming ideas, typical tech stacks, and how to get started.
+      </p>
+    ),
+    series: 'LEVEL-UP',
+    day: '8',
+    month: 'November',
+    year: '2023',
+    time: {
+      start: '7:00PM',
+      end: '8:00PM',
+    },
+    location: {
+      name: '144 Curry Student Center (CIE)',
+    },
+    cancelled: false,
+  },
 ];
 
 export default events;
