@@ -10,7 +10,7 @@ const events = [
         be doing resume reviews, so feel free to bring your resume!
       </p>
     ),
-    series: '',
+    series: 'LEVEL-UP',
     day: '1',
     month: 'November',
     year: '2023',
@@ -33,7 +33,7 @@ const events = [
         tech stacks, and how to get started.
       </p>
     ),
-    series: 'LEVEL-UP',
+    series: 'LEVEL UP',
     day: '8',
     month: 'November',
     year: '2023',
@@ -47,8 +47,7 @@ const events = [
     cancelled: false,
   },
   {
-    name:
-      'MULTI x ColorStack x United Health Group: Info Session and Resume Review',
+    name: 'MULTI x ColorStack x United Health Group: Info Session and Resume Review',
     description: (
       <p>
         Join us for a collab between MULTI, ColorStack, and United Health Group!
@@ -70,14 +69,14 @@ const events = [
     cancelled: false,
   },
   {
-    name: 'Code 4 Cash: Leetcode',
+    name: 'Code For Cash: Leetcode',
     description: (
       <p>
-        Join us for our Code 4 Cash competition! We will be hosting a Leetcode
+        Join us for our Code For Cash competition! We will be hosting a Leetcode
         competition to enter a raffle for a cash prize!
       </p>
     ),
-    series: 'Code 4 Cash',
+    series: 'Code For Cash',
     day: '29',
     month: 'November',
     year: '2023',
