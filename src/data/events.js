@@ -6,9 +6,9 @@ const events = [
     description: (
       <p>
         Join us for an engaging Leetcode practice session where we will be
-        solving problems together and discussing the best approaches to solve them.
-        Here you will have the opportunity to bolster your problem solving skills
-        and learn from your peers. 
+        solving problems together and discussing the best approaches to solve
+        them. Here you will have the opportunity to bolster your problem solving
+        skills and learn from your peers.
       </p>
     ),
     series: 'Community Leetcode Practice',
@@ -50,9 +50,9 @@ const events = [
     name: 'Tech Talk w/ Neel Jawaid',
     description: (
       <p>
-        Join us for a talk with Neel Jawaid, a designer at Google, as
-        he discusses his journey through the tech industry and how he has
-        navigated the challenges he has faced.
+        Join us for a talk with Neel Jawaid, a designer at Google, as he
+        discusses his journey through the tech industry and how he has navigated
+        the challenges he has faced.
       </p>
     ),
     series: 'Tech Talk',
