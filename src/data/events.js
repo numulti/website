@@ -2,18 +2,19 @@ import React from 'react';
 
 const events = [
   {
-    name: 'Interview and Resume Workshop',
+    name: 'Level Up',
     description: (
       <p>
-        Are you applying to co-ops or internships? Join us on Wednesday to
-        receive advice about how to tackle behavioural interviews! We will also
-        be doing resume reviews, so feel free to bring your resume!
+        Join us for an engaging Leetcode practice session where we will be
+        solving problems together and discussing the best approaches to solve
+        them. Here you will have the opportunity to bolster your problem solving
+        skills and learn from your peers.
       </p>
     ),
-    series: 'LEVEL-UP',
-    day: '1',
-    month: 'November',
-    year: '2023',
+    series: 'Community Leetcode Practice',
+    day: '28',
+    month: 'February',
+    year: '2024',
     time: {
       start: '7:00PM',
       end: '8:00PM',
@@ -24,19 +25,18 @@ const events = [
     cancelled: false,
   },
   {
-    name: 'C4C x MULTI: Intro to Personal Projects',
+    name: 'Effects of Music',
     description: (
       <p>
-        Join Code4Community and MULTI for our personal projects workshop, where
-        we will go over the fundamentals of building personal projects for
-        resumes. We will go over example projects, brainstorming ideas, typical
-        tech stacks, and how to get started.
+        Join us on for our meeting centered around music and its abiltiy to
+        improve mental health, support community building skills and its general
+        promotion of cohesion through activity.
       </p>
     ),
-    series: 'LEVEL UP',
-    day: '8',
-    month: 'November',
-    year: '2023',
+    series: 'Breaking the Stigma',
+    day: '21',
+    month: 'February',
+    year: '2024',
     time: {
       start: '7:00PM',
       end: '8:00PM',
@@ -47,39 +47,18 @@ const events = [
     cancelled: false,
   },
   {
-    name: 'MULTI x ColorStack x United Health Group: Info Session and Resume Review',
+    name: 'Tech Talk w/ Neel Jawaid',
     description: (
       <p>
-        Join us for a collab between MULTI, ColorStack, and United Health Group!
-        UHG employees will be joining us to talk about the company, answer
-        quesitons, and conduct resume reviews!
+        Join us for a talk with Neel Jawaid, a designer at Google, as he
+        discusses his journey through the tech industry and how he has navigated
+        the challenges he has faced.
       </p>
     ),
     series: 'Tech Talk',
-    day: '15',
-    month: 'November',
-    year: '2023',
-    time: {
-      start: '7:00PM',
-      end: '8:00PM',
-    },
-    location: {
-      name: '144 Curry Student Center (CIE)',
-    },
-    cancelled: false,
-  },
-  {
-    name: 'Code For Cash: Leetcode',
-    description: (
-      <p>
-        Join us for our Code For Cash competition! We will be hosting a Leetcode
-        competition to enter a raffle for a cash prize!
-      </p>
-    ),
-    series: 'Code For Cash',
-    day: '29',
-    month: 'November',
-    year: '2023',
+    day: '31',
+    month: 'January',
+    year: '2024',
     time: {
       start: '7:00PM',
       end: '8:00PM',
